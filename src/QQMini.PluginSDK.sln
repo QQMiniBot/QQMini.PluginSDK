@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQMini.PluginSDK", "QQMini.PluginSDK\QQMini.PluginSDK.csproj", "{E47CF757-C8BF-41C1-86BD-F4B60DE7D1FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E47CF757-C8BF-41C1-86BD-F4B60DE7D1FE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E47CF757-C8BF-41C1-86BD-F4B60DE7D1FE}.Debug|Any CPU.Build.0 = Debug|x86
+		{E47CF757-C8BF-41C1-86BD-F4B60DE7D1FE}.Release|Any CPU.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBAC4FF8-A902-4C77-9A07-862AA2274E7D}
+	EndGlobalSection
+EndGlobal

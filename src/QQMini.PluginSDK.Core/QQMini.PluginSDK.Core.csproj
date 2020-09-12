@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<!--应用程序-->
+		<TargetFrameworks>net45;net46;net47;net48</TargetFrameworks>
+		<RootNamespace>QQMini.PluginSDK.Core</RootNamespace>
+		<OutputType>Library</OutputType>
+
+		<!--生成-->
+		<Platforms>x86</Platforms>
+		<PlatformTarget>x86</PlatformTarget>
+		<DocumentationFile>D:\文稿\QQMini-二次开发3.2020.8.22\QQMini-.NET SDK\QQMini.PluginSDK\src\QQMini.PluginSDK.Core\QQMini.PluginSDK.Core.xml</DocumentationFile>
+		
+		<!--打包-->
+		<Version>1.0.0.0000-alpha</Version>
+		<PackageId>QQMini.PluginSDK.Core</PackageId>
+		<Authors>JieGG</Authors>
+		<Company>QQMiniBot</Company>
+		<Product>QQMini机器人第三方托管扩展应用程序管理组件应用程序开发包核心</Product>
+		<Description>适用于QQMini机器人第三方托管扩展应用程序管理组件应用程序开发包核心</Description>
+		<Copyright>Copyright © 2020 JieGG All rights reserved</Copyright>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/QQMiniBot/QQMini.PluginSDK</PackageProjectUrl>
+	</PropertyGroup>
+</Project>
