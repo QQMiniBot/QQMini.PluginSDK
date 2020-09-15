@@ -31,9 +31,9 @@
             当在派生类中重写时, 对当前插件进行反初始化
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.IPlugin.OnOpenWindowMenu">
+        <member name="M:QQMini.PluginSDK.Core.IPlugin.OnOpenSettingMenu">
             <summary>
-            当在派生类中重写时, 打开当前插件的窗口
+            当在派生类中重写时, 打开当前插件的设置菜单
             </summary>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.PluginInfo">
@@ -109,6 +109,21 @@
             </summary>
             <returns>表示当前对象的字符串</returns>
         </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes">
+            <summary>
+            表示 QQMini 框架类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes.QQMiniAir">
+            <summary>
+            表示当前运行的是 QQMini Air 版本
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes.QQMiniPro">
+            <summary>
+            表示当前运行的是 QQMini Pro 版本
+            </summary>
+        </member>
         <member name="T:QQMini.PluginSDK.Core.PluginBase">
             <summary>
             提供一种符合 QQMini 扩展应用程序的运行机制
@@ -146,9 +161,9 @@
             当在派生类中重写时, 对当前插件进行反初始化
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnOpenWindowMenu">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnOpenSettingMenu">
             <summary>
-            当在派生类中重写时, 打开设置窗体
+            当在派生类中重写时, 打开当前插件的设置菜单
             </summary>
         </member>
         <member name="T:QQMini.PluginSDK.Core.QMApi">
@@ -161,6 +176,12 @@
             初始化 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 类的新实例
             </summary>
             <param name="authCode">用于给 QMApi 授权的授权码</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFrameType">
+            <summary>
+            获取当前运行的 QQMini 框架的版本
+            </summary>
+            <returns><see cref="T:QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes"/> 的枚举值</returns>
         </member>
     </members>
 </doc>

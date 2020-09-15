@@ -30,8 +30,8 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		void OnUninitialize ();
 		/// <summary>
-		/// 当在派生类中重写时, 打开当前插件的窗口
+		/// 当在派生类中重写时, 打开当前插件的设置菜单
 		/// </summary>
-		void OnOpenWindowMenu ();
+		void OnOpenSettingMenu ();
 	}
 }
