@@ -8,7 +8,7 @@ namespace QQMini.PluginSDK.Core
 	/// 提供一种符合 QQMini 扩展应用程序的运行机制
 	/// </summary>
 	[Serializable]
-	public abstract class QMApplication : MarshalByRefObject
+	public abstract class PluginBase : MarshalByRefObject, IPlugin
 	{
 		#region --字段--
 		private QMApi _api;
@@ -22,38 +22,40 @@ namespace QQMini.PluginSDK.Core
 		/// <summary>
 		/// 当在派生类中重写时, 设置应用程序的信息
 		/// </summary>
-		public abstract QMAppInfo AppInfo { get; }
+		public abstract PluginInfo AppInfo { get; }
 		#endregion
 
 		#region --公开方法--
 		/// <summary>
-		/// 获取应用程序信息
+		/// 获取插件的基本信息
 		/// </summary>
-		/// <returns>返回应用程序信息</returns>
-		public string GetAppInfo ()
+		/// <returns>返回插件信息字符串</returns>
+		public string GetInfomaction ()
 		{
 			return AppInfo.ToString ();
 		}
 		/// <summary>
-		/// 设置应用程序授权
+		/// 设置插件的授权信息
 		/// </summary>
-		public void SetAppAuthorize (int authCode)
+		/// <param name="authCode">插件授权码</param>
+		public void SetAuthorize (int authCode)
 		{
 			this._api = new QMApi (authCode);
 		}
-
 		/// <summary>
-		/// 当在派生类中重写时, 初始化应用程序
+		/// 当在派生类中重写时, 对当前插件进行初始化
 		/// </summary>
-		public abstract void OnInitialized ();
+		public virtual void OnInitialize ()
+		{ }
 		/// <summary>
-		/// 当在派生类中重写时, 卸载应用程序
+		/// 当在派生类中重写时, 对当前插件进行反初始化
 		/// </summary>
-		public abstract void OnUninitialized ();
+		public virtual void OnUninitialize ()
+		{ }
 		/// <summary>
-		/// 当在派生类中重写时, 打开设置窗体
+		/// 当在派生类中重写时, 打开当前插件的设置菜单
 		/// </summary>
-		public virtual void OnOpenSettingsWindow ()
+		public virtual void OnOpenSettingMenu ()
 		{ }
 		#endregion
 	}

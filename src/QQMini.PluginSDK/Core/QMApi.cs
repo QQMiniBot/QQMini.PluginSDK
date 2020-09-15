@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using QQMini.PluginSDK.Core.Core;
+using QQMini.PluginSDK.Core.Model;
+
 namespace QQMini.PluginSDK.Core
 {
 	/// <summary>
@@ -24,6 +27,17 @@ namespace QQMini.PluginSDK.Core
 		public QMApi (int authCode)
 		{
 			this._authCode = authCode;
+		}
+		#endregion
+
+		#region --公开方法--
+		/// <summary>
+		/// 获取当前运行的 QQMini 框架的版本
+		/// </summary>
+		/// <returns><see cref="QQMiniFrameworkTypes"/> 的枚举值</returns>
+		public QQMiniFrameworkTypes GetFrameType ()
+		{
+			return (QQMiniFrameworkTypes)QQMiniApi.QMApi_GetFrameType (this._authCode);
 		}
 		#endregion
 	}

@@ -27,4 +27,7 @@
 	<ItemGroup>
 		<None Include="Assets\readme.txt" Pack="True" PackagePath="" />
 	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="12.0.3" PrivateAssets="All" />
+</ItemGroup>
 </Project>
