@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QQMini.PluginSDK.Core.Model;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,14 +26,22 @@ namespace QQMini.PluginSDK.Core
 		/// <summary>
 		/// 当在派生类中重写时, 对当前插件进行初始化
 		/// </summary>
-		void OnInitialize ();
+		void SetInitialize ();
 		/// <summary>
 		/// 当在派生类中重写时, 对当前插件进行反初始化
 		/// </summary>
-		void OnUninitialize ();
+		void SetUninitialize ();
 		/// <summary>
 		/// 当在派生类中重写时, 打开当前插件的设置菜单
 		/// </summary>
-		void OnOpenSettingMenu ();
+		void SetOpenSettingMenu ();
+		/// <summary>
+		/// 当在派生类中重写时, 向当前插件推送新事件
+		/// </summary>
+		/// <param name="type">事件类型</param>
+		/// <param name="subType">事件子类型</param>
+		/// <param name="datas">数据指针数组</param>
+		/// <returns>事件的处理结果</returns>
+		QMEventHandlerTypes PushNewEvent (int type, int subType, params IntPtr[] datas);
 	}
 }

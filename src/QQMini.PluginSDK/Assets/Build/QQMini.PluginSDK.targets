@@ -1,4 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Project>
-	
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<TaskAssembly Condition="$(IsDebugModel) == 'True'">$(MSBuildThisFileDirectory)..\..\bin\x86\Debug\net45\QQMini.PluginSDK.dll</TaskAssembly>
+		<TaskAssembly Condition="$(IsDebugModel) != 'True'">$(MSBuildThisFileDirectory)..\lib\net45\QQMini.PluginSDK.dll</TaskAssembly>
+	</PropertyGroup>
+
+	<UsingTask TaskName="ClearOldBuildTask" AssemblyFile="$(TaskAssembly)"/>
+	<UsingTask TaskName="FileAdjustTask" AssemblyFile="$(TaskAssembly)"/>
+
+	<Target Name="BuildAfter" BeforeTargets="CoreCompile" Condition="$(IsBuildFramework) != 'True'">
+		<ClearOldBuildTask BuildOutputPath="$(OutputPath)"/>
+	</Target>
+
+	<Target Name="BuildBefore" AfterTargets="Build" BeforeTargets="AfterBuild; PostBuildEvent" Condition="$(IsBuildFramework) != 'True'">
+		<ItemGroup>
+			<NotMoveFiles Include="$(OutputPath)$(TargetName)*.*"/>
+		</ItemGroup>
+		<ItemGroup>
+			<DeleteFiles Include="$(OutputPath)QQMini.PluginSDK*.*"/>
+		</ItemGroup>
+		<FileAdjustTask BuildOutputAssembly="$(TargetFileName)" BuildOutputPath="$(OutputPath)" BuildOutTargetPath="$(OutputPath)bin" NotMoveFiles="@(NotMoveFiles)" DeleteFiles="@(DeleteFiles)"/>
+	</Target>
 </Project>

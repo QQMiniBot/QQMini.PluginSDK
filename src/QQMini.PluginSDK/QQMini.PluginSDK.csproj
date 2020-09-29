@@ -11,7 +11,7 @@
 		<DocumentationFile>D:\文稿\QQMini-二次开发3.2020.8.22\QQMini-.NET SDK\QQMini.PluginSDK\src\QQMini.PluginSDK\QQMini.PluginSDK.xml</DocumentationFile>
 
 		<!--打包-->
-		<Version>1.0.0.0000-alpha</Version>
+		<Version>1.0.0.0929-alpha</Version>
 		<PackageId>QQMini.PluginSDK</PackageId>
 		<Authors>JieGG</Authors>
 		<Company>QQMiniBot</Company>
@@ -21,13 +21,26 @@
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/QQMiniBot/QQMini.PluginSDK</PackageProjectUrl>
+		<LangVersion>8.0</LangVersion>
+		<PackageIcon>icon.png</PackageIcon>
+		<RepositoryUrl>https://github.com/QQMiniBot/QQMini.PluginSDK</RepositoryUrl>
+		<RepositoryType>Git</RepositoryType>
 	</PropertyGroup>
 
 	<!--重定向目标包-->
 	<ItemGroup>
+		<None Include="..\..\img\icon.png">
+		  <Pack>True</Pack>
+		  <PackagePath></PackagePath>
+		</None>
+		<None Include="Assets\Build\**" Pack="True" PackagePath="build\" />
 		<None Include="Assets\readme.txt" Pack="True" PackagePath="" />
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="Newtonsoft.Json" Version="12.0.3" PrivateAssets="All" />
-</ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="QQMini.PluginFramework.Utility" Version="1.0.0.929" />
+		<PackageReference Include="Microsoft.Build.Framework" Version="14.3.0" />
+		<PackageReference Include="Microsoft.Build.Utilities.Core" Version="14.3.0" />
+		<PackageReference Update="@(PackageReference)" PrivateAssets="All" />
+	</ItemGroup>
 </Project>
