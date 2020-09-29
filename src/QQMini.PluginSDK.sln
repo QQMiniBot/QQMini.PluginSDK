@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQMini.PluginSDK", "QQMini.PluginSDK\QQMini.PluginSDK.csproj", "{E47CF757-C8BF-41C1-86BD-F4B60DE7D1FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QQMini.PluginSDK", "QQMini.PluginSDK\QQMini.PluginSDK.csproj", "{E47CF757-C8BF-41C1-86BD-F4B60DE7D1FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQMini.PluginSDK.Test", "QQMini.PluginSDK.Test\QQMini.PluginSDK.Test.csproj", "{396B6BA7-084C-446B-908F-11827128040A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,6 +16,10 @@ Global
 		{E47CF757-C8BF-41C1-86BD-F4B60DE7D1FE}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{E47CF757-C8BF-41C1-86BD-F4B60DE7D1FE}.Debug|Any CPU.Build.0 = Debug|x86
 		{E47CF757-C8BF-41C1-86BD-F4B60DE7D1FE}.Release|Any CPU.ActiveCfg = Release|x86
+		{396B6BA7-084C-446B-908F-11827128040A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{396B6BA7-084C-446B-908F-11827128040A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{396B6BA7-084C-446B-908F-11827128040A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{396B6BA7-084C-446B-908F-11827128040A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

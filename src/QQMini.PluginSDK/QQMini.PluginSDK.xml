@@ -21,20 +21,434 @@
             </summary>
             <param name="authCode">插件授权码</param>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.IPlugin.OnInitialize">
+        <member name="M:QQMini.PluginSDK.Core.IPlugin.SetInitialize">
             <summary>
             当在派生类中重写时, 对当前插件进行初始化
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.IPlugin.OnUninitialize">
+        <member name="M:QQMini.PluginSDK.Core.IPlugin.SetUninitialize">
             <summary>
             当在派生类中重写时, 对当前插件进行反初始化
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.IPlugin.OnOpenSettingMenu">
+        <member name="M:QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu">
             <summary>
             当在派生类中重写时, 打开当前插件的设置菜单
             </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.IPlugin.PushNewEvent(System.Int32,System.Int32,System.IntPtr[])">
+            <summary>
+            当在派生类中重写时, 向当前插件推送新事件
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="datas">数据指针数组</param>
+            <returns>事件的处理结果</returns>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.Discuss">
+            <summary>
+            表示讨论组号的类
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.Discuss.MinValue">
+            <summary>
+            获取 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 的最小值.
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.Discuss.Id">
+            <summary>
+            获取当前实例的唯一标识 (群组号)
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.#ctor(System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 类的新实例
+            </summary>
+            <param name="id">绑定于当前实例的标识 (群组号)</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 id 小于 <see cref="F:QQMini.PluginSDK.Core.Model.Discuss.MinValue"/></exception>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.Equals(QQMini.PluginSDK.Core.Model.Discuss)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.Equals(System.Object)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.GetHashCode">
+            <summary>
+            返回此实例的哈希代码
+            </summary>
+            <returns>32 位有符号整数哈希代码</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.ToString">
+            <summary>
+            将此实例的数值转换为其等效的字符串表示形式
+            </summary>
+            <returns>表示当前对象的字符串</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Implicit(QQMini.PluginSDK.Core.Model.Discuss)~System.Int64">
+            <summary>
+            定义将 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象转换为 <see cref="T:System.Int64"/>
+            </summary>
+            <param name="value">转换的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Implicit(QQMini.PluginSDK.Core.Model.Discuss)~System.String">
+            <summary>
+            定义将 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象转换为 <see cref="T:System.String"/>
+            </summary>
+            <param name="value">转换的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Equality(QQMini.PluginSDK.Core.Model.Discuss,QQMini.PluginSDK.Core.Model.Discuss)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Inequality(QQMini.PluginSDK.Core.Model.Discuss,QQMini.PluginSDK.Core.Model.Discuss)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Equality(QQMini.PluginSDK.Core.Model.Discuss,System.Int64)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Inequality(QQMini.PluginSDK.Core.Model.Discuss,System.Int64)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Equality(System.Int64,QQMini.PluginSDK.Core.Model.Discuss)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Inequality(System.Int64,QQMini.PluginSDK.Core.Model.Discuss)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Equality(QQMini.PluginSDK.Core.Model.Discuss,System.String)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.String"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Inequality(QQMini.PluginSDK.Core.Model.Discuss,System.String)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.String"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Equality(System.String,QQMini.PluginSDK.Core.Model.Discuss)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.String"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+            <returns>如果 a 是与 b.Id 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Discuss.op_Inequality(System.String,QQMini.PluginSDK.Core.Model.Discuss)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.String"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Discuss"/> 对象</param>
+            <returns>如果 a 是与 b.Id 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.GenderTypes">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.GenderTypes.Boy">
+            <summary>
+            男
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.GenderTypes.Gril">
+            <summary>
+            女
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.Group">
+            <summary>
+            表示群组号的类
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.Group.MinValue">
+            <summary>
+            获取 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 的最小值.
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.Group.Id">
+            <summary>
+            获取当前实例的唯一标识 (群组号)
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.#ctor(System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 类的新实例
+            </summary>
+            <param name="id">绑定于当前实例的标识 (群组号)</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 id 小于 <see cref="F:QQMini.PluginSDK.Core.Model.Group.MinValue"/></exception>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.Equals(QQMini.PluginSDK.Core.Model.Group)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.Equals(System.Object)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.GetHashCode">
+            <summary>
+            返回此实例的哈希代码
+            </summary>
+            <returns>32 位有符号整数哈希代码</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.ToString">
+            <summary>
+            将此实例的数值转换为其等效的字符串表示形式
+            </summary>
+            <returns>表示当前对象的字符串</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Implicit(QQMini.PluginSDK.Core.Model.Group)~System.Int64">
+            <summary>
+            定义将 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象转换为 <see cref="T:System.Int64"/>
+            </summary>
+            <param name="value">转换的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Implicit(QQMini.PluginSDK.Core.Model.Group)~System.String">
+            <summary>
+            定义将 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象转换为 <see cref="T:System.String"/>
+            </summary>
+            <param name="value">转换的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Equality(QQMini.PluginSDK.Core.Model.Group,QQMini.PluginSDK.Core.Model.Group)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Inequality(QQMini.PluginSDK.Core.Model.Group,QQMini.PluginSDK.Core.Model.Group)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Equality(QQMini.PluginSDK.Core.Model.Group,System.Int64)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Inequality(QQMini.PluginSDK.Core.Model.Group,System.Int64)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Equality(System.Int64,QQMini.PluginSDK.Core.Model.Group)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Inequality(System.Int64,QQMini.PluginSDK.Core.Model.Group)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Equality(QQMini.PluginSDK.Core.Model.Group,System.String)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.String"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Inequality(QQMini.PluginSDK.Core.Model.Group,System.String)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.String"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Equality(System.String,QQMini.PluginSDK.Core.Model.Group)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.String"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+            <returns>如果 a 是与 b.Id 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Group.op_Inequality(System.String,QQMini.PluginSDK.Core.Model.Group)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.String"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Group"/> 对象</param>
+            <returns>如果 a 是与 b.Id 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.Message">
+            <summary>
+            表示消息的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.Message.Id">
+            <summary>
+            获取当前消息的唯一标识 (ID)
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.Message.Number">
+            <summary>
+            获取当前消息的序号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.Message.Text">
+            <summary>
+            获取当前消息的文本
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 类的新实例
+            </summary>
+            <param name="id">消息标识</param>
+            <param name="number">消息序号</param>
+            <param name="text">消息文本</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 id 或 number 小于 0</exception>
+            <exception cref="T:System.ArgumentNullException">参数 text 为 <see langword="null"/></exception>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.Equals(QQMini.PluginSDK.Core.Model.Message)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.Equals(System.Object)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.GetHashCode">
+            <summary>
+            返回此实例的哈希代码
+            </summary>
+            <returns>32 位有符号整数哈希代码</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.ToString">
+            <summary>
+            将此实例的数值转换为其等效的字符串表示形式
+            </summary>
+            <returns>表示当前对象的字符串</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.op_Implicit(QQMini.PluginSDK.Core.Model.Message)~System.String">
+            <summary>
+            定义将 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 对象转换为 <see cref="T:System.String"/>
+            </summary>
+            <param name="value">转换的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 对象</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.op_Equality(QQMini.PluginSDK.Core.Model.Message,QQMini.PluginSDK.Core.Model.Message)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.op_Inequality(QQMini.PluginSDK.Core.Model.Message,QQMini.PluginSDK.Core.Model.Message)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.op_Equality(QQMini.PluginSDK.Core.Model.Message,System.String)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.String"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.op_Inequality(QQMini.PluginSDK.Core.Model.Message,System.String)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.String"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.op_Equality(System.String,QQMini.PluginSDK.Core.Model.Message)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.String"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 对象</param>
+            <returns>如果 a 是与 b.Id 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.op_Inequality(System.String,QQMini.PluginSDK.Core.Model.Message)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.String"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 对象</param>
+            <returns>如果 a 是与 b.Id 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.PluginInfo">
             <summary>
@@ -109,6 +523,1123 @@
             </summary>
             <returns>表示当前对象的字符串</returns>
         </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs">
+            <summary>
+            表示包含被好友删除事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.IntPtr)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="appendMessage">附加消息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventSubTypes">
+            <summary>
+            表示 QQMini 框架好友添加响应事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventSubTypes.BeFriendDelete">
+            <summary>
+            被删除好友
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMDiscussEventSubTypes">
+            <summary>
+            表示 QQMini 框架讨论组事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMDiscussEventSubTypes.Discuss">
+            <summary>
+            讨论组消息
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs">
+            <summary>
+            表示包含讨论组消息事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.FromDiscuss">
+            <summary>
+            指示当前事件的来源讨论组
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.Message">
+            <summary>
+            指示当前事件的消息
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromDiscuss">来源讨论组</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="msgNumber">消息序号</param>
+            <param name="msgId">消息ID</param>
+            <param name="message">详细信息</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/> 或 fromDiscuss 小于 <see cref="F:QQMini.PluginSDK.Core.Model.Discuss.MinValue"/></exception>
+            <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMEventArgs">
+            <summary>
+            表示包含 QQMini 事件数据的类的基类，并提供用于不包含事件数据的事件的值
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMEventArgs.Type">
+            <summary>
+            获取当前实例的事件类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMEventArgs.RobotQQ">
+            <summary>
+            获取接收到当前事件的机器人QQ
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMEventArgs.#ctor(System.Int32,System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="robotQQ">接收当前事件的机器人QQ</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMEventHandlerTypes">
+            <summary>
+            表示事件处理类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.Continue">
+            <summary>
+            继续
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.Intercept">
+            <summary>
+            拦截
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.Exception">
+            <summary>
+            异常
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMEventTypes">
+            <summary>
+            表示 QQMini 插件事件类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.PrivateMessage">
+            <summary>
+            私聊消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupMessage">
+            <summary>
+            群组消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.DiscussMessage">
+            <summary>
+            讨论组消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.FriendAddRequest">
+            <summary>
+            好友添加请求
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.FriendAddResponse">
+            <summary>
+            好友添加响应
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.BeFriendDelete">
+            <summary>
+            被好友删除
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupAddRequest">
+            <summary>
+            群组添加请求
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupMemberInstance">
+            <summary>
+            群组成员加入
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupMemberDecrease">
+            <summary>
+            群组成员离开
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupDissmiss">
+            <summary>
+            群组被解散
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupManagerChange">
+            <summary>
+            群组管理员改变
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupMemberCardChange">
+            <summary>
+            群组成员名片改变
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupNameChange">
+            <summary>
+            群名片改变
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupBanSpeak">
+            <summary>
+            群组禁言
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupMemberBanSpeak">
+            <summary>
+            群组成员禁言
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupAnonymousChange">
+            <summary>
+            群匿名改变
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupMemberRemoveMessage">
+            <summary>
+            群成员撤回消息
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs">
+            <summary>
+            表示包含好友添加请求事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.AppendMessage">
+            <summary>
+            指示当前事件的附加消息
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.Request">
+            <summary>
+            指示当前事件的请求
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.IntPtr,System.IntPtr)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="appendMsg">附加的验证消息</param>
+            <param name="responseFlag">响应标识</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/></exception>
+            <exception cref="T:System.ArgumentNullException">参数 appendMsg 或 responseFlag 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventSubTypes">
+            <summary>
+            表示 QQMini 框架好友添加请求事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventSubTypes.FriendAddRequest">
+            <summary>
+            好友添加请求
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs">
+            <summary>
+            表示包含好友添加响应事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs.AppendMessage">
+            <summary>
+            指示当前事件的附加消息
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.IntPtr)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="appendMessage">附加消息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventSubTypes">
+            <summary>
+            表示 QQMini 框架好友添加响应事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventSubTypes.AgreeAddFriend">
+            <summary>
+            同意添加好友
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventSubTypes.RefuseAddFriend">
+            <summary>
+            拒绝添加好友
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs">
+            <summary>
+            表示包含被好友删除事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.OperateQQ">
+            <summary>
+            指示当前事件的操作QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.Request">
+            <summary>
+            指示当前事件的请求
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.IntPtr)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="operateQQ">操作QQ</param>
+            <param name="responseFlag">反馈标识</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组添加请求事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventSubTypes.ApplyAddGroup">
+            <summary>
+            申请加群
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventSubTypes.InviteMyAddGroup">
+            <summary>
+            邀请加群
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs">
+            <summary>
+            表示包含群组匿名改变事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs.FromQQ">
+            <summary>
+            指示当前事件的开启或关闭群组匿名的操作者QQ
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组匿名状态改变事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventSubTypes.GroupAnonymousOpen">
+            <summary>
+            群组匿名开启
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventSubTypes.GroupAnonymousClose">
+            <summary>
+            群组匿名关闭
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs">
+            <summary>
+            表示包含群组禁言事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs.FromQQ">
+            <summary>
+            指示当前事件的开启或关闭全体禁言的操作者QQ
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组禁言事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventSubTypes.GroupBanSpeakOpen">
+            <summary>
+            群组禁言开启
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventSubTypes.GroupBanSpeakClose">
+            <summary>
+            群组禁言关闭
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs">
+            <summary>
+            表示包含群组解散事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupDissmissEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组解散事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupDissmissEventSubTypes.GroupDissmiss">
+            <summary>
+            群组解散
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupEventSubTypes">
+            <summary>
+            表示 QQMini 框架群聊事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupEventSubTypes.Group">
+            <summary>
+            群组消息
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs">
+            <summary>
+            表示包含群组管理员改变事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组管理员改变事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventSubTypes.BecomeManager">
+            <summary>
+            成为管理员
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventSubTypes.CanceledManager">
+            <summary>
+            取消管理员
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs">
+            <summary>
+            表示包含群组成员禁言事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.FromQQ">
+            <summary>
+            指示当前事件的被禁言QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.OperateQQ">
+            <summary>
+            指示当前事件的设置或解除禁言的管理者QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.BanSpeakTimeSpan">
+            <summary>
+            指示当前事件设置禁言的时长. (如果 <see cref="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.SubType"/> 是 <see cref="F:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.GroupMemberRemoveBanSpeak"/> 则为 0)
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="operateQQ">操作QQ</param>
+            <param name="banTime">禁言时长</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组成员禁言事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.GroupMemberSetBanSpeak">
+            <summary>
+            群组成员禁言
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.GroupMemberRemoveBanSpeak">
+            <summary>
+            群组成员解除禁言
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs">
+            <summary>
+            表示包含群组成员名片改变事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs.NewCard">
+            <summary>
+            指示当前事件的新名片
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.IntPtr)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="newCard">新名片</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组成员名片改变事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventSubTypes.GroupMemberCardChange">
+            <summary>
+            群组成员名片改变
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs">
+            <summary>
+            表示包含群组成员减少事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.OperateQQ">
+            <summary>
+            指示当前事件的操作QQ
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="operateQQ">操作QQ</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组成员减少事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventSubTypes.GroupMemberLeave">
+            <summary>
+            群组成员离开
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventSubTypes.GroupManagerRemoveMember">
+            <summary>
+            群管理员移除成员
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs">
+            <summary>
+            表示包含群组成员增加事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.OperateQQ">
+            <summary>
+            指示当前事件的操作QQ
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="operateQQ">操作QQ</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组成员增加事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventSubTypes.BeAllowAddGroup">
+            <summary>
+            被批准加入群组
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventSubTypes.MyAddGroup">
+            <summary>
+            我加入了群组
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventSubTypes.BeInviteAddGroup">
+            <summary>
+            被邀请加入了群组
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs">
+            <summary>
+            表示包含群组成员撤回消息事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.FromQQ">
+            <summary>
+            指示当前事件的开启或关闭群组匿名的操作者QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.MessageNumber">
+            <summary>
+            指示当前事件的消息序号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.MessageId">
+            <summary>
+            指示当前事件的消息标识 (ID)
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="msgNumber">消息序号</param>
+            <param name="msgId">消息标识 (ID)</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 msgNumber 或 msgId 小于 0</exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组成员撤回消息事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventSubTypes.RemoveGroupMessage">
+            <summary>
+            撤回群组消息
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs">
+            <summary>
+            表示包含群组消息事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群组
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.Message">
+            <summary>
+            指示当前事件的消息
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="msgNumber">消息序号</param>
+            <param name="msgId">消息ID</param>
+            <param name="message">详细信息</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/> 或 fromGroup 小于 <see cref="F:QQMini.PluginSDK.Core.Model.Group.MinValue"/></exception>
+            <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs">
+            <summary>
+            表示包含群组名称改变事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs.FromGroup">
+            <summary>
+            指示当前事件的来源群号
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs.NewCard">
+            <summary>
+            指示当前事件的新名片
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.IntPtr)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromGroup">来源群组</param>
+            <param name="newCard">新名片</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventSubTypes">
+            <summary>
+            表示 QQMini 框架群组名称改变事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventSubTypes.GroupNameChange">
+            <summary>
+            群组名称改变
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes">
+            <summary>
+            表示 QQMini 框架私聊事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.Friend">
+            <summary>
+            好友消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.GroupTemp">
+            <summary>
+            群临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.DiscussTemp">
+            <summary>
+            讨论组临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.OnlineTemp">
+            <summary>
+            在线临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.FriendVerify">
+            <summary>
+            好友验证回复
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs">
+            <summary>
+            表示包含私聊消息事件数据的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.SubType">
+            <summary>
+            指示当前事件的子类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.FromQQ">
+            <summary>
+            指示当前事件的来源QQ
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.Message">
+            <summary>
+            指示当前事件的消息
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs"/> 类的新实例
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="fromQQ">来源QQ</param>
+            <param name="msgNumber">消息序号</param>
+            <param name="msgId">消息ID</param>
+            <param name="message">详细信息</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/></exception>
+            <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QQ">
+            <summary>
+            表示 QQ 号的类
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QQ.MinValue">
+            <summary>
+            获取 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 的最小值. (此值作为 "系统消息")
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QQ.Id">
+            <summary>
+            获取当前实例的唯一标识 (QQ号)
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.#ctor(System.Int64)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 类的新实例
+            </summary>
+            <param name="id">绑定于当前实例的标识 (QQ号)</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">参数 id 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/></exception>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.Equals(QQMini.PluginSDK.Core.Model.QQ)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.Equals(System.Object)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.GetHashCode">
+            <summary>
+            返回此实例的哈希代码
+            </summary>
+            <returns>32 位有符号整数哈希代码</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.ToString">
+            <summary>
+            将此实例的数值转换为其等效的字符串表示形式
+            </summary>
+            <returns>表示当前对象的字符串</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Implicit(QQMini.PluginSDK.Core.Model.QQ)~System.Int64">
+            <summary>
+            定义将 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象转换为 <see cref="T:System.Int64"/>
+            </summary>
+            <param name="value">转换的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Implicit(QQMini.PluginSDK.Core.Model.QQ)~System.String">
+            <summary>
+            定义将 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象转换为 <see cref="T:System.String"/>
+            </summary>
+            <param name="value">转换的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Equality(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Inequality(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Equality(QQMini.PluginSDK.Core.Model.QQ,System.Int64)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Inequality(QQMini.PluginSDK.Core.Model.QQ,System.Int64)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Equality(System.Int64,QQMini.PluginSDK.Core.Model.QQ)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Inequality(System.Int64,QQMini.PluginSDK.Core.Model.QQ)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.Int64"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Equality(QQMini.PluginSDK.Core.Model.QQ,System.String)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.String"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Inequality(QQMini.PluginSDK.Core.Model.QQ,System.String)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:System.String"/> 对象</param>
+            <returns>如果 a.Id 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Equality(System.String,QQMini.PluginSDK.Core.Model.QQ)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 和 <see cref="T:System.String"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.String"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+            <returns>如果 a 是与 b.Id 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Inequality(System.String,QQMini.PluginSDK.Core.Model.QQ)">
+            <summary>
+            确定指定的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 和 <see cref="T:System.String"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的 <see cref="T:System.String"/> 对象</param>
+            <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+            <returns>如果 a 是与 b.Id 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QQMiniException">
+            <summary>
+            表示异常代码的枚举
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QQMiniException.Code">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQMiniException.#ctor(System.Int32,System.String)">
+            <summary>
+            生成一个QQMiniPluginException异常
+            </summary>
+            <param name="code">错误代码</param>
+            <param name="message">错误信息</param>
+        </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes">
             <summary>
             表示 QQMini 框架类型的枚举
@@ -124,47 +1655,461 @@
             表示当前运行的是 QQMini Pro 版本
             </summary>
         </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.Request">
+            <summary>
+            表示请求的类
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.Request.ReaponseFalg">
+            <summary>
+            获取当前实例的响应标识
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Request.#ctor(System.String)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.Request"/> 类的新实例
+            </summary>
+            <param name="flag">响应标识</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Request.Equals(QQMini.PluginSDK.Core.Model.Request)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Request.Equals(System.Object)">
+            <summary>
+            指示当前对象是否等于同一类型的另一个对象
+            </summary>
+            <param name="obj">与此对象进行比较的对象</param>
+            <returns>如果当前对象等于 obj 参数，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Request.GetHashCode">
+            <summary>
+            返回此实例的哈希代码
+            </summary>
+            <returns>32 位有符号整数哈希代码</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Request.ToString">
+            <summary>
+            将此实例的数值转换为其等效的字符串表示形式
+            </summary>
+            <returns>表示当前对象的字符串</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Request.op_Equality(QQMini.PluginSDK.Core.Model.Request,QQMini.PluginSDK.Core.Model.Request)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Request"/> 实例是否具有相同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="true"/>；否则为 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.Request.op_Inequality(QQMini.PluginSDK.Core.Model.Request,QQMini.PluginSDK.Core.Model.Request)">
+            <summary>
+            确定两个指定的 <see cref="T:QQMini.PluginSDK.Core.Model.Request"/> 实例是否具有不同的值
+            </summary>
+            <param name="a">要比较的第一个对象</param>
+            <param name="b">要比较的第二个对象</param>
+            <returns>如果 a 是与 b 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.ResponseTypes">
+            <summary>
+            请求的方式
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.ResponseTypes.Accept">
+            <summary>
+            同意
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.ResponseTypes.Refuse">
+            <summary>
+            解决
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.ResponseTypes.Ignore">
+            <summary>
+            忽略
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.StatusTypes">
+            <summary>
+            QQ的在线状态
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.StatusTypes.Online">
+            <summary>
+            在线
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.StatusTypes.QMe">
+            <summary>
+            Q我吧
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.StatusTypes.Leave">
+            <summary>
+            离开
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.StatusTypes.Busy">
+            <summary>
+            忙碌
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.StatusTypes.NoDisturb">
+            <summary>
+            请勿打扰
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.StatusTypes.Invisible">
+            <summary>
+            隐身
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.VerifyTypes">
+            <summary>
+            存放查询到目标QQ的好友验证方式
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.VerifyTypes.No_validation">
+            <summary>
+            无验证
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.VerifyTypes.Authentication_required">
+            <summary>
+            需身份验证
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.VerifyTypes.Need_correct_answer">
+            <summary>
+            需正确答案
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.VerifyTypes.Questions_to_answer">
+            <summary>
+            需回答问题
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.VerifyTypes.Already_friend">
+            <summary>
+            已成为好友
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.VoiceTypes">
+            <summary>
+            语音格式
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.VoiceTypes.None">
+            <summary>
+            暂时未定
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.XmlTypes">
+            <summary>
+            XML格式基本类型
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.XmlTypes.Basic">
+            <summary>
+            基本结构
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.XmlTypes.Music">
+            <summary>
+            歌曲结构
+            </summary>
+        </member>
         <member name="T:QQMini.PluginSDK.Core.PluginBase">
             <summary>
             提供一种符合 QQMini 扩展应用程序的运行机制
             </summary>
         </member>
-        <member name="P:QQMini.PluginSDK.Core.PluginBase.Api">
+        <member name="P:QQMini.PluginSDK.Core.PluginBase.QMApi">
             <summary>
-            获取当前应用程序相关联的应用程序 Api
+            获取当前插件可使用的 QQMini 框架的 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 实例
             </summary>
         </member>
-        <member name="P:QQMini.PluginSDK.Core.PluginBase.AppInfo">
+        <member name="P:QQMini.PluginSDK.Core.PluginBase.IsInitialized">
+            <summary>
+            获取当前插件是否已经初始化
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.PluginBase.PluginInfo">
             <summary>
             当在派生类中重写时, 设置应用程序的信息
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.GetInfomaction">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#GetInfomaction">
             <summary>
             获取插件的基本信息
             </summary>
-            <returns>返回插件信息字符串</returns>
+            <returns>插件基本信息的字符串</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.SetAuthorize(System.Int32)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetAuthorize(System.Int32)">
             <summary>
             设置插件的授权信息
             </summary>
             <param name="authCode">插件授权码</param>
         </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetInitialize">
+            <summary>
+            设置插件初始化
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetUninitialize">
+            <summary>
+            设置插件反初始化
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetOpenSettingMenu">
+            <summary>
+            设置插件打开设置菜单
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#PushNewEvent(System.Int32,System.Int32,System.IntPtr[])">
+            <summary>
+            向当前插件推送新事件
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="subType">事件子类型</param>
+            <param name="datas">数据指针数组</param>
+            <returns>事件的处理结果</returns>
+        </member>
         <member name="M:QQMini.PluginSDK.Core.PluginBase.OnInitialize">
             <summary>
-            当在派生类中重写时, 对当前插件进行初始化
+            当插件被初始化时调用
             </summary>
         </member>
         <member name="M:QQMini.PluginSDK.Core.PluginBase.OnUninitialize">
             <summary>
-            当在派生类中重写时, 对当前插件进行反初始化
+            当插件被反初始化时调用
             </summary>
         </member>
         <member name="M:QQMini.PluginSDK.Core.PluginBase.OnOpenSettingMenu">
             <summary>
-            当在派生类中重写时, 打开当前插件的设置菜单
+            当插件打开设置菜单时调用
             </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnReceiveEvent(QQMini.PluginSDK.Core.Model.QMEventArgs)">
+            <summary>
+            当插件收到新事件时调用
+            </summary>
+            <param name="e">新事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnReceiveFriendMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">
+            <summary>
+            当收到好友消息
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">
+            <summary>
+            当收到群组临时消息
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">
+            <summary>
+            当收到讨论组临时消息
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnReceiveOnlineTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">
+            <summary>
+            当收到在线临时消息
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnReceiveFriendVerifyMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">
+            <summary>
+            当收到好友验证回复消息
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupMessage(QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs)">
+            <summary>
+            当收到群组消息
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussMessage(QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs)">
+            <summary>
+            当收到讨论组消息
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnFriendAddRequest(QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs)">
+            <summary>
+            当好友添加请求
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnBeAgreeAddFriend(QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs)">
+            <summary>
+            当被同意添加为好友
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnBeRefuseAddFriend(QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs)">
+            <summary>
+            当被拒绝添加为好友
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnBeFriendDelete(QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs)">
+            <summary>
+            当被删除好友
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupApplyAddRequest(QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs)">
+            <summary>
+            当群组申请加入请求
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupInviteMyAddRequest(QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs)">
+            <summary>
+            当群组邀请我加入请求
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBeAllowAdd(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">
+            <summary>
+            当群组成员被允许入群
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberMyAddGroup(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">
+            <summary>
+            当我加入了群组
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBeInviteAdd(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">
+            <summary>
+            当群组成员被邀请入群
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberLeave(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">
+            <summary>
+            当群组成员离开
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupManagerRemoveMember(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">
+            <summary>
+            当群组管理员移除成员
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupDissmiss(QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs)">
+            <summary>
+            当群组解散
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBecomeManager(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+            <summary>
+            当群成员成为管理员
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCanceledManager(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+            <summary>
+            当群成员被取消管理员
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCardChange(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+            <summary>
+            当群成员修改了新名片
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupNameChange(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+            <summary>
+            当群组名称改变
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakOpen(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+            <summary>
+            当群组开启全体禁言
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakClose(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+            <summary>
+            当群组关闭全体禁言
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberSetBanSpeak(QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs)">
+            <summary>
+            当群组成员被设置禁言
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberRemoveBanSpeak(QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs)">
+            <summary>
+            当群组成员被解除禁言
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousOpen(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+            <summary>
+            当群组匿名被开启
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousClose(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+            <summary>
+            当群组匿名被关闭
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberRemoveMessage(QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs)">
+            <summary>
+            当群组成员撤回消息
+            </summary>
+            <param name="e">包含当前事件的事件参数</param>
+            <returns>通知当前框架的事件处理办法</returns>
         </member>
         <member name="T:QQMini.PluginSDK.Core.QMApi">
             <summary>
@@ -182,6 +2127,610 @@
             获取当前运行的 QQMini 框架的版本
             </summary>
             <returns><see cref="T:QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes"/> 的枚举值</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFrameVersion">
+            <summary>
+            获取框架版本号
+            </summary>
+            <returns>返回 QQMini 框架的版本号</returns>
+            <exception cref="T:System.FormatException">转换字符串失败</exception> 
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFrameTimeStamp">
+            <summary>
+            获取框架内部时间戳
+            </summary>
+            <returns>以秒为单位的时间戳</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetPluginDataDirectory">
+            <summary>
+            获取插件数据目录
+            </summary>
+            <returns>绝对路径</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFriendList(System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ的好友列表
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>好友列表集合</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFriendInfo(System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ的好友信息,
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要获取好友信息的目标QQ</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>指定QQ的好友信息</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetStrangerInfo(System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ的陌生人信息
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要获取陌生人信息的目标QQ</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>陌生人信息</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupList(System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ的群组列表
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>群组列表</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupInfo(System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ指定群组的群组信息
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要获取群组信息的目标群组</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>群组信息</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupMemberList(System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ在指定群的成员群组列表.
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要获取群组成员列表的目标群组</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>成员群组列表</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupMemberInfo(System.Int64,System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ在指定群组的群成员信息
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要获取群组成员信息的目标群组</param>
+            <param name="destQQ">要在群组内获取其成员信息的目标QQ</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>群成员信息</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupManagerList(System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ指定群组的管理员列表
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要获取群组管理员列表的目标群组</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>管理员列表</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetDiscussList(System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ的讨论组列表
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>讨论组列表</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetDiscussMemberList(System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            获取指定QQ指定讨论组的讨论组成员列表
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destDiscuss">要获取讨论组成员列表的目标讨论组</param>
+            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
+            <returns>讨论组成员列表</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetCookies(System.Int64)">
+            <summary>
+            获取指定QQ网页操作用的 Cookies
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <returns>Cookies</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetBkn(System.Int64)">
+            <summary>
+            获取指定QQ网页操作用的 G_tk 或 Bkn 参数
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <returns> G_tk 或 Bkn 参数</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetOnlineStatus(System.Int64,System.Int64)">
+            <summary>
+            获取指定QQ的在线状态.
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要查询在线状态的QQ. 如果为空则查询 responseQQ</param>
+            <returns>在线状态</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupBanStatus(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            获取群组或群组成员的禁言状态.
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要查询是否被禁言群组</param>
+            <param name="destQQ">要查询是否被禁言群组内的QQ</param>
+            <returns>禁言状态</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFriendVerifyMode(System.Int64,System.Int64)">
+            <summary>
+            获取指定QQ的好友验证方式.
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要查询其好友验证方式的目标QQ</param>
+            <returns>好友验证方式</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetIsOnline(System.Int64,System.Int64)">
+            <summary>
+            获取指定的QQ是否在线
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要查询其是否在线的目标QQ</param>
+            <returns>是否在线</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetIsReceiveOnlineTempMessage(System.Int64,System.Int64)">
+            <summary>
+            获取指定QQ是否接收在线临时消息
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要查询其是否在线的目标QQ</param>
+            <returns>QQ是否接收在线临时消息</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetDiscussName(System.Int64,System.Int64)">
+            <summary>
+            获取指定讨论组的名称
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destDiscuss">要获取其名称的目标讨论组</param>
+            <returns>讨论组的名称</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetDiscussAddLink(System.Int64,System.Int64)">
+            <summary>
+            获取指定讨论组的加入链接
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destDiscuss">要获取加入链接的目标讨论组</param>
+            <returns>讨论组的加入链接</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupGiftList(System.Int64)">
+            <summary>
+            获取收到的群组礼物
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <returns>收到的群组礼物</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.GetRandomGroupGift(System.Int64,System.Int64)">
+            <summary>
+            随机获取群礼物(需要Lv5群聊等级).
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup"></param>
+            <returns>查询到的礼物</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetLogger(System.Int32,System.String)">
+            <summary>
+            设置一条日志信息到框架
+            </summary>
+            <param name="nLevel">类型: 调试(0), 信息(1), 警告(2), 错误(3), 严重错误(4). 若使用严重错误, 会使主程序停止运行</param>
+            <param name="message">日志的详细信息字符串</param>
+            <returns>日志的详细信息字符串</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetOnlineStatus(System.Int64,QQMini.PluginSDK.Core.Model.StatusTypes,System.String)">
+            <summary>
+            设置指定QQ的在线状态.
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="onlineStatus">在线(1), Q我吧(2), 离开(3), 忙碌(4), 请勿打扰(5), 隐身(6).</param>
+            <param name="statusMessage">要附加的在线状态信息. 最大255字节</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetAddQQToBlacklist(System.Int64,System.Int64)">
+            <summary>
+            设置QQ添加到黑名单列表
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要加入黑名单的目标QQ</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupBanStatus(System.Int64,System.Int64,System.Int64,System.Int32)">
+            <summary>
+            设置群组或群组成员禁言
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要禁言的QQ所在的群组</param>
+            <param name="destQQ">要在群组禁言的QQ</param>
+            <param name="nTimeSpan">要禁言的时长.单位: 秒, 范围:1 - 2592000(30天). 0为解除禁言</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupAnonymousStatus(System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            设置群组匿名功能状态
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要设置匿名功能的目标群组</param>
+            <param name="isEnabled">如果此参数为真, 则启动该群的匿名功能. 否则关闭匿名功能. 默认值: 假</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupShieldedStatus(System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            设置群组屏蔽状态
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要设置屏蔽状态的群组</param>
+            <param name="isShielded">如果该值为 "真" 屏蔽群消息, 否则为接受并提醒. 默认值: 假</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupManager(System.Int64,System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            设置群组管理员
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要设置管理员的群组</param>
+            <param name="destQQ">要在群组内设置为管理员的QQ</param>
+            <param name="isManager">是否设置为管理员</param>
+            <returns>成功返回真,失败返回假</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupMemberCard(System.Int64,System.Int64,System.Int64,System.String)">
+            <summary>
+            设置群组成员名片
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要设置群名片的目标群组</param>
+            <param name="destQQ">要在群组内设置群名片的目标QQ</param>
+            <param name="NewCard">要设置的新名片</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupQuit">
+            <summary>
+            设置群组退出(机器人是群主则解散群). 如果成功返回 0, 否则返回负值
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetDiscussName(System.Int64,System.Int64,System.String)">
+            <summary>
+            设置讨论组名称
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destDiscuss">要执行修改名称的目标讨论组</param>
+            <param name="NewName">要修改的新名称</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetFriendNotes(System.Int64,System.Int64,System.String)">
+            <summary>
+            设置好友备注
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要执行备注修改的好友QQ</param>
+            <param name="NewNotes">要修改的新备注</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetSignature(System.Int64,System.String)">
+            <summary>
+            设置个性签名
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="NewSignature">要修改的新个性签名</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGender(System.Int64,QQMini.PluginSDK.Core.Model.GenderTypes)">
+            <summary>
+            设置性别
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="nGender">要设置的性别值. 男(1),女(2).</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetNick(System.Int64,System.String)">
+            <summary>
+            设置昵称
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="NewNick">要修改的新昵称</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetFriendAddRequest(System.Int64,System.Int64,QQMini.PluginSDK.Core.Model.ResponseTypes,System.String)">
+            <summary>
+            设置好友添加请求	
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要处理请求添加好友的目标QQ</param>
+            <param name="responseType">处理该请求的方式. 同意(10). 拒绝(20), 忽略(30). </param>
+            <param name="AppendMsg">处理请求时的附加信息</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupAddRequest(System.Int64,System.Int64,System.Int64,System.String,QQMini.PluginSDK.Core.Model.ResponseTypes,System.String)">
+            <summary>
+            设置群组添加请求
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要处理请求加入的目标群组</param>
+            <param name="destQQ">要请求处理加入群组的目标QQ</param>
+            <param name="Seq">从事件处收到的请求标识</param>
+            <param name="nResponseType">处理该请求的方式. 同意(10). 拒绝(20), 忽略(30). 参考 #RESPONSE_ 常量</param>
+            <param name="AppendMsg">处理请求时的附加信息</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendMessage(System.Int64,System.Int32,System.Int64,System.Int64,System.String,System.Nullable{QQMini.PluginSDK.Core.Model.XmlTypes})">
+            <summary>
+            发送一条消息
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="sendType">指定消息的发送类型, 参考 #MSG_ 常量</param>
+            <param name="destTarget">发送到的目标群组或讨论组</param>
+            <param name="destQQ">发送到的目标QQ</param>
+            <param name="message">要发送的详细信息</param>
+            <param name="xmlSubType">基本结构(0), 歌曲结构(2), 其他值不明. 如果是普通消息和JSON消息, 本参数为空</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendLike(System.Int64,System.Int64,System.Int32)">
+            <summary>
+            发送一个点赞
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要为其点赞的目标QQ</param>
+            <param name="count">点赞的次数, 1-10. 默认: 1</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendShake(System.Int64,System.Int64)">
+            <summary>
+            向好友发送抖动窗口(移动端为"戳一戳")
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">欲抖动的好友</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendSignIn(System.Int64,System.Int64,System.String,System.String)">
+            <summary>
+            向指定群发送群签到
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">欲接收此签到的群组</param>
+            <param name="placeName">签到地名(Pro可用)</param>
+            <param name="message">想法发表的内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendInputing(System.Int64,System.Int64)">
+            <summary>
+            向好友发送正在输入状态
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">欲接收此状态的目标QQ</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupNotification(System.Int64,System.Int64,System.String,System.String)">
+            <summary>
+            向群组发送一条公告
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要发送公告的目标群组</param>
+            <param name="notificationTitle">要发送群公告的标题</param>
+            <param name="notificationContent">要发送群公告的内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupWork(System.Int64,System.Int64,System.String,System.String,System.String)">
+            <summary>
+            向群组发送一条作业
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要发送作业的目标群组</param>
+            <param name="workName">作业的名称</param>
+            <param name="workTitle">作业的标题</param>
+            <param name="workContent">作业的内容</param>
+            <returns>成功返回 0, 失败返回负值</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupGift(System.Int64,System.Int64,System.Int64,System.String)">
+            <summary>
+            向群组成员发送群组礼物
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要送出礼物的群组</param>
+            <param name="destQQ">要接收礼物的目标QQ</param>
+            <param name="giftPid">要送出的礼物的 PID</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupAddRequest(System.Int64,System.Int64,System.String)">
+            <summary>
+            发送群添加请求
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">欲申请加入的群的群号码</param>
+            <param name="appendMsg">附加的申请消息. 可为空 (需回答正确问题时, 请添加问题的答案)</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendfriendAddRequest(System.Int64,System.Int64,System.String)">
+            <summary>
+            发送好友添加请求
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">欲申请添加的目标QQ</param>
+            <param name="appendMsg">附加的申请消息. 可为空</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupInviteRequest(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            发送群组邀请请求
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要邀请进入的目标群组</param>
+            <param name="destQQ">要邀请的目标QQ</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendDiscussInviteRequest(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            发送讨论组邀请请求
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destDiscuss">要邀请进入的目标讨论组</param>
+            <param name="destQQ">被邀请进入讨论组的目标QQ</param>
+            <returns>成功返回 0, 失败返回负值</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.DownloadPicture(System.Int64,System.String,System.String)">
+            <summary>
+            接收指定的图片
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="pictureGUID">要接收图片的图片GUID, 例如: {xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}.qqmini.image</param>
+            <param name="picturePath">存放接收到图片位于本地服务器的绝对路径. </param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.DownloadVoice(System.Int64,System.String,System.Nullable{QQMini.PluginSDK.Core.Model.VoiceTypes},System.String)">
+            <summary>
+            接收指定的语音
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="voiceGUID">要接收语音的语音GUID, 例如: {xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}.qqmini.voice</param>
+            <param name="voiceOutFormat">要接收语音的目标语音格式. </param>
+            <param name="voicePath">存放接收到语音位于本地服务器的绝对路径. </param>
+            <returns>成功返回 0, 失败返回负值</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.UploadPicture(System.Int64,System.String,System.String)">
+            <summary>
+            上传指定的图片
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="picturePath">要上传图片的图片位于本地服务器的绝对路径</param>
+            <param name="pictureGUID">存放要上传图片的图片 GUID, 该 GUID 用于发送, 发送时图片将会被上传</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.UploadVoice(System.Int64,System.String,System.String)">
+            <summary>
+            上传指定的语音
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="voicePath">要上传图片的语音位于本地服务器的绝对路径</param>
+            <param name="voiceGUID">存放要上传语音的语音 GUID, 该 GUID 用于发送.</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.UploadHeadPortraits(System.Int64,System.String)">
+            <summary>
+            上传指定QQ的头像
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="picturePath">要设置的QQ头像位于本地服务器的绝对路径</param>
+            <returns>成功返回 0, 失败返回负值</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.UploadCover(System.Int64,System.String)">
+            <summary>
+            上传指定QQ的封面
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="picturePath">要设置的QQ封面位于本地服务器的绝对路径</param>
+            <returns>成功返回 0, 失败返回负值</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.RemoveFromBlacklist(System.Int64,System.Int64)">
+            <summary>
+            从黑名单列表中移除QQ
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要移除黑名单的目标QQ</param>
+            <returns>成功返回 0, 失败返回负值</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.Removefriend(System.Int64,System.Int64)">
+            <summary>
+            从好友列表中移除QQ
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要删除的目标QQ</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.RemoveMessage(System.Int64,System.Int32)">
+            <summary>
+            移除一条消息
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="messageId">要撤回的消息的消息ID</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.RemoveGroupMember(System.Int64,System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            移除群组成员
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destGroup">要执行群成员移除的群组</param>
+            <param name="destQQ">要被群组移除的QQ</param>
+            <param name="isRefuseAccept">指定是否不再接收该QQ的加群申请, 如果为 "真" 则不再接收, 默认为 "假"</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.RemoveDiscussMember(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            移除讨论组成员
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destDiscuss">要执行讨论组成员移除的讨论组</param>
+            <param name="destQQ">要被讨论组移除的QQ</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.CreateDiscuss(System.Int64,System.Int64)">
+            <summary>
+            创建讨论组
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="destQQ">要邀请进入讨论组的成员QQ</param>
+            <returns>讨论组ID</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.AddDiscussFromLink(System.Int64,System.String)">
+            <summary>
+            通过链接加入讨论组.
+            </summary>
+            <param name="responseQQ">要响应此接口的QQ</param>
+            <param name="discussLink">要加入的讨论组的讨论组链接</param>
+            <returns>成功返回 0, 失败返回负值</returns>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.QMEventAttribute">
+            <summary>
+            表示将特定方法设置为指定类型事件的终点的特性
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.QMEventAttribute.Type">
+            <summary>
+            获取或设置当前实例的事件类型
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.QMEventAttribute.SubType">
+            <summary>
+            获取或设置当前实例的事件子类型
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMEventAttribute.#ctor(QQMini.PluginSDK.Core.Model.QMEventTypes)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.QMEventAttribute"/> 类的新实例
+            </summary>
+            <param name="type">表示路由匹配的事件类型</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Tasks.ClearOldBuildTask">
+            <summary>
+            清除旧编译任务
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Tasks.ClearOldBuildTask.BuildOutputPath">
+            <summary>
+            获取或设置编译输出路径
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Tasks.ClearOldBuildTask.Execute">
+            <summary>
+            执行任务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QQMini.PluginSDK.Tasks.FileAdjustTask">
+            <summary>
+            文件调整任务
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Tasks.FileAdjustTask.BuildOutputAssembly">
+            <summary>
+            获取或设置编译过程中输出的程序集
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Tasks.FileAdjustTask.BuildOutputPath">
+            <summary>
+            获取或设置编译过程中的输出目录
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Tasks.FileAdjustTask.BuildOutTargetPath">
+            <summary>
+            获取或设置编译过程中的输出目标目录
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Tasks.FileAdjustTask.NotMoveFiles">
+            <summary>
+            获取或设置编译过程中不移动的文件列表
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Tasks.FileAdjustTask.DeleteFiles">
+            <summary>
+            获取或设置编译过程中删除的文件列表
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Tasks.FileAdjustTask.Execute">
+            <summary>
+            执行任务
+            </summary>
+            <returns></returns>
         </member>
     </members>
 </doc>

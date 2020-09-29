@@ -50,7 +50,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <summary>
 		/// 开发人员序列号
 		/// </summary>
-		[JsonProperty (PropertyName = "VeveloperKey")]
+		[JsonProperty (PropertyName = "DeveloperKey")]
 		public string DeveloperKey { get; set; }
 		#endregion
 

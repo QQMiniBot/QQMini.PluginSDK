@@ -55,7 +55,7 @@ namespace QQMini.PluginSDK.Core
 			{
 				return version;
 			}
-			throw new QQMiniPluginException (0,"无法解析指定的版本号");
+			throw new QQMiniException (0,"无法解析指定的版本号");
 		}
 		/// <summary>
 		/// 获取框架内部时间戳
@@ -91,7 +91,7 @@ namespace QQMini.PluginSDK.Core
 				
 				return null;
 			}
-			throw new QQMiniPluginException (1,$"【{responseQQ}】获取好友列表失败");
+			throw new QQMiniException (1,$"【{responseQQ}】获取好友列表失败");
 		}
 		/// <summary>
 		/// 获取指定QQ的好友信息,
@@ -110,7 +110,7 @@ namespace QQMini.PluginSDK.Core
 
 				return 0;
 			}
-			throw new QQMiniPluginException (2,$"【{responseQQ}】获取“{destQQ}”的好友信息失败");
+			throw new QQMiniException (2,$"【{responseQQ}】获取“{destQQ}”的好友信息失败");
 		}
 		/// <summary>
 		/// 获取指定QQ的陌生人信息
@@ -129,7 +129,7 @@ namespace QQMini.PluginSDK.Core
 
 				return 0;
 			}
-			throw new QQMiniPluginException (3,$"【{responseQQ}】获取“{destQQ}”的陌生人信息失败");
+			throw new QQMiniException (3,$"【{responseQQ}】获取“{destQQ}”的陌生人信息失败");
 		}
 		/// <summary>
 		/// 获取指定QQ的群组列表
@@ -147,7 +147,7 @@ namespace QQMini.PluginSDK.Core
 
 				return 0;
 			}
-			throw new QQMiniPluginException (4,$"【{responseQQ}】获取群组列表失败");
+			throw new QQMiniException (4,$"【{responseQQ}】获取群组列表失败");
 		}
 		/// <summary>
 		/// 获取指定QQ指定群组的群组信息
@@ -166,7 +166,7 @@ namespace QQMini.PluginSDK.Core
 
 				return 0;
 			}
-			throw new QQMiniPluginException (5,$"【{responseQQ}】获取“{destGroup}”群组信息失败");
+			throw new QQMiniException (5,$"【{responseQQ}】获取“{destGroup}”群组信息失败");
 		}
 		/// <summary>
 		/// 获取指定QQ在指定群的成员群组列表.
@@ -185,7 +185,7 @@ namespace QQMini.PluginSDK.Core
 
 				return 0;
 			}
-			throw new QQMiniPluginException (6,$"【{responseQQ}】获取“{destGroup}”成员群组列表失败");
+			throw new QQMiniException (6,$"【{responseQQ}】获取“{destGroup}”成员群组列表失败");
 		}
 		//** 写到这里了哦！明天加油继续写！
 		//今天加油继续写！
@@ -207,7 +207,7 @@ namespace QQMini.PluginSDK.Core
 
 				return 0;
 			}
-			throw new QQMiniPluginException (7,$"【{responseQQ}】获取“{destQQ}”的“{destGroup}”群成员信息失败");
+			throw new QQMiniException (7,$"【{responseQQ}】获取“{destQQ}”的“{destGroup}”群成员信息失败");
 		}
 		/// <summary>
 		/// 获取指定QQ指定群组的管理员列表
@@ -226,7 +226,7 @@ namespace QQMini.PluginSDK.Core
 
 				return 0;
 			}
-			throw new QQMiniPluginException (8,$"【{responseQQ}】获取“{destGroup}”管理员列表失败");
+			throw new QQMiniException (8,$"【{responseQQ}】获取“{destGroup}”管理员列表失败");
 		}
 		/// <summary>
 		/// 获取指定QQ的讨论组列表
@@ -244,7 +244,7 @@ namespace QQMini.PluginSDK.Core
 
 				return 0;
 			}
-			throw new QQMiniPluginException (9,$"【{responseQQ}】获取讨论组列表失败");
+			throw new QQMiniException (9,$"【{responseQQ}】获取讨论组列表失败");
 		}
 		/// <summary>
 		/// 获取指定QQ指定讨论组的讨论组成员列表
@@ -263,7 +263,7 @@ namespace QQMini.PluginSDK.Core
 
 				return 0;
 			}
-			throw new QQMiniPluginException (10,$"【{responseQQ}】获取“{destDiscuss}”的讨论组成员列表失败");
+			throw new QQMiniException (10,$"【{responseQQ}】获取“{destDiscuss}”的讨论组成员列表失败");
 		}
 		/// <summary>
 		/// 获取指定QQ网页操作用的 Cookies
@@ -282,7 +282,7 @@ namespace QQMini.PluginSDK.Core
 				// TODO: 解析过程. 待定
 
 			}
-			throw new QQMiniPluginException (11,$"【{responseQQ}】获取Cookies失败");
+			throw new QQMiniException (11,$"【{responseQQ}】获取Cookies失败");
 		}
 		/// <summary>
 		/// 获取指定QQ网页操作用的 G_tk 或 Bkn 参数
@@ -297,7 +297,7 @@ namespace QQMini.PluginSDK.Core
 
 				return bkn.ToString();
 			}
-			throw new QQMiniPluginException (12,$"【{responseQQ}】获取G_tk 或 Bkn 参数失败");
+			throw new QQMiniException (12,$"【{responseQQ}】获取G_tk 或 Bkn 参数失败");
 		}
 		/// <summary>
 		/// 获取指定QQ的在线状态.
@@ -313,7 +313,7 @@ namespace QQMini.PluginSDK.Core
 
 				return (StatusTypes)onlineStatus;
 			}
-			throw new QQMiniPluginException (13,$"【{responseQQ}】获取“{destQQ}”在线状态获取失败");
+			throw new QQMiniException (13,$"【{responseQQ}】获取“{destQQ}”在线状态获取失败");
 		}
 		/// <summary>
 		/// 获取群组或群组成员的禁言状态.
@@ -330,7 +330,7 @@ namespace QQMini.PluginSDK.Core
 
 				return isBan;
 			}
-			throw new QQMiniPluginException (14,$"【{responseQQ}】获取“{destQQ}”禁言状态失败");
+			throw new QQMiniException (14,$"【{responseQQ}】获取“{destQQ}”禁言状态失败");
 		}
 
 		/// <summary>
@@ -347,7 +347,7 @@ namespace QQMini.PluginSDK.Core
 
 				return (VerifyTypes)friendVerify;
 			}
-			throw new QQMiniPluginException (15,$"【{responseQQ}】获取“{destQQ}”好友验证方式失败");
+			throw new QQMiniException (15,$"【{responseQQ}】获取“{destQQ}”好友验证方式失败");
 		}
 		/// <summary>
 		/// 获取指定的QQ是否在线
@@ -363,7 +363,7 @@ namespace QQMini.PluginSDK.Core
 
 				return isOnline;
 			}
-			throw new QQMiniPluginException (16,$"【{responseQQ}】获取“{destQQ}”是否在线失败");
+			throw new QQMiniException (16,$"【{responseQQ}】获取“{destQQ}”是否在线失败");
 		}
 		/// <summary>
 		/// 获取指定QQ是否接收在线临时消息
@@ -382,7 +382,7 @@ namespace QQMini.PluginSDK.Core
 				// TODO: 解析过程. 待定
 
 			}
-			throw new QQMiniPluginException (17,$"【{responseQQ}】获取“{destQQ}”是否接收在线临时消息失败");
+			throw new QQMiniException (17,$"【{responseQQ}】获取“{destQQ}”是否接收在线临时消息失败");
 		}
 		/// <summary>
 		/// 获取指定讨论组的名称
@@ -402,7 +402,7 @@ namespace QQMini.PluginSDK.Core
 				// TODO: 解析过程. 待定
 
 			}
-			throw new QQMiniPluginException (18,$"【{responseQQ}】获取“{destDiscuss}”讨论组的名称失败");
+			throw new QQMiniException (18,$"【{responseQQ}】获取“{destDiscuss}”讨论组的名称失败");
 		}
 		/// <summary>
 		/// 获取指定讨论组的加入链接
@@ -422,7 +422,7 @@ namespace QQMini.PluginSDK.Core
 				// TODO: 解析过程. 待定
 
 			}
-			throw new QQMiniPluginException (19,$"【{responseQQ}】获取“{destDiscuss}”讨论组的加入链接失败");
+			throw new QQMiniException (19,$"【{responseQQ}】获取“{destDiscuss}”讨论组的加入链接失败");
 		}
 		/// <summary>
 		/// 获取收到的群组礼物
@@ -441,7 +441,7 @@ namespace QQMini.PluginSDK.Core
 				// TODO: 解析过程. 待定
 
 			}
-			throw new QQMiniPluginException (20,$"【{responseQQ}】获取收到的群组礼物失败");
+			throw new QQMiniException (20,$"【{responseQQ}】获取收到的群组礼物失败");
 		}
 		/// <summary>
 		/// 随机获取群礼物(需要Lv5群聊等级).
@@ -461,7 +461,7 @@ namespace QQMini.PluginSDK.Core
 				// TODO: 解析过程. 待定
 
 			}
-			throw new QQMiniPluginException (21,$"【{responseQQ}】获取查询到的礼物失败");
+			throw new QQMiniException (21,$"【{responseQQ}】获取查询到的礼物失败");
 		}
 		/// <summary>
 		/// 设置一条日志信息到框架
@@ -480,7 +480,7 @@ namespace QQMini.PluginSDK.Core
 					// TODO: 解析过程. 待定
 
 				}
-				throw new QQMiniPluginException (22,$"日志信息到框架执行失败");
+				throw new QQMiniException (22,$"日志信息到框架执行失败");
 			}
 			finally
             {
@@ -488,13 +488,13 @@ namespace QQMini.PluginSDK.Core
 				gCHandle.Free();
 			}
 		}
-        /// <summary>
-        /// 设置指定QQ的在线状态.
-        /// </summary>
-        /// <param name="responseQQ">要响应此接口的QQ</param>
-        /// <param name="OnlineStatus">在线(1), Q我吧(2), 离开(3), 忙碌(4), 请勿打扰(5), 隐身(6)./param>
-        /// <param name="statusMessage">要附加的在线状态信息. 最大255字节</param>
-        public bool SetOnlineStatus(long responseQQ, StatusTypes onlineStatus, string statusMessage)
+		/// <summary>
+		/// 设置指定QQ的在线状态.
+		/// </summary>
+		/// <param name="responseQQ">要响应此接口的QQ</param>
+		/// <param name="onlineStatus">在线(1), Q我吧(2), 离开(3), 忙碌(4), 请勿打扰(5), 隐身(6).</param>
+		/// <param name="statusMessage">要附加的在线状态信息. 最大255字节</param>
+		public bool SetOnlineStatus(long responseQQ, StatusTypes onlineStatus, string statusMessage)
 		{
 			GCHandle gCHandle = statusMessage.GetStringGCHandle(Global.DefaultEncoding);
 			try
@@ -505,7 +505,7 @@ namespace QQMini.PluginSDK.Core
 					// TODO: 解析过程. 待定
 
 				}
-				throw new QQMiniPluginException (23,$"【{responseQQ}】设置指定QQ的在线状态失败");
+				throw new QQMiniException (23,$"【{responseQQ}】设置指定QQ的在线状态失败");
 			}
 			finally
 			{
@@ -526,7 +526,7 @@ namespace QQMini.PluginSDK.Core
 				// TODO: 解析过程. 待定
 
 			}
-			throw new QQMiniPluginException (24,$"【{responseQQ}】设置{destQQ}添加到黑名单列表失败");
+			throw new QQMiniException (24,$"【{responseQQ}】设置{destQQ}添加到黑名单列表失败");
 		}
 		/// <summary>
 		/// 设置群组或群组成员禁言
@@ -543,7 +543,7 @@ namespace QQMini.PluginSDK.Core
 				// TODO: 解析过程. 待定
 
 			}
-			throw new QQMiniPluginException (25,$"【{responseQQ}】设置群组或群组成员禁言失败");
+			throw new QQMiniException (25,$"【{responseQQ}】设置群组或群组成员禁言失败");
 		}
 		/// <summary>
 		/// 设置群组匿名功能状态
@@ -560,7 +560,7 @@ namespace QQMini.PluginSDK.Core
 
 
 			}
-			throw new QQMiniPluginException (26,$"【{responseQQ}】设置群组或群组成员禁言失败");
+			throw new QQMiniException (26,$"【{responseQQ}】设置群组或群组成员禁言失败");
 		}
 		/// <summary>
 		/// 设置群组屏蔽状态
@@ -577,7 +577,7 @@ namespace QQMini.PluginSDK.Core
 
 
 			}
-			throw new QQMiniPluginException (27,$"【{responseQQ}】设置群组屏蔽状态失败");
+			throw new QQMiniException (27,$"【{responseQQ}】设置群组屏蔽状态失败");
 		}
 		/// <summary>
 		/// 设置群组管理员
@@ -596,7 +596,7 @@ namespace QQMini.PluginSDK.Core
 
 
 			}
-			throw new QQMiniPluginException (28,$"【{responseQQ}】设置群组屏蔽状态失败");
+			throw new QQMiniException (28,$"【{responseQQ}】设置群组屏蔽状态失败");
 		}
 		/// <summary>
 		/// 设置群组成员名片
@@ -617,7 +617,7 @@ namespace QQMini.PluginSDK.Core
 					// TODO: 解析过程. 待定
 
 				}
-				throw new QQMiniPluginException (29,$"【{responseQQ}】设置{destGroup}群组{destQQ}成员名片失败");
+				throw new QQMiniException (29,$"【{responseQQ}】设置{destGroup}群组{destQQ}成员名片失败");
 			}
 			finally
 			{
@@ -637,7 +637,7 @@ namespace QQMini.PluginSDK.Core
 
 
 			}
-			throw new QQMiniPluginException (30,$"设置群组退出失败");
+			throw new QQMiniException (30,$"设置群组退出失败");
 		}
 		/// <summary>
 		///	设置讨论组名称
@@ -656,7 +656,7 @@ namespace QQMini.PluginSDK.Core
 					// TODO: 解析过程. 待定
 
 				}
-				throw new QQMiniPluginException (31,$"【{responseQQ}】设置{destDiscuss}讨论组{destDiscuss}新名称失败");
+				throw new QQMiniException (31,$"【{responseQQ}】设置{destDiscuss}讨论组{destDiscuss}新名称失败");
 			}
 			finally
 			{
@@ -681,7 +681,7 @@ namespace QQMini.PluginSDK.Core
 					// TODO: 解析过程. 待定
 
 				}
-				throw new QQMiniPluginException (32,$"【{responseQQ}】设置{destQQ}新备注失败");
+				throw new QQMiniException (32,$"【{responseQQ}】设置{destQQ}新备注失败");
 			}
 			finally
 			{
@@ -705,7 +705,7 @@ namespace QQMini.PluginSDK.Core
 					// TODO: 解析过程. 待定
 
 				}
-				throw new QQMiniPluginException (33,$"【{responseQQ}】设置新个性签名失败");
+				throw new QQMiniException (33,$"【{responseQQ}】设置新个性签名失败");
 			}
 			finally
 			{
@@ -727,7 +727,7 @@ namespace QQMini.PluginSDK.Core
 
 
 			}
-			throw new QQMiniPluginException (34,$"【{responseQQ}】设置性别失败");
+			throw new QQMiniException (34,$"【{responseQQ}】设置性别失败");
 		}
 		/// <summary>
 		/// 设置昵称
@@ -745,7 +745,7 @@ namespace QQMini.PluginSDK.Core
 					// TODO: 解析过程. 待定
 
 				}
-				throw new QQMiniPluginException (35,$"【{responseQQ}】设置新个性签名失败");
+				throw new QQMiniException (35,$"【{responseQQ}】设置新个性签名失败");
 			}
 			finally
 			{
@@ -758,7 +758,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="responseQQ">要响应此接口的QQ</param>
 		/// <param name="destQQ">要处理请求添加好友的目标QQ</param>
-		/// <param name="nResponseType">处理该请求的方式. 同意(10). 拒绝(20), 忽略(30). </param>
+		/// <param name="responseType">处理该请求的方式. 同意(10). 拒绝(20), 忽略(30). </param>
 		/// <param name="AppendMsg">处理请求时的附加信息</param>
 		public void SetFriendAddRequest (long responseQQ, long destQQ, ResponseTypes responseType, string AppendMsg)
 		{
@@ -771,7 +771,7 @@ namespace QQMini.PluginSDK.Core
 					// TODO: 解析过程. 待定
 
 				}
-				throw new QQMiniPluginException (36,$"【{responseQQ}】设置{destQQ}好友添加请求失败");
+				throw new QQMiniException (36,$"【{responseQQ}】设置{destQQ}好友添加请求失败");
 			}
 			finally
 			{
@@ -800,7 +800,7 @@ namespace QQMini.PluginSDK.Core
 					// TODO: 解析过程. 待定
 
 				}
-				throw new QQMiniPluginException (37,$"【{responseQQ}】设置群组{destGroup}的{destQQ}添加请求失败");
+				throw new QQMiniException (37,$"【{responseQQ}】设置群组{destGroup}的{destQQ}添加请求失败");
 			}
 			finally
 			{
@@ -829,7 +829,7 @@ namespace QQMini.PluginSDK.Core
                 {
 
                 }
-				throw new QQMiniPluginException (38,$"【{responseQQ}】发送一条消息失败");
+				throw new QQMiniException (38,$"【{responseQQ}】发送一条消息失败");
 			}
 			finally
 			{
@@ -848,7 +848,7 @@ namespace QQMini.PluginSDK.Core
 			{
 
 			}
-			throw new QQMiniPluginException (39,$"【{responseQQ}】发送一个点赞失败");
+			throw new QQMiniException (39,$"【{responseQQ}】发送一个点赞失败");
 		}
 		/// <summary>
 		/// 向好友发送抖动窗口(移动端为"戳一戳")
@@ -861,7 +861,7 @@ namespace QQMini.PluginSDK.Core
 			{
 
 			}
-			throw new QQMiniPluginException (40,$"【{responseQQ}】向好友{destQQ}发送抖动窗口失败");
+			throw new QQMiniException (40,$"【{responseQQ}】向好友{destQQ}发送抖动窗口失败");
 		}
 		/// <summary>
 		/// 向指定群发送群签到
@@ -880,7 +880,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (41,$"【{responseQQ}】发送一条消息失败");
+				throw new QQMiniException (41,$"【{responseQQ}】发送一条消息失败");
 			}
 			finally
 			{
@@ -899,7 +899,7 @@ namespace QQMini.PluginSDK.Core
 			{
 
 			}
-			throw new QQMiniPluginException (42,$"【{responseQQ}】向好友{destQQ}发送正在输入状态失败");
+			throw new QQMiniException (42,$"【{responseQQ}】向好友{destQQ}发送正在输入状态失败");
 		}
 		/// <summary>
 		/// 向群组发送一条公告
@@ -918,7 +918,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (43,$"【{responseQQ}】向群组{destGroup}发送一条公告失败");
+				throw new QQMiniException (43,$"【{responseQQ}】向群组{destGroup}发送一条公告失败");
 			}
 			finally
 			{
@@ -946,7 +946,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (44,$"【{responseQQ}】向群组{destGroup}发送一条公告失败");
+				throw new QQMiniException (44,$"【{responseQQ}】向群组{destGroup}发送一条公告失败");
 			}
 			finally
 			{
@@ -971,7 +971,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (45,$"【{responseQQ}】向群组{destGroup}成员{destQQ}发送群组礼物失败");
+				throw new QQMiniException (45,$"【{responseQQ}】向群组{destGroup}成员{destQQ}发送群组礼物失败");
 			}
 			finally
 			{
@@ -993,7 +993,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (46,$"【{responseQQ}】向群组{destGroup}发送群添加请求失败");
+				throw new QQMiniException (46,$"【{responseQQ}】向群组{destGroup}发送群添加请求失败");
 			}
 			finally
 			{
@@ -1015,7 +1015,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (47,$"【{responseQQ}】向{destQQ}发送好友添加请求失败");
+				throw new QQMiniException (47,$"【{responseQQ}】向{destQQ}发送好友添加请求失败");
 			}
 			finally
 			{
@@ -1034,7 +1034,7 @@ namespace QQMini.PluginSDK.Core
 			{
 
 			}
-			throw new QQMiniPluginException (48,$"【{responseQQ}】从群组{destGroup}向好友{destQQ}发送群组邀请请求失败");
+			throw new QQMiniException (48,$"【{responseQQ}】从群组{destGroup}向好友{destQQ}发送群组邀请请求失败");
 		}
 		/// <summary>
 		/// 发送讨论组邀请请求
@@ -1049,7 +1049,7 @@ namespace QQMini.PluginSDK.Core
 			{
 
 			}
-			throw new QQMiniPluginException (49,$"【{responseQQ}】从群组{destDiscuss}向好友{destQQ}发送群组邀请请求失败");
+			throw new QQMiniException (49,$"【{responseQQ}】从群组{destDiscuss}向好友{destQQ}发送群组邀请请求失败");
 		}
 		/// <summary>
 		/// 接收指定的图片
@@ -1067,7 +1067,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (50,$"【{responseQQ}】接收指定的图片失败");
+				throw new QQMiniException (50,$"【{responseQQ}】接收指定的图片失败");
 			}
 			finally
 			{
@@ -1095,7 +1095,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (51,$"【{responseQQ}】接收指定的语音失败");
+				throw new QQMiniException (51,$"【{responseQQ}】接收指定的语音失败");
 			}
 			finally
 			{
@@ -1119,7 +1119,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (52,$"【{responseQQ}】上传指定的图片失败");
+				throw new QQMiniException (52,$"【{responseQQ}】上传指定的图片失败");
 			}
 			finally
 			{
@@ -1143,7 +1143,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (53,$"【{responseQQ}】上传指定的语音失败");
+				throw new QQMiniException (53,$"【{responseQQ}】上传指定的语音失败");
 			}
 			finally
 			{
@@ -1166,7 +1166,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (54,$"【{responseQQ}】上传指定QQ的头像失败");
+				throw new QQMiniException (54,$"【{responseQQ}】上传指定QQ的头像失败");
 			}
 			finally
 			{
@@ -1188,7 +1188,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (55,$"【{responseQQ}】上传指定QQ的封面失败");
+				throw new QQMiniException (55,$"【{responseQQ}】上传指定QQ的封面失败");
 			}
 			finally
 			{
@@ -1216,7 +1216,7 @@ namespace QQMini.PluginSDK.Core
 			{
 
 			}
-			throw new QQMiniPluginException (56,$"【{responseQQ}】好友列表中移除{destQQ}失败");
+			throw new QQMiniException (56,$"【{responseQQ}】好友列表中移除{destQQ}失败");
 		}
 		/// <summary>
 		/// 移除一条消息
@@ -1229,7 +1229,7 @@ namespace QQMini.PluginSDK.Core
 			{
 
 			}
-			throw new QQMiniPluginException (57,$"【{responseQQ}】移除{messageId}消息失败");
+			throw new QQMiniException (57,$"【{responseQQ}】移除{messageId}消息失败");
 		}
 		/// <summary>
 		/// 移除群组成员
@@ -1244,7 +1244,7 @@ namespace QQMini.PluginSDK.Core
 			{
 
 			}
-			throw new QQMiniPluginException (58,$"【{responseQQ}】从群组{destGroup}移除成员{destQQ}失败");
+			throw new QQMiniException (58,$"【{responseQQ}】从群组{destGroup}移除成员{destQQ}失败");
 		}
 		/// <summary>
 		/// 移除讨论组成员
@@ -1258,7 +1258,7 @@ namespace QQMini.PluginSDK.Core
 			{
 
 			}
-			throw new QQMiniPluginException (59,$"【{responseQQ}】从讨论组{destDiscuss}移除成员{destQQ}失败");
+			throw new QQMiniException (59,$"【{responseQQ}】从讨论组{destDiscuss}移除成员{destQQ}失败");
 		}
 		/// <summary>
 		/// 创建讨论组
@@ -1272,7 +1272,7 @@ namespace QQMini.PluginSDK.Core
 			{
 				return discussId;
 			}
-			throw new QQMiniPluginException (60,$"【{responseQQ}】创建讨论组并邀请{destQQ}失败");
+			throw new QQMiniException (60,$"【{responseQQ}】创建讨论组并邀请{destQQ}失败");
 		}
 		/// <summary>
 		/// 通过链接加入讨论组.
@@ -1289,7 +1289,7 @@ namespace QQMini.PluginSDK.Core
 				{
 
 				}
-				throw new QQMiniPluginException (61,$"【{responseQQ}】通过链接加入讨论组失败");
+				throw new QQMiniException (61,$"【{responseQQ}】通过链接加入讨论组失败");
 			}
 			finally
 			{

@@ -8,6 +8,6 @@ namespace QQMini.PluginSDK.Core
 {
 	internal static class Global
 	{
-		public static readonly Encoding DefaultEncoding = Encoding.GetEncoding ("GB2312");
+		public static readonly Encoding DefaultEncoding = Encoding.GetEncoding ("GB18030");
 	}
 }

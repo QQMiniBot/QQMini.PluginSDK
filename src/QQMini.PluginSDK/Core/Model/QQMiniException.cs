@@ -9,7 +9,7 @@ namespace QQMini.PluginSDK.Core.Model
     /// <summary>
     /// 表示异常代码的枚举
     /// </summary>
-    public class QQMiniPluginException : Exception
+    public class QQMiniException : Exception
     {
         private readonly int _code;
         /// <summary>
@@ -21,7 +21,7 @@ namespace QQMini.PluginSDK.Core.Model
         /// </summary>
         /// <param name="code">错误代码</param>
         /// <param name="message">错误信息</param>
-        public QQMiniPluginException(int code,string message) : base(message)
+        public QQMiniException(int code,string message) : base(message)
         {
             _code = code;
         }
