@@ -86,30 +86,10 @@ namespace QQMini.PluginSDK.Tasks
 			Log.LogMessage (MessageImportance.High, $"整理编译目录 -> 成功");
 
 			Log.LogMessage (MessageImportance.High, $"打包编译结果...");
-			string zipName = $"{this.BuildAssemblyName}.dll";              // 原版压缩文件的名称
+			string zipName = $"{this.BuildAssemblyName}.MQ.dll";              // 原版压缩文件的名称
 			string zipPath = Path.Combine (this.BuildOutputPath, zipName);      // 原版压缩文件的路径
 			ZipFile.CreateFromDirectory (targetPath, zipPath, CompressionLevel.Fastest, false);
 
-			string endZipName = $"{this.BuildAssemblyName}.MQ.dll";
-			string endZipPath = Path.Combine (this.BuildOutputPath, endZipName);
-
-			// 修改文件头
-			using (BinaryReader reader = new BinaryReader (File.OpenRead (zipPath)))
-			{
-				reader.ReadBytes (10);
-				using (BinaryWriter writer = new BinaryWriter (File.OpenWrite (endZipPath)))
-				{
-					writer.Write ("QQMiniSDK\0".ToCharArray ());
-					do
-					{
-						writer.Write (reader.ReadByte ());
-					} while (reader.BaseStream.Length - reader.BaseStream.Position > 0);
-				}
-			}
-			if (File.Exists (zipPath))
-			{
-				File.Delete (zipPath);
-			}
 			Log.LogMessage (MessageImportance.High, $"打包编译结果 -> 成功");
 			return true;
 		}
