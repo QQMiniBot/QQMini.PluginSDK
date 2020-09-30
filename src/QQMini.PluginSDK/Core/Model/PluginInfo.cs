@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace QQMini.PluginSDK.Core.Model
 {
@@ -43,15 +44,15 @@ namespace QQMini.PluginSDK.Core.Model
 		[JsonProperty (PropertyName = "Description")]
 		public string Description { get; set; }
 		/// <summary>
-		/// SDK版本
+		/// SDK版本, 默认: 3
 		/// </summary>
 		[JsonProperty (PropertyName = "SDKVersion")]
-		public int SDKVersion { get; set; }
+		public int SDKVersion { get; set; } = 3;
 		/// <summary>
-		/// 开发人员序列号
+		/// 开发人员序列号, 请勿随意改动此序列号
 		/// </summary>
 		[JsonProperty (PropertyName = "DeveloperKey")]
-		public string DeveloperKey { get; set; }
+		public string DeveloperKey { get; set; } = "5A09222C13D7";
 		#endregion
 
 		#region --构造函数--
@@ -105,7 +106,17 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <returns>表示当前对象的字符串</returns>
 		public override string ToString ()
 		{
-			return JsonConvert.SerializeObject (this);
+			JObject root = new JObject
+			{
+				{ "PackageID", this.PackageId },
+				{ "Name", this.Name },
+				{ "Version", this.Version.ToString () },
+				{ "Author", this.Author },
+				{ "Description", this.Description },
+				{ "SDKVersion", this.SDKVersion },
+				{ "DeveloperKey", this.DeveloperKey }
+			};
+			return root.ToString ();
 		}
 		#endregion
 	}

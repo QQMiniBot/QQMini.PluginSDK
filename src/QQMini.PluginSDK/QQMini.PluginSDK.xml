@@ -482,12 +482,12 @@
         </member>
         <member name="P:QQMini.PluginSDK.Core.Model.PluginInfo.SDKVersion">
             <summary>
-            SDK版本
+            SDK版本, 默认: 3
             </summary>
         </member>
         <member name="P:QQMini.PluginSDK.Core.Model.PluginInfo.DeveloperKey">
             <summary>
-            开发人员序列号
+            开发人员序列号, 请勿随意改动此序列号
             </summary>
         </member>
         <member name="M:QQMini.PluginSDK.Core.Model.PluginInfo.#ctor">
