@@ -2701,6 +2701,11 @@
             文件调整任务
             </summary>
         </member>
+        <member name="P:QQMini.PluginSDK.Tasks.FileAdjustTask.BuildAssemblyName">
+            <summary>
+            获取或设置程序集名称
+            </summary>
+        </member>
         <member name="P:QQMini.PluginSDK.Tasks.FileAdjustTask.BuildOutputAssembly">
             <summary>
             获取或设置编译过程中输出的程序集

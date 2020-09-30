@@ -11,7 +11,7 @@
 		<DocumentationFile>D:\文稿\QQMini-二次开发3.2020.8.22\QQMini-.NET SDK\QQMini.PluginSDK\src\QQMini.PluginSDK\QQMini.PluginSDK.xml</DocumentationFile>
 
 		<!--打包-->
-		<Version>1.0.0.0929-alpha</Version>
+		<Version>1.0.0.0930-alpha</Version>
 		<PackageId>QQMini.PluginSDK</PackageId>
 		<Authors>JieGG</Authors>
 		<Company>QQMiniBot</Company>

@@ -20,6 +20,10 @@ namespace QQMini.PluginSDK.Tasks
 	{
 		#region --属性--
 		/// <summary>
+		/// 获取或设置程序集名称
+		/// </summary>
+		public string BuildAssemblyName { get; set; }
+		/// <summary>
 		/// 获取或设置编译过程中输出的程序集
 		/// </summary>
 		public string BuildOutputAssembly { get; set; }
@@ -75,45 +79,39 @@ namespace QQMini.PluginSDK.Tasks
 			MoveFiles (this.BuildOutputPath, this.BuildOutTargetPath, this.NotMoveFiles, tempDelFils.ToArray ());
 			Log.LogMessage (MessageImportance.High, $"整理编译依赖 -> 成功");
 
-			// 获取PackageID
-			string assemblyFilePath = Path.Combine (this.BuildOutputPath, this.BuildOutputAssembly);
-			Assembly assembly = Assembly.LoadFile (assemblyFilePath);
-			Type type = assembly.GetTypes ().FirstOrDefault (p => typeof (PluginBase).IsAssignableFrom (p) && !p.IsAbstract && !p.IsInterface);
-			if (type != null)
+			// 将所有文件转移到 Assembly 目录
+			Log.LogMessage (MessageImportance.High, $"整理编译目录...");
+			string targetPath = Path.Combine (this.BuildOutputPath, this.BuildAssemblyName);
+			MoveFiles (this.BuildOutputPath, targetPath, new string[0], new string[0]);
+			Log.LogMessage (MessageImportance.High, $"整理编译目录 -> 成功");
+
+			Log.LogMessage (MessageImportance.High, $"打包编译结果...");
+			string zipName = $"{this.BuildAssemblyName}.dll";              // 原版压缩文件的名称
+			string zipPath = Path.Combine (this.BuildOutputPath, zipName);      // 原版压缩文件的路径
+			ZipFile.CreateFromDirectory (targetPath, zipPath, CompressionLevel.Fastest, false);
+
+			string endZipName = $"{this.BuildAssemblyName}.MQ.dll";
+			string endZipPath = Path.Combine (this.BuildOutputPath, endZipName);
+
+			// 修改文件头
+			using (BinaryReader reader = new BinaryReader (File.OpenRead (zipPath)))
 			{
-				PluginBase plugin = (PluginBase)Activator.CreateInstance (type);
-
-				// 将所有文件转移到 PackageID 目录
-				Log.LogMessage (MessageImportance.High, $"整理编译目录...");
-				string targetPath = Path.Combine (this.BuildOutputPath, plugin.PluginInfo.PackageId);
-				MoveFiles (this.BuildOutputPath, targetPath, new string[0], new string[0]);
-				Log.LogMessage (MessageImportance.High, $"整理编译目录 -> 成功");
-
-				Log.LogMessage (MessageImportance.High, $"打包编译结果...");
-				string zipName = $"{plugin.PluginInfo.PackageId}.dll";				// 原版压缩文件的名称
-				string zipPath = Path.Combine (this.BuildOutputPath, zipName);		// 原版压缩文件的路径
-				ZipFile.CreateFromDirectory (targetPath, zipPath, CompressionLevel.Fastest, false);
-
-				string endZipName = $"{plugin.PluginInfo.PackageId}.MQ.dll";
-				string endZipPath = Path.Combine (this.BuildOutputPath, endZipName);
-
-				// 修改文件头
-				using (BinaryReader reader = new BinaryReader (File.OpenRead (zipPath)))
+				reader.ReadBytes (10);
+				using (BinaryWriter writer = new BinaryWriter (File.OpenWrite (endZipPath)))
 				{
-					reader.ReadBytes (10);
-					using (BinaryWriter writer = new BinaryWriter (File.OpenWrite (endZipPath)))
+					writer.Write ("QQMiniSDK\0".ToCharArray ());
+					do
 					{
-						writer.Write ("QQMiniSDK\0".ToCharArray ());
-						do
-						{
-							writer.Write (reader.ReadByte ());
-						} while (reader.BaseStream.Length - reader.BaseStream.Position > 0);
-					}
+						writer.Write (reader.ReadByte ());
+					} while (reader.BaseStream.Length - reader.BaseStream.Position > 0);
 				}
-				Log.LogMessage (MessageImportance.High, $"打包编译结果 -> 成功");
-				return true;
 			}
-			return false;
+			if (File.Exists (zipPath))
+			{
+				File.Delete (zipPath);
+			}
+			Log.LogMessage (MessageImportance.High, $"打包编译结果 -> 成功");
+			return true;
 		}
 		#endregion
 

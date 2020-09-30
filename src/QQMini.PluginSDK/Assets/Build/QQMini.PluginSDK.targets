@@ -20,6 +20,6 @@
 		<ItemGroup>
 			<DeleteFiles Include="$(OutputPath)QQMini.PluginSDK*.*"/>
 		</ItemGroup>
-		<FileAdjustTask BuildOutputAssembly="$(TargetFileName)" BuildOutputPath="$(OutputPath)" BuildOutTargetPath="$(OutputPath)bin" NotMoveFiles="@(NotMoveFiles)" DeleteFiles="@(DeleteFiles)"/>
+		<FileAdjustTask BuildAssemblyName="$(AssemblyName)" BuildOutputAssembly="$(TargetFileName)" BuildOutputPath="$(OutputPath)" BuildOutTargetPath="$(OutputPath)bin" NotMoveFiles="@(NotMoveFiles)" DeleteFiles="@(DeleteFiles)"/>
 	</Target>
 </Project>
