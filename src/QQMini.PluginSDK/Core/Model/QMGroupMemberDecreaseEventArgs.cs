@@ -48,7 +48,10 @@ namespace QQMini.PluginSDK.Core.Model
 			SubType = (QMGroupMemberDecreaseEventSubTypes)subType;
 			FromGroup = new Group (fromGroup);
 			FromQQ = new QQ (fromQQ);
-			OperateQQ = new QQ (operateQQ);
+			if (this.SubType == QMGroupMemberDecreaseEventSubTypes.GroupManagerRemoveMember)
+			{
+				OperateQQ = new QQ (operateQQ);
+			}
 		}
 		#endregion
 	}

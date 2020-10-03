@@ -360,7 +360,7 @@
             获取当前消息的文本
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.Message.#ctor(System.Int32,System.Int32,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.#ctor(System.Int32,System.Int64,System.String)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 类的新实例
             </summary>
@@ -536,16 +536,6 @@
             被删除好友
             </summary>
         </member>
-        <member name="T:QQMini.PluginSDK.Core.Model.QMDiscussEventSubTypes">
-            <summary>
-            表示 QQMini 框架讨论组事件子类型的枚举
-            </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMDiscussEventSubTypes.Discuss">
-            <summary>
-            讨论组消息
-            </summary>
-        </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs">
             <summary>
             表示包含讨论组消息事件数据的类
@@ -571,7 +561,7 @@
             指示当前事件的消息
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs"/> 类的新实例
             </summary>
@@ -585,6 +575,16 @@
             <param name="message">详细信息</param>
             <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/> 或 fromDiscuss 小于 <see cref="F:QQMini.PluginSDK.Core.Model.Discuss.MinValue"/></exception>
             <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventSubTypes">
+            <summary>
+            表示 QQMini 框架讨论组事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventSubTypes.Discuss">
+            <summary>
+            讨论组消息
+            </summary>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMEventArgs">
             <summary>
@@ -999,16 +999,6 @@
             群组解散
             </summary>
         </member>
-        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupEventSubTypes">
-            <summary>
-            表示 QQMini 框架群聊事件子类型的枚举
-            </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupEventSubTypes.Group">
-            <summary>
-            群组消息
-            </summary>
-        </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs">
             <summary>
             表示包含群组管理员改变事件数据的类
@@ -1081,7 +1071,7 @@
         </member>
         <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.BanSpeakTimeSpan">
             <summary>
-            指示当前事件设置禁言的时长. (如果 <see cref="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.SubType"/> 是 <see cref="F:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.GroupMemberRemoveBanSpeak"/> 则为 0)
+            指示当前事件设置禁言的时长. (如果 <see cref="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.SubType"/> 是 <see cref="F:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.GroupMemberRemoveBanSpeak"/> 则为 <see langword="null"/>)
             </summary>
         </member>
         <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32)">
@@ -1294,7 +1284,7 @@
             指示当前事件的消息标识 (ID)
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs"/> 类的新实例
             </summary>
@@ -1342,7 +1332,7 @@
             指示当前事件的消息
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs"/> 类的新实例
             </summary>
@@ -1356,6 +1346,16 @@
             <param name="message">详细信息</param>
             <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/> 或 fromGroup 小于 <see cref="F:QQMini.PluginSDK.Core.Model.Group.MinValue"/></exception>
             <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMessageEventSubTypes">
+            <summary>
+            表示 QQMini 框架群聊事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMessageEventSubTypes.Group">
+            <summary>
+            群组消息
+            </summary>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs">
             <summary>
@@ -1397,36 +1397,6 @@
             群组名称改变
             </summary>
         </member>
-        <member name="T:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes">
-            <summary>
-            表示 QQMini 框架私聊事件子类型的枚举
-            </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.Friend">
-            <summary>
-            好友消息
-            </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.GroupTemp">
-            <summary>
-            群临时消息
-            </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.DiscussTemp">
-            <summary>
-            讨论组临时消息
-            </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.OnlineTemp">
-            <summary>
-            在线临时消息
-            </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.FriendVerify">
-            <summary>
-            好友验证回复
-            </summary>
-        </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs">
             <summary>
             表示包含私聊消息事件数据的类
@@ -1447,7 +1417,7 @@
             指示当前事件的消息
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int32,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs"/> 类的新实例
             </summary>
@@ -1460,6 +1430,36 @@
             <param name="message">详细信息</param>
             <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/></exception>
             <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes">
+            <summary>
+            表示 QQMini 框架私聊事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.Friend">
+            <summary>
+            好友消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.GroupTemp">
+            <summary>
+            群临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.DiscussTemp">
+            <summary>
+            讨论组临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.OnlineTemp">
+            <summary>
+            在线临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.FriendVerify">
+            <summary>
+            好友验证回复
+            </summary>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QQ">
             <summary>
@@ -1991,14 +1991,14 @@
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberLeave(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberLeave(QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs)">
             <summary>
             当群组成员离开
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupManagerRemoveMember(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupManagerRemoveMember(QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs)">
             <summary>
             当群组管理员移除成员
             </summary>
@@ -2026,28 +2026,28 @@
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCardChange(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCardChange(QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs)">
             <summary>
             当群成员修改了新名片
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupNameChange(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupNameChange(QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs)">
             <summary>
             当群组名称改变
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakOpen(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakOpen(QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs)">
             <summary>
             当群组开启全体禁言
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakClose(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakClose(QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs)">
             <summary>
             当群组关闭全体禁言
             </summary>
@@ -2068,14 +2068,14 @@
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousOpen(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousOpen(QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs)">
             <summary>
             当群组匿名被开启
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousClose(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousClose(QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs)">
             <summary>
             当群组匿名被关闭
             </summary>

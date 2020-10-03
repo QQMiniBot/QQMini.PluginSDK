@@ -17,7 +17,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <summary>
 		/// 指示当前事件的子类型
 		/// </summary>
-		public QMPrivateEventSubTypes SubType { get; }
+		public QMPrivateMessageEventSubTypes SubType { get; }
 		/// <summary>
 		/// 指示当前事件的来源QQ
 		/// </summary>
@@ -41,10 +41,10 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <param name="message">详细信息</param>
 		/// <exception cref="ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="QQ.MinValue"/></exception>
 		/// <exception cref="ArgumentNullException">参数 message 为 <see langword="null"/></exception>
-		public QMPrivateMessageEventArgs (int type, int subType, long robotQQ, long fromQQ, int msgNumber, int msgId, IntPtr message)
+		public QMPrivateMessageEventArgs (int type, int subType, long robotQQ, long fromQQ, long msgNumber, int msgId, IntPtr message)
 			: base (type, robotQQ)
 		{
-			SubType = (QMPrivateEventSubTypes)subType;
+			SubType = (QMPrivateMessageEventSubTypes)subType;
 			FromQQ = new QQ (fromQQ);
 			Message = new Message (msgId, msgNumber, message.ToString (Global.DefaultEncoding));
 		}

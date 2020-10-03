@@ -31,9 +31,9 @@ namespace QQMini.PluginSDK.Core.Model
 		/// </summary>
 		public QQ OperateQQ { get; }
 		/// <summary>
-		/// 指示当前事件设置禁言的时长. (如果 <see cref="SubType"/> 是 <see cref="QMGroupMemberBanSpeakEventSubTypes.GroupMemberRemoveBanSpeak"/> 则为 0)
+		/// 指示当前事件设置禁言的时长. (如果 <see cref="SubType"/> 是 <see cref="QMGroupMemberBanSpeakEventSubTypes.GroupMemberRemoveBanSpeak"/> 则为 <see langword="null"/>)
 		/// </summary>
-		public TimeSpan BanSpeakTimeSpan { get; }
+		public TimeSpan? BanSpeakTimeSpan { get; }
 		#endregion
 
 		#region --构造函数--
@@ -54,7 +54,10 @@ namespace QQMini.PluginSDK.Core.Model
 			FromGroup = new Group (fromGroup);
 			FromQQ = new QQ (fromQQ);
 			OperateQQ = new QQ (operateQQ);
-			BanSpeakTimeSpan = new TimeSpan (banTime * 10000000);
+			if (this.SubType == QMGroupMemberBanSpeakEventSubTypes.GroupMemberSetBanSpeak)
+			{
+				BanSpeakTimeSpan = new TimeSpan? (new TimeSpan (banTime * 10000000L));
+			}
 		}
 		#endregion
 	}

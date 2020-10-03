@@ -29,7 +29,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <summary>
 		/// 指示当前事件的消息序号
 		/// </summary>
-		public int MessageNumber { get; }
+		public long MessageNumber { get; }
 		/// <summary>
 		/// 指示当前事件的消息标识 (ID)
 		/// </summary>
@@ -48,7 +48,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <param name="msgNumber">消息序号</param>
 		/// <param name="msgId">消息标识 (ID)</param>
 		/// <exception cref="ArgumentOutOfRangeException">参数 msgNumber 或 msgId 小于 0</exception>
-		public QMGroupMemberRemoveMessageEventArgs (int type, int subType, long robotQQ, long fromGroup, long fromQQ, int msgNumber, int msgId)
+		public QMGroupMemberRemoveMessageEventArgs (int type, int subType, long robotQQ, long fromGroup, long fromQQ, long msgNumber, int msgId)
 			: base (type, robotQQ)
 		{
 			if (msgId < 0)

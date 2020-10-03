@@ -9,7 +9,7 @@ namespace QQMini.PluginSDK.Core.Model
 	/// <summary>
 	/// 表示 QQMini 框架私聊事件子类型的枚举
 	/// </summary>
-	public enum QMPrivateEventSubTypes
+	public enum QMPrivateMessageEventSubTypes
 	{
 		/// <summary>
 		/// 好友消息

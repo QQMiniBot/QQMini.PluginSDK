@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace QQMini.PluginSDK.Core.Model
 {
 	/// <summary>
-	/// 表示 QQMini 框架群聊事件子类型的枚举
+	/// 表示 QQMini 框架讨论组事件子类型的枚举
 	/// </summary>
-	public enum QMGroupEventSubTypes
+	public enum QMDiscussMessageEventSubTypes
 	{
 		/// <summary>
-		/// 群组消息
+		/// 讨论组消息
 		/// </summary>
-		Group = 1
+		Discuss = 1
 	}
 }

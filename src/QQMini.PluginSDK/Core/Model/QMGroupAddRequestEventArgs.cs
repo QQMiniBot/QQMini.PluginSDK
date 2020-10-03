@@ -53,7 +53,10 @@ namespace QQMini.PluginSDK.Core.Model
 			SubType = (QMGroupAddRequestEventSubTypes)subType;
 			FromGroup = new Group (fromGroup);
 			FromQQ = new QQ (fromQQ);
-			OperateQQ = new QQ (operateQQ);
+			if (this.SubType == QMGroupAddRequestEventSubTypes.InviteMyAddGroup)
+			{
+				OperateQQ = new QQ (operateQQ);
+			}
 			Request = new Request (responseFlag.ToString (Global.DefaultEncoding));
 		}
 		#endregion

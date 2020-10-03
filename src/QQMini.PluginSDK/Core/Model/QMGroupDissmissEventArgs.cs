@@ -17,7 +17,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <summary>
 		/// 指示当前事件的子类型
 		/// </summary>
-		public QMGroupMemberDecreaseEventSubTypes SubType { get; }
+		public QMGroupDissmissEventSubTypes SubType { get; }
 		/// <summary>
 		/// 指示当前事件的来源群号
 		/// </summary>
@@ -40,7 +40,7 @@ namespace QQMini.PluginSDK.Core.Model
 		public QMGroupDissmissEventArgs (int type, int subType, long robotQQ, long fromGroup, long fromQQ)
 			: base (type, robotQQ)
 		{
-			SubType = (QMGroupMemberDecreaseEventSubTypes)subType;
+			SubType = (QMGroupDissmissEventSubTypes)subType;
 			FromGroup = new Group (fromGroup);
 			FromQQ = new QQ (fromQQ);
 		}

@@ -12,8 +12,7 @@ namespace QQMini.PluginSDK.Test
 	{
 		static void Main ()
 		{
-			IPlugin plugin = new Plugin ();
-			Console.WriteLine (plugin.GetInfomaction ());
+			Console.WriteLine (new TimeSpan (10000000L * 600));
 			Console.ReadKey ();
 		}
 	}

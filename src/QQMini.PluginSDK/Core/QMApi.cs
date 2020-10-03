@@ -30,6 +30,10 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="authCode">用于给 QMApi 授权的授权码</param>
 		public QMApi (int authCode)
 		{
+			if (authCode <= 0)
+			{
+				// TODO: 抛出异常
+			}
 			this._authCode = authCode;
 		}
 		#endregion

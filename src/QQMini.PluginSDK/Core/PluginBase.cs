@@ -170,7 +170,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.Friend)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.Friend)]
 		public virtual QMEventHandlerTypes OnReceiveFriendMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -180,7 +180,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.GroupTemp)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.GroupTemp)]
 		public virtual QMEventHandlerTypes OnReceiveGroupTempMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -190,7 +190,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.DiscussTemp)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.DiscussTemp)]
 		public virtual QMEventHandlerTypes OnReceiveDiscussTempMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -200,7 +200,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.OnlineTemp)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.OnlineTemp)]
 		public virtual QMEventHandlerTypes OnReceiveOnlineTempMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -210,31 +210,34 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.FriendVerify)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.FriendVerify)]
 		public virtual QMEventHandlerTypes OnReceiveFriendVerifyMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当收到群组消息
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.GroupMessage, SubType = (int)QMGroupEventSubTypes.Group)]
+		[QMEvent (QMEventTypes.GroupMessage, SubType = (int)QMGroupMessageEventSubTypes.Group)]
 		public virtual QMEventHandlerTypes OnReceiveGroupMessage (QMGroupMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当收到讨论组消息
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.DiscussMessage, SubType = (int)QMDiscussEventSubTypes.Discuss)]
+		[QMEvent (QMEventTypes.DiscussMessage, SubType = (int)QMDiscussMessageEventSubTypes.Discuss)]
 		public virtual QMEventHandlerTypes OnReceiveDiscussMessage (QMDiscussMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当好友添加请求
 		/// </summary>
@@ -265,6 +268,7 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当被删除好友
 		/// </summary>
@@ -275,6 +279,7 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群组申请加入请求
 		/// </summary>
@@ -295,6 +300,7 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群组成员被允许入群
 		/// </summary>
@@ -325,13 +331,14 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群组成员离开
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupMemberDecrease, SubType = (int)QMGroupMemberDecreaseEventSubTypes.GroupMemberLeave)]
-		public virtual QMEventHandlerTypes OnGroupMemberLeave (QMGroupMemberIncreaseEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupMemberLeave (QMGroupMemberDecreaseEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -341,10 +348,11 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupMemberDecrease, SubType = (int)QMGroupMemberDecreaseEventSubTypes.GroupManagerRemoveMember)]
-		public virtual QMEventHandlerTypes OnGroupManagerRemoveMember (QMGroupMemberIncreaseEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupManagerRemoveMember (QMGroupMemberDecreaseEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群组解散
 		/// </summary>
@@ -355,6 +363,7 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群成员成为管理员
 		/// </summary>
@@ -375,33 +384,36 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群成员修改了新名片
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupMemberCardChange, SubType = (int)QMGroupMemberCardChangeEventSubTypes.GroupMemberCardChange)]
-		public virtual QMEventHandlerTypes OnGroupMemberCardChange (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupMemberCardChange (QMGroupMemberCardChangeEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群组名称改变
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupNameChange, SubType = (int)QMGroupNameChangeEventSubTypes.GroupNameChange)]
-		public virtual QMEventHandlerTypes OnGroupNameChange (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupNameChange (QMGroupNameChangeEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群组开启全体禁言
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupBanSpeak, SubType = (int)QMGroupBanSpeakEventSubTypes.GroupBanSpeakOpen)]
-		public virtual QMEventHandlerTypes OnGroupBanSpeakOpen (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupBanSpeakOpen (QMGroupBanSpeakEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -411,10 +423,11 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupBanSpeak, SubType = (int)QMGroupBanSpeakEventSubTypes.GroupBanSpeakClose)]
-		public virtual QMEventHandlerTypes OnGroupBanSpeakClose (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupBanSpeakClose (QMGroupBanSpeakEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群组成员被设置禁言
 		/// </summary>
@@ -435,13 +448,14 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群组匿名被开启
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupAnonymousChange, SubType = (int)QMGroupAnonymousChangeEventSubTypes.GroupAnonymousOpen)]
-		public virtual QMEventHandlerTypes OnGroupAnonymousOpen (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupAnonymousOpen (QMGroupAnonymousChangeEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -451,10 +465,11 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupAnonymousChange, SubType = (int)QMGroupAnonymousChangeEventSubTypes.GroupAnonymousClose)]
-		public virtual QMEventHandlerTypes OnGroupAnonymousClose (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupAnonymousClose (QMGroupAnonymousChangeEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
+
 		/// <summary>
 		/// 当群组成员撤回消息
 		/// </summary>

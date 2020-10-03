@@ -17,7 +17,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <summary>
 		/// 指示当前事件的子类型
 		/// </summary>
-		public QMGroupManagerChangeEventSubTypes SubType { get; }
+		public QMGroupNameChangeEventSubTypes SubType { get; }
 		/// <summary>
 		/// 指示当前事件的来源群号
 		/// </summary>
@@ -40,7 +40,7 @@ namespace QQMini.PluginSDK.Core.Model
 		public QMGroupNameChangeEventArgs (int type, int subType, long robotQQ, long fromGroup, IntPtr newCard)
 			: base (type, robotQQ)
 		{
-			SubType = (QMGroupManagerChangeEventSubTypes)subType;
+			SubType = (QMGroupNameChangeEventSubTypes)subType;
 			FromGroup = new Group (fromGroup);
 			NewCard = newCard.ToString (Global.DefaultEncoding);
 		}
