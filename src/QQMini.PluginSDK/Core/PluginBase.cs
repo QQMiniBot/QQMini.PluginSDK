@@ -52,7 +52,15 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>插件基本信息的字符串</returns>
 		string IPlugin.GetInfomaction ()
 		{
-			return this.PluginInfo.ToString ();
+			try
+			{
+				return this.PluginInfo.ToString ();
+			}
+			catch (Exception ex)
+			{
+				this.OnException (ex);
+				return string.Empty;
+			}
 		}
 		/// <summary>
 		/// 设置插件的授权信息
@@ -60,30 +68,58 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="authCode">插件授权码</param>
 		void IPlugin.SetAuthorize (int authCode)
 		{
-			this._qMApi = new QMApi (authCode);
+			try
+			{
+				this._qMApi = new QMApi (authCode);
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+			}
 		}
 		/// <summary>
 		/// 设置插件初始化
 		/// </summary>
 		void IPlugin.SetInitialize ()
 		{
-			this.OnInitialize ();
-			this._isInitialized = true;
+			try
+			{
+				this.OnInitialize ();
+				this._isInitialized = true;
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+			}
 		}
 		/// <summary>
 		/// 设置插件反初始化
 		/// </summary>
 		void IPlugin.SetUninitialize ()
 		{
-			this._isInitialized = false;
-			this.OnUninitialize ();
+			try
+			{
+				this._isInitialized = false;
+				this.OnUninitialize ();
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+			}
 		}
 		/// <summary>
 		/// 设置插件打开设置菜单
 		/// </summary>
 		void IPlugin.SetOpenSettingMenu ()
 		{
-			this.OnOpenSettingMenu ();
+			try
+			{
+				this.OnOpenSettingMenu ();
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+			}
 		}
 		/// <summary>
 		/// 向当前插件推送新事件
@@ -94,50 +130,58 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>事件的处理结果</returns>
 		QMEventHandlerTypes IPlugin.PushNewEvent (int type, int subType, params IntPtr[] datas)
 		{
-			foreach (MethodInfo method in _methodInfo)
+			try
 			{
-				QMEventAttribute attribute = method.GetCustomAttribute<QMEventAttribute> ();    // 获取方法标记
-
-				if ((int)attribute.Type == type && attribute.SubType == subType)
+				foreach (MethodInfo method in _methodInfo)
 				{
-					// 获取方法的第一个参数
-					ParameterInfo methodParameter = method.GetParameters ().SingleOrDefault ();
-					if (methodParameter != null)
+					QMEventAttribute attribute = method.GetCustomAttribute<QMEventAttribute> ();    // 获取方法标记
+
+					if ((int)attribute.Type == type && attribute.SubType == subType)
 					{
-						// 获取参数的构造函数的唯一构造函数
-						ConstructorInfo constructorInfo = methodParameter.ParameterType.GetConstructors ().SingleOrDefault ();
-
-						if (constructorInfo != null)
+						// 获取方法的第一个参数
+						ParameterInfo methodParameter = method.GetParameters ().SingleOrDefault ();
+						if (methodParameter != null)
 						{
-							// 根据参数获取数据类型
-							ParameterInfo[] parameters = constructorInfo.GetParameters ();
-							object[] args = new object[parameters.Length];
-							args[0] = type;
-							args[1] = subType;
-							for (int i = 0; i < parameters.Length - 2; i++)
+							// 获取参数的构造函数的唯一构造函数
+							ConstructorInfo constructorInfo = methodParameter.ParameterType.GetConstructors ().SingleOrDefault ();
+
+							if (constructorInfo != null)
 							{
-								// 将指针转换为具体类型的数据
-								args[i + 2] = datas[i].GetValue (parameters[i + 2].ParameterType);  // 转换为
+								// 根据参数获取数据类型
+								ParameterInfo[] parameters = constructorInfo.GetParameters ();
+								object[] args = new object[parameters.Length];
+								args[0] = type;
+								args[1] = subType;
+								for (int i = 0; i < parameters.Length - 2; i++)
+								{
+									// 将指针转换为具体类型的数据
+									args[i + 2] = datas[i].GetValue (parameters[i + 2].ParameterType);  // 转换为
+								}
+
+								// 创建事件参数
+								QMEventArgs qMEventArgs = (QMEventArgs)Activator.CreateInstance (methodParameter.ParameterType, args);
+
+								// 调用总事件
+								QMEventHandlerTypes result = OnReceiveEvent (qMEventArgs);
+								if (result != QMEventHandlerTypes.Continue)
+								{
+									return result;
+								}
+
+								// 调用具体路由方法
+								return (QMEventHandlerTypes)method.Invoke (this, new object[] { qMEventArgs });
 							}
-
-							// 创建事件参数
-							QMEventArgs qMEventArgs = (QMEventArgs)Activator.CreateInstance (methodParameter.ParameterType, args);
-
-							// 调用总事件
-							QMEventHandlerTypes result = OnReceiveEvent (qMEventArgs);
-							if (result != QMEventHandlerTypes.Continue)
-							{
-								return result;
-							}
-
-							// 调用具体路由方法
-							return (QMEventHandlerTypes)method.Invoke (this, new object[] { qMEventArgs });
 						}
 					}
 				}
-			}
 
-			return QMEventHandlerTypes.Continue;
+				return QMEventHandlerTypes.Continue;
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+				return QMEventHandlerTypes.Exception;
+			}
 		}
 
 		/// <summary>
@@ -215,7 +259,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当收到群组消息
 		/// </summary>
@@ -226,7 +269,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当收到讨论组消息
 		/// </summary>
@@ -237,7 +279,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当好友添加请求
 		/// </summary>
@@ -268,7 +309,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当被删除好友
 		/// </summary>
@@ -279,7 +319,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群组申请加入请求
 		/// </summary>
@@ -300,7 +339,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群组成员被允许入群
 		/// </summary>
@@ -331,7 +369,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群组成员离开
 		/// </summary>
@@ -352,7 +389,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群组解散
 		/// </summary>
@@ -363,7 +399,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群成员成为管理员
 		/// </summary>
@@ -384,7 +419,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群成员修改了新名片
 		/// </summary>
@@ -395,7 +429,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群组名称改变
 		/// </summary>
@@ -406,7 +439,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群组开启全体禁言
 		/// </summary>
@@ -427,7 +459,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群组成员被设置禁言
 		/// </summary>
@@ -448,7 +479,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群组匿名被开启
 		/// </summary>
@@ -469,7 +499,6 @@ namespace QQMini.PluginSDK.Core
 		{
 			return QMEventHandlerTypes.Continue;
 		}
-
 		/// <summary>
 		/// 当群组成员撤回消息
 		/// </summary>
@@ -479,6 +508,16 @@ namespace QQMini.PluginSDK.Core
 		public virtual QMEventHandlerTypes OnGroupMemberRemoveMessage (QMGroupMemberRemoveMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
+		}
+		#endregion
+
+		#region --私有方法--
+		private void OnException (Exception ex)
+		{
+			if (this.QMApi != null)
+			{
+				this.QMApi.SetFatal (ex);
+			}
 		}
 		#endregion
 	}
