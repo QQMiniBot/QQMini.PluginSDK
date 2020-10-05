@@ -52,7 +52,15 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>插件基本信息的字符串</returns>
 		string IPlugin.GetInfomaction ()
 		{
-			return this.PluginInfo.ToString ();
+			try
+			{
+				return this.PluginInfo.ToString ();
+			}
+			catch (Exception ex)
+			{
+				this.OnException (ex);
+				return string.Empty;
+			}
 		}
 		/// <summary>
 		/// 设置插件的授权信息
@@ -60,30 +68,58 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="authCode">插件授权码</param>
 		void IPlugin.SetAuthorize (int authCode)
 		{
-			this._qMApi = new QMApi (authCode);
+			try
+			{
+				this._qMApi = new QMApi (authCode);
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+			}
 		}
 		/// <summary>
 		/// 设置插件初始化
 		/// </summary>
 		void IPlugin.SetInitialize ()
 		{
-			this.OnInitialize ();
-			this._isInitialized = true;
+			try
+			{
+				this.OnInitialize ();
+				this._isInitialized = true;
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+			}
 		}
 		/// <summary>
 		/// 设置插件反初始化
 		/// </summary>
 		void IPlugin.SetUninitialize ()
 		{
-			this._isInitialized = false;
-			this.OnUninitialize ();
+			try
+			{
+				this._isInitialized = false;
+				this.OnUninitialize ();
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+			}
 		}
 		/// <summary>
 		/// 设置插件打开设置菜单
 		/// </summary>
 		void IPlugin.SetOpenSettingMenu ()
 		{
-			this.OnOpenSettingMenu ();
+			try
+			{
+				this.OnOpenSettingMenu ();
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+			}
 		}
 		/// <summary>
 		/// 向当前插件推送新事件
@@ -94,50 +130,58 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>事件的处理结果</returns>
 		QMEventHandlerTypes IPlugin.PushNewEvent (int type, int subType, params IntPtr[] datas)
 		{
-			foreach (MethodInfo method in _methodInfo)
+			try
 			{
-				QMEventAttribute attribute = method.GetCustomAttribute<QMEventAttribute> ();    // 获取方法标记
-
-				if ((int)attribute.Type == type && attribute.SubType == subType)
+				foreach (MethodInfo method in _methodInfo)
 				{
-					// 获取方法的第一个参数
-					ParameterInfo methodParameter = method.GetParameters ().SingleOrDefault ();
-					if (methodParameter != null)
+					QMEventAttribute attribute = method.GetCustomAttribute<QMEventAttribute> ();    // 获取方法标记
+
+					if ((int)attribute.Type == type && attribute.SubType == subType)
 					{
-						// 获取参数的构造函数的唯一构造函数
-						ConstructorInfo constructorInfo = methodParameter.ParameterType.GetConstructors ().SingleOrDefault ();
-
-						if (constructorInfo != null)
+						// 获取方法的第一个参数
+						ParameterInfo methodParameter = method.GetParameters ().SingleOrDefault ();
+						if (methodParameter != null)
 						{
-							// 根据参数获取数据类型
-							ParameterInfo[] parameters = constructorInfo.GetParameters ();
-							object[] args = new object[parameters.Length];
-							args[0] = type;
-							args[1] = subType;
-							for (int i = 0; i < parameters.Length - 2; i++)
+							// 获取参数的构造函数的唯一构造函数
+							ConstructorInfo constructorInfo = methodParameter.ParameterType.GetConstructors ().SingleOrDefault ();
+
+							if (constructorInfo != null)
 							{
-								// 将指针转换为具体类型的数据
-								args[i + 2] = datas[i].GetValue (parameters[i + 2].ParameterType);  // 转换为
+								// 根据参数获取数据类型
+								ParameterInfo[] parameters = constructorInfo.GetParameters ();
+								object[] args = new object[parameters.Length];
+								args[0] = type;
+								args[1] = subType;
+								for (int i = 0; i < parameters.Length - 2; i++)
+								{
+									// 将指针转换为具体类型的数据
+									args[i + 2] = datas[i].GetValue (parameters[i + 2].ParameterType);  // 转换为
+								}
+
+								// 创建事件参数
+								QMEventArgs qMEventArgs = (QMEventArgs)Activator.CreateInstance (methodParameter.ParameterType, args);
+
+								// 调用总事件
+								QMEventHandlerTypes result = OnReceiveEvent (qMEventArgs);
+								if (result != QMEventHandlerTypes.Continue)
+								{
+									return result;
+								}
+
+								// 调用具体路由方法
+								return (QMEventHandlerTypes)method.Invoke (this, new object[] { qMEventArgs });
 							}
-
-							// 创建事件参数
-							QMEventArgs qMEventArgs = (QMEventArgs)Activator.CreateInstance (methodParameter.ParameterType, args);
-
-							// 调用总事件
-							QMEventHandlerTypes result = OnReceiveEvent (qMEventArgs);
-							if (result != QMEventHandlerTypes.Continue)
-							{
-								return result;
-							}
-
-							// 调用具体路由方法
-							return (QMEventHandlerTypes)method.Invoke (this, new object[] { qMEventArgs });
 						}
 					}
 				}
-			}
 
-			return QMEventHandlerTypes.Continue;
+				return QMEventHandlerTypes.Continue;
+			}
+			catch (Exception ex)
+			{
+				OnException (ex);
+				return QMEventHandlerTypes.Exception;
+			}
 		}
 
 		/// <summary>
@@ -170,7 +214,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.Friend)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.Friend)]
 		public virtual QMEventHandlerTypes OnReceiveFriendMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -180,7 +224,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.GroupTemp)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.GroupTemp)]
 		public virtual QMEventHandlerTypes OnReceiveGroupTempMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -190,7 +234,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.DiscussTemp)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.DiscussTemp)]
 		public virtual QMEventHandlerTypes OnReceiveDiscussTempMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -200,7 +244,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.OnlineTemp)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.OnlineTemp)]
 		public virtual QMEventHandlerTypes OnReceiveOnlineTempMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -210,7 +254,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateEventSubTypes.FriendVerify)]
+		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.FriendVerify)]
 		public virtual QMEventHandlerTypes OnReceiveFriendVerifyMessage (QMPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -220,7 +264,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.GroupMessage, SubType = (int)QMGroupEventSubTypes.Group)]
+		[QMEvent (QMEventTypes.GroupMessage, SubType = (int)QMGroupMessageEventSubTypes.Group)]
 		public virtual QMEventHandlerTypes OnReceiveGroupMessage (QMGroupMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -230,7 +274,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
-		[QMEvent (QMEventTypes.DiscussMessage, SubType = (int)QMDiscussEventSubTypes.Discuss)]
+		[QMEvent (QMEventTypes.DiscussMessage, SubType = (int)QMDiscussMessageEventSubTypes.Discuss)]
 		public virtual QMEventHandlerTypes OnReceiveDiscussMessage (QMDiscussMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
@@ -331,7 +375,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupMemberDecrease, SubType = (int)QMGroupMemberDecreaseEventSubTypes.GroupMemberLeave)]
-		public virtual QMEventHandlerTypes OnGroupMemberLeave (QMGroupMemberIncreaseEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupMemberLeave (QMGroupMemberDecreaseEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -341,7 +385,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupMemberDecrease, SubType = (int)QMGroupMemberDecreaseEventSubTypes.GroupManagerRemoveMember)]
-		public virtual QMEventHandlerTypes OnGroupManagerRemoveMember (QMGroupMemberIncreaseEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupManagerRemoveMember (QMGroupMemberDecreaseEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -381,7 +425,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupMemberCardChange, SubType = (int)QMGroupMemberCardChangeEventSubTypes.GroupMemberCardChange)]
-		public virtual QMEventHandlerTypes OnGroupMemberCardChange (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupMemberCardChange (QMGroupMemberCardChangeEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -391,7 +435,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupNameChange, SubType = (int)QMGroupNameChangeEventSubTypes.GroupNameChange)]
-		public virtual QMEventHandlerTypes OnGroupNameChange (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupNameChange (QMGroupNameChangeEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -401,7 +445,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupBanSpeak, SubType = (int)QMGroupBanSpeakEventSubTypes.GroupBanSpeakOpen)]
-		public virtual QMEventHandlerTypes OnGroupBanSpeakOpen (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupBanSpeakOpen (QMGroupBanSpeakEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -411,7 +455,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupBanSpeak, SubType = (int)QMGroupBanSpeakEventSubTypes.GroupBanSpeakClose)]
-		public virtual QMEventHandlerTypes OnGroupBanSpeakClose (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupBanSpeakClose (QMGroupBanSpeakEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -441,7 +485,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupAnonymousChange, SubType = (int)QMGroupAnonymousChangeEventSubTypes.GroupAnonymousOpen)]
-		public virtual QMEventHandlerTypes OnGroupAnonymousOpen (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupAnonymousOpen (QMGroupAnonymousChangeEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -451,7 +495,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.GroupAnonymousChange, SubType = (int)QMGroupAnonymousChangeEventSubTypes.GroupAnonymousClose)]
-		public virtual QMEventHandlerTypes OnGroupAnonymousClose (QMGroupManagerChangeEventArgs e)
+		public virtual QMEventHandlerTypes OnGroupAnonymousClose (QMGroupAnonymousChangeEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -464,6 +508,16 @@ namespace QQMini.PluginSDK.Core
 		public virtual QMEventHandlerTypes OnGroupMemberRemoveMessage (QMGroupMemberRemoveMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
+		}
+		#endregion
+
+		#region --私有方法--
+		private void OnException (Exception ex)
+		{
+			if (this.QMApi != null)
+			{
+				this.QMApi.SetFatal (ex);
+			}
 		}
 		#endregion
 	}

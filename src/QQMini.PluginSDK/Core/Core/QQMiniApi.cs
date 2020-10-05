@@ -24,70 +24,73 @@ namespace QQMini.PluginSDK.Core.Core
 		public static extern IntPtr QMApi_GetPluginDataDirectory (int nAuthCode);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetFriendList), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetFriendList (int nAuthCode, long lResponseQQ,bool bUseCache, out IntPtr szFriendList);
+		public static extern int QMApi_GetFriendList (int nAuthCode, long lResponseQQ, bool bUseCache, out IntPtr szFriendList);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetFriendInfo), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetFriendInfo (int nAuthCode, long lResponseQQ, long lDestQQ,bool bUseCache, out IntPtr szFriendInfo);
+		public static extern int QMApi_GetFriendInfo (int nAuthCode, long lResponseQQ, long lDestQQ, bool bUseCache, out IntPtr szFriendInfo);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetStrangerInfo), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetStrangerInfo (int nAuthCode, long lResponseQQ, long lDestQQ,bool bUseCache, out IntPtr szStrangerInfo);
+		public static extern int QMApi_GetStrangerInfo (int nAuthCode, long lResponseQQ, long lDestQQ, bool bUseCache, out IntPtr szStrangerInfo);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetGroupList), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetGroupList (int nAuthCode, long lResponseQQ,bool bUseCache,out IntPtr szGroupList);
+		public static extern int QMApi_GetGroupList (int nAuthCode, long lResponseQQ, bool bUseCache, out IntPtr szGroupList);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetGroupInfo), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetGroupInfo (int nAuthCode, long lResponseQQ, long lDestGroup,bool bUseCache,out IntPtr szGroupInfo);
+		public static extern int QMApi_GetGroupInfo (int nAuthCode, long lResponseQQ, long lDestGroup, bool bUseCache, out IntPtr szGroupInfo);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetGroupMemberList), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetGroupMemberList (int nAuthCode, long lResponseQQ, long lDestGroup,bool bUseCache,out IntPtr szGroupManagerList);
+		public static extern int QMApi_GetGroupMemberList (int nAuthCode, long lResponseQQ, long lDestGroup, bool bUseCache, out IntPtr szGroupManagerList);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetGroupMemberInfo), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetGroupMemberInfo (int nAuthCode, long lResponseQQ, long lDestGroup, long lDestQQ,bool bUseCache,out IntPtr szGroupMemberInfo);
+		public static extern int QMApi_GetGroupMemberInfo (int nAuthCode, long lResponseQQ, long lDestGroup, long lDestQQ, bool bUseCache, out IntPtr szGroupMemberInfo);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetGroupManagerList), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetGroupManagerList (int nAuthCode, long lResponseQQ, long lDestGroup,bool bUseCache,out IntPtr szGroupManagerList);
+		public static extern int QMApi_GetGroupManagerList (int nAuthCode, long lResponseQQ, long lDestGroup, bool bUseCache, out IntPtr szGroupManagerList);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetDiscussList), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetDiscussList (int nAuthCode, long lResponseQQ,bool bUseCache,out IntPtr szDiscussList);
+		public static extern int QMApi_GetDiscussList (int nAuthCode, long lResponseQQ, bool bUseCache, out IntPtr szDiscussList);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetDiscussMemberList), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetDiscussMemberList (int nAuthCode, long lResponseQQ, long lDestDiscuss,bool bUseCache,out IntPtr szDiscussMemberList);
+		public static extern int QMApi_GetDiscussMemberList (int nAuthCode, long lResponseQQ, long lDestDiscuss, bool bUseCache, out IntPtr szDiscussMemberList);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetCookies), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetCookies (int nAuthCode, long lResponseQQ,out IntPtr szCookies);
+		public static extern int QMApi_GetCookies (int nAuthCode, long lResponseQQ, out IntPtr szCookies);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetBkn), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetBkn (int nAuthCode, long lResponseQQ,out IntPtr szBkn);
+		public static extern int QMApi_GetBkn (int nAuthCode, long lResponseQQ, out IntPtr szBkn);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetOnlineStatus), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetOnlineStatus (int nAuthCode, long lResponseQQ, long lDestQQ,out int nOnlineStatus);
+		public static extern int QMApi_GetOnlineStatus (int nAuthCode, long lResponseQQ, long lDestQQ, out int nOnlineStatus);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetGroupBanStatus), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetGroupBanStatus (int nAuthCode, long lResponseQQ, long lDestGroup, long lDestQQ,out bool bIsBan);
+		public static extern int QMApi_GetGroupBanStatus (int nAuthCode, long lResponseQQ, long lDestGroup, long lDestQQ, out bool bIsBan);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetFriendVerifyMode), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetFriendVerifyMode (int nAuthCode, long lResponseQQ, long IDestQQ,out int nFriendVerify);
+		public static extern int QMApi_GetFriendVerifyMode (int nAuthCode, long lResponseQQ, long IDestQQ, out int nFriendVerify);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetIsOnline), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetIsOnline (int nAuthCode, long lResponseQQ, long IDestQQ,out bool bIsOnline);
+		public static extern int QMApi_GetIsOnline (int nAuthCode, long lResponseQQ, long IDestQQ, out bool bIsOnline);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetIsReceiveOnlineTempMessage), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetIsReceiveOnlineTempMessage (int nAuthCode, long lResponseQQ, long IDestQQ,out bool bIsOnline);
+		public static extern int QMApi_GetIsReceiveOnlineTempMessage (int nAuthCode, long lResponseQQ, long IDestQQ, out bool bIsOnline);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetDiscussName), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetDiscussName (int nAuthCode, long lResponseQQ, long lDestDiscuss,out IntPtr szDiscussName);
+		public static extern int QMApi_GetDiscussName (int nAuthCode, long lResponseQQ, long lDestDiscuss, out IntPtr szDiscussName);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetDiscussAddLink), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetDiscussAddLink (int nAuthCode, long lResponseQQ, long lDestDiscuss,out IntPtr szDiscussAddLink);
+		public static extern int QMApi_GetDiscussAddLink (int nAuthCode, long lResponseQQ, long lDestDiscuss, out IntPtr szDiscussAddLink);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetGroupGiftList), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetGroupGiftList (int nAuthCode, long lResponseQQ,out IntPtr szGiftList);
+		public static extern int QMApi_GetGroupGiftList (int nAuthCode, long lResponseQQ, out IntPtr szGiftList);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_GetRandomGroupGift), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_GetRandomGroupGift (int nAuthCode, long lResponseQQ, long lDestGroup,out IntPtr szGift);
+		public static extern int QMApi_GetRandomGroupGift (int nAuthCode, long lResponseQQ, long lDestGroup, out IntPtr szGift);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_SetLogger), CallingConvention = CallingConvention.StdCall)]
 		public static extern int QMApi_SetLogger (int nAuthCode, int nLevel, IntPtr szMessage);
+
+		[DllImport (LibraryName, EntryPoint = nameof (QMApi_SetFatal), CallingConvention = CallingConvention.StdCall)]
+		public static extern int QMApi_SetFatal (int nAuthCode, int nErrorCode, IntPtr szErrorMessage);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_SetOnlineStatus), CallingConvention = CallingConvention.StdCall)]
 		public static extern int QMApi_SetOnlineStatus (int nAuthCode, long lResponseQQ, int nOnlineStatus, IntPtr szStatusMessage);
@@ -99,7 +102,7 @@ namespace QQMini.PluginSDK.Core.Core
 		public static extern int QMApi_SetGroupBanStatus (int nAuthCode, long lResponseQQ, long lDestGroup, long lDestQQ, int nTimeSpan);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_SetGroupAnonymousStatus), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_SetGroupAnonymousStatus (int nAuthCode, long lResponseQQ, long lDestGroup,bool bIsEnabled);
+		public static extern int QMApi_SetGroupAnonymousStatus (int nAuthCode, long lResponseQQ, long lDestGroup, bool bIsEnabled);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_SetGroupShieldedStatus), CallingConvention = CallingConvention.StdCall)]
 		public static extern int QMApi_SetGroupShieldedStatus (int nAuthCode, long lResponseQQ, long lDestGroup, bool bIsShielded);
@@ -207,7 +210,7 @@ namespace QQMini.PluginSDK.Core.Core
 		public static extern int QMApi_RemoveDiscussMember (int nAuthCode, long lResponseQQ, long lDestDiscuss, long lDestQQ);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_CreateDiscuss), CallingConvention = CallingConvention.StdCall)]
-		public static extern int QMApi_CreateDiscuss (int nAuthCode, long lResponseQQ, long lDestQQ,out long lDiscussId);
+		public static extern int QMApi_CreateDiscuss (int nAuthCode, long lResponseQQ, long lDestQQ, out long lDiscussId);
 
 		[DllImport (LibraryName, EntryPoint = nameof (QMApi_AddDiscussFromLink), CallingConvention = CallingConvention.StdCall)]
 		public static extern int QMApi_AddDiscussFromLink (int nAuthCode, long lResponseQQ, IntPtr szDiscussLink);

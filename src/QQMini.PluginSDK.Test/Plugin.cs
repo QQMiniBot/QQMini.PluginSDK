@@ -13,7 +13,11 @@ namespace QQMini.PluginSDK.Test
 	{
 		public override PluginInfo PluginInfo => new PluginInfo ()
 		{
-			PackageId = "com.jiegg.demo"
+			PackageId = "com.jiegg.demo",
+			Author = "JieGG",
+			Name = "QQMini插件V3",
+			Description = "QQMini插件",
+			Version = new Version (1, 0, 0, 0)
 		};
 	}
 }

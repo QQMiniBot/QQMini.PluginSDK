@@ -17,7 +17,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <summary>
 		/// 指示当前事件的子类型
 		/// </summary>
-		public QMFriendAddResponseEventSubTypes SubType { get; }
+		public QMBeFriendDeleteEventSubTypes SubType { get; }
 		/// <summary>
 		/// 指示当前事件的来源QQ
 		/// </summary>
@@ -36,7 +36,7 @@ namespace QQMini.PluginSDK.Core.Model
 		public QMBeFriendDeleteEventArgs (int type, int subType, long robotQQ, long fromQQ, IntPtr appendMessage)
 			: base (type, robotQQ)
 		{
-			SubType = (QMFriendAddResponseEventSubTypes)subType;
+			SubType = (QMBeFriendDeleteEventSubTypes)subType;
 			FromQQ = new QQ (fromQQ);
 		}
 		#endregion

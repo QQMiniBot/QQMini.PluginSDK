@@ -360,7 +360,7 @@
             获取当前消息的文本
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.Message.#ctor(System.Int32,System.Int32,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.#ctor(System.Int32,System.Int64,System.String)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 类的新实例
             </summary>
@@ -482,12 +482,12 @@
         </member>
         <member name="P:QQMini.PluginSDK.Core.Model.PluginInfo.SDKVersion">
             <summary>
-            SDK版本
+            SDK版本, 默认: 3
             </summary>
         </member>
         <member name="P:QQMini.PluginSDK.Core.Model.PluginInfo.DeveloperKey">
             <summary>
-            开发人员序列号
+            开发人员序列号, 请勿随意改动此序列号
             </summary>
         </member>
         <member name="M:QQMini.PluginSDK.Core.Model.PluginInfo.#ctor">
@@ -495,33 +495,56 @@
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.PluginInfo"/> 类的新实例
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.PluginInfo.#ctor(System.String,System.String,System.Version,System.String,System.String)">
-            <summary>
-            使用指定的信息初始化 <see cref="T:QQMini.PluginSDK.Core.Model.PluginInfo"/> 类的新实例
-            </summary>
-            <param name="packageId">应用程序的唯一标识</param>
-            <param name="name">描述应用程序的名称</param>
-            <param name="version">应用程序的版本号</param>
-            <param name="author">应用程序的作者</param>
-            <param name="description">应用程序的详细介绍</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.PluginInfo.#ctor(System.String,System.String,System.Version,System.String,System.String,System.Int32,System.String)">
-            <summary>
-            使用指定的信息初始化 <see cref="T:QQMini.PluginSDK.Core.Model.PluginInfo"/> 类的新实例
-            </summary>
-            <param name="packageId">应用程序的唯一标识</param>
-            <param name="name">描述应用程序的名称</param>
-            <param name="version">应用程序的版本号</param>
-            <param name="author">应用程序的作者</param>
-            <param name="description">应用程序的详细介绍</param>
-            <param name="sDKVersion">应用程序开发包的版本</param>
-            <param name="sKey">引用程序的序列号</param>
-        </member>
         <member name="M:QQMini.PluginSDK.Core.Model.PluginInfo.ToString">
             <summary>
             返回表示当前对象的字符串
             </summary>
             <returns>表示当前对象的字符串</returns>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的授权码无效的错误.
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.#ctor">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException"/> 类的新实例
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的授权码小于0的错误.
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException.ErrorAuthCode">
+            <summary>
+            获取导致当前异常的错误授权码
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException.Message">
+            <summary>
+            获取描述当前异常的消息
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException.#ctor(System.Int32)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException"/> 类的新实例
+            </summary>
+            <param name="authCode">错误的授权码</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs">
             <summary>
@@ -558,16 +581,6 @@
             被删除好友
             </summary>
         </member>
-        <member name="T:QQMini.PluginSDK.Core.Model.QMDiscussEventSubTypes">
-            <summary>
-            表示 QQMini 框架讨论组事件子类型的枚举
-            </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMDiscussEventSubTypes.Discuss">
-            <summary>
-            讨论组消息
-            </summary>
-        </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs">
             <summary>
             表示包含讨论组消息事件数据的类
@@ -593,7 +606,7 @@
             指示当前事件的消息
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs"/> 类的新实例
             </summary>
@@ -607,6 +620,16 @@
             <param name="message">详细信息</param>
             <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/> 或 fromDiscuss 小于 <see cref="F:QQMini.PluginSDK.Core.Model.Discuss.MinValue"/></exception>
             <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventSubTypes">
+            <summary>
+            表示 QQMini 框架讨论组事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventSubTypes.Discuss">
+            <summary>
+            讨论组消息
+            </summary>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMEventArgs">
             <summary>
@@ -739,6 +762,99 @@
         <member name="F:QQMini.PluginSDK.Core.Model.QMEventTypes.GroupMemberRemoveMessage">
             <summary>
             群成员撤回消息
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的错误.
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.Model.QMException.Code">
+            <summary>
+            获取当前异常的错误代码
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMException.#ctor(QQMini.PluginSDK.Core.Model.QMExceptionCodes)">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMException"/> 类的新实例
+            </summary>
+            <param name="code">当前异常的错误代码</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMException.#ctor(QQMini.PluginSDK.Core.Model.QMExceptionCodes,System.String)">
+            <summary>
+            用指定的错误消息和异常错误代码来初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMException"/> 类的新实例
+            </summary>
+            <param name="code">当前异常的错误代码</param>
+            <param name="message">描述错误的消息</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMException.#ctor(QQMini.PluginSDK.Core.Model.QMExceptionCodes,System.String,System.Exception)">
+            <summary>
+            使用指定的错误消息和对作为此异常原因的内部异常的引用和异常错误代码来初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMException"/> 类的新实例
+            </summary>
+            <param name="code">当前异常的错误代码</param>
+            <param name="message">解释异常原因的错误消息</param>
+            <param name="innerException">导致当前异常的异常；如果未指定内部异常，则是一个 null 引用（在 Visual Basic 中为 Nothing）</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMExceptionCodes">
+            <summary>
+            表示 QQMini 异常代码的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.AuthCodeLessThanZero">
+            <summary>
+            指示 AuthCode 的值不正确
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.AuthCodeInvalid">
+            <summary>
+            指示传递给接口的 AuthCode 无效
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.PlugiNotEnable">
+            <summary>
+            指示当前插件未被启用
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.ResponseQQNotFound">
+            <summary>
+            指示响应QQ找不到
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.SendTypeError">
+            <summary>
+            指示发送类型错误
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.SendGroupOrDiscussIsEmpty">
+            <summary>
+            指示发送群组或讨论组为空
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.SendQQIsEmpty">
+            <summary>
+            指示发送QQ为空
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.SendContentIsEmpty">
+            <summary>
+            指示发送内容为空
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.SendQQNotSupportTempMessage">
+            <summary>
+            发送QQ不支持临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.NotReceiveSendQQResponseMessage">
+            <summary>
+            未收到发送QQ响应消息
             </summary>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs">
@@ -1021,16 +1137,6 @@
             群组解散
             </summary>
         </member>
-        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupEventSubTypes">
-            <summary>
-            表示 QQMini 框架群聊事件子类型的枚举
-            </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupEventSubTypes.Group">
-            <summary>
-            群组消息
-            </summary>
-        </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs">
             <summary>
             表示包含群组管理员改变事件数据的类
@@ -1103,7 +1209,7 @@
         </member>
         <member name="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.BanSpeakTimeSpan">
             <summary>
-            指示当前事件设置禁言的时长. (如果 <see cref="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.SubType"/> 是 <see cref="F:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.GroupMemberRemoveBanSpeak"/> 则为 0)
+            指示当前事件设置禁言的时长. (如果 <see cref="P:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.SubType"/> 是 <see cref="F:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.GroupMemberRemoveBanSpeak"/> 则为 <see langword="null"/>)
             </summary>
         </member>
         <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32)">
@@ -1316,7 +1422,7 @@
             指示当前事件的消息标识 (ID)
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs"/> 类的新实例
             </summary>
@@ -1364,7 +1470,7 @@
             指示当前事件的消息
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs"/> 类的新实例
             </summary>
@@ -1378,6 +1484,16 @@
             <param name="message">详细信息</param>
             <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/> 或 fromGroup 小于 <see cref="F:QQMini.PluginSDK.Core.Model.Group.MinValue"/></exception>
             <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMGroupMessageEventSubTypes">
+            <summary>
+            表示 QQMini 框架群聊事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMGroupMessageEventSubTypes.Group">
+            <summary>
+            群组消息
+            </summary>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs">
             <summary>
@@ -1419,35 +1535,39 @@
             群组名称改变
             </summary>
         </member>
-        <member name="T:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes">
+        <member name="T:QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException">
             <summary>
-            表示 QQMini 框架私聊事件子类型的枚举
+            表示在 QQMini 插件执行过程中发生的发送QQ不支持临时消息的错误.
             </summary>
         </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.Friend">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.#ctor">
             <summary>
-            好友消息
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException"/> 类的新实例
             </summary>
         </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.GroupTemp">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>
-            群临时消息
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMPluginNotEnableException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的插件未启用的错误.
             </summary>
         </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.DiscussTemp">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.#ctor">
             <summary>
-            讨论组临时消息
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMPluginNotEnableException"/> 类的新实例
             </summary>
         </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.OnlineTemp">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>
-            在线临时消息
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMPluginNotEnableException"/> 类的新实例
             </summary>
-        </member>
-        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateEventSubTypes.FriendVerify">
-            <summary>
-            好友验证回复
-            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs">
             <summary>
@@ -1469,7 +1589,7 @@
             指示当前事件的消息
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int32,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs"/> 类的新实例
             </summary>
@@ -1482,6 +1602,138 @@
             <param name="message">详细信息</param>
             <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/></exception>
             <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes">
+            <summary>
+            表示 QQMini 框架私聊事件子类型的枚举
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.Friend">
+            <summary>
+            好友消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.GroupTemp">
+            <summary>
+            群临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.DiscussTemp">
+            <summary>
+            讨论组临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.OnlineTemp">
+            <summary>
+            在线临时消息
+            </summary>
+        </member>
+        <member name="F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.FriendVerify">
+            <summary>
+            好友验证回复
+            </summary>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的响应QQ未找到的错误.
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.#ctor">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException"/> 类的新实例
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的发送内容为空的错误.
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.#ctor">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException"/> 类的新实例
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的发送群组或讨论组为空的错误.
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.#ctor">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException"/> 类的新实例
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的发送QQ为空的错误.
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.#ctor">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException"/> 类的新实例
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的发送QQ不支持临时消息的错误.
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.#ctor">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException"/> 类的新实例
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
+        </member>
+        <member name="T:QQMini.PluginSDK.Core.Model.QMSendTypeErrorException">
+            <summary>
+            表示在 QQMini 插件执行过程中发生的发送类型错误的错误.
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.#ctor">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendTypeErrorException"/> 类的新实例
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMSendTypeErrorException"/> 类的新实例
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext"/>，它包含关于源或目标的上下文信息</param>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QQ">
             <summary>
@@ -1622,23 +1874,6 @@
             <param name="a">要比较的 <see cref="T:System.String"/> 对象</param>
             <param name="b">要比较的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
             <returns>如果 a 是与 b.Id 相同的值，或两者均为 <see langword="null"/>，则为 <see langword="false"/>；否则为 <see langword="true"/></returns>
-        </member>
-        <member name="T:QQMini.PluginSDK.Core.Model.QQMiniException">
-            <summary>
-            表示异常代码的枚举
-            </summary>
-        </member>
-        <member name="P:QQMini.PluginSDK.Core.Model.QQMiniException.Code">
-            <summary>
-            错误代码
-            </summary>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QQMiniException.#ctor(System.Int32,System.String)">
-            <summary>
-            生成一个QQMiniPluginException异常
-            </summary>
-            <param name="code">错误代码</param>
-            <param name="message">错误信息</param>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes">
             <summary>
@@ -2013,14 +2248,14 @@
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberLeave(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberLeave(QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs)">
             <summary>
             当群组成员离开
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupManagerRemoveMember(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupManagerRemoveMember(QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs)">
             <summary>
             当群组管理员移除成员
             </summary>
@@ -2048,28 +2283,28 @@
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCardChange(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCardChange(QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs)">
             <summary>
             当群成员修改了新名片
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupNameChange(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupNameChange(QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs)">
             <summary>
             当群组名称改变
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakOpen(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakOpen(QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs)">
             <summary>
             当群组开启全体禁言
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakClose(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakClose(QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs)">
             <summary>
             当群组关闭全体禁言
             </summary>
@@ -2090,14 +2325,14 @@
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousOpen(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousOpen(QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs)">
             <summary>
             当群组匿名被开启
             </summary>
             <param name="e">包含当前事件的事件参数</param>
             <returns>通知当前框架的事件处理办法</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousClose(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousClose(QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs)">
             <summary>
             当群组匿名被关闭
             </summary>
@@ -2116,548 +2351,96 @@
             提供 QQMini 应用程序公开接口的调用实现
             </summary>
         </member>
+        <member name="P:QQMini.PluginSDK.Core.QMApi.AuthCode">
+            <summary>
+            获取当前调用接口的授权码
+            </summary>
+        </member>
         <member name="M:QQMini.PluginSDK.Core.QMApi.#ctor(System.Int32)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 类的新实例
             </summary>
             <param name="authCode">用于给 QMApi 授权的授权码</param>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFrameType">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendFriendMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)">
             <summary>
-            获取当前运行的 QQMini 框架的版本
+            向指定的指定的QQ好友发送一条消息
             </summary>
-            <returns><see cref="T:QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes"/> 的枚举值</returns>
+            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="sendQQ">接收消息的目标QQ</param>
+            <param name="message">要发送的消息内容</param>
+            <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFrameVersion">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Group,System.String)">
             <summary>
-            获取框架版本号
+            向指定的群组发送一条消息
             </summary>
-            <returns>返回 QQMini 框架的版本号</returns>
-            <exception cref="T:System.FormatException">转换字符串失败</exception> 
+            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="sendGroup">接收消息的目标群组</param>
+            <param name="message">要发送的消息内容</param>
+            <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFrameTimeStamp">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendDiscussMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Discuss,System.String)">
             <summary>
-            获取框架内部时间戳
+            向指定的讨论组发送一条消息
             </summary>
-            <returns>以秒为单位的时间戳</returns>
+            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="sendDiscuss">接收消息的目标讨论组</param>
+            <param name="message">要发送的消息内容</param>
+            <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetPluginDataDirectory">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Group,QQMini.PluginSDK.Core.Model.QQ,System.String)">
             <summary>
-            获取插件数据目录
+            向指定的QQ发送一条群组临时消息
             </summary>
-            <returns>绝对路径</returns>
+            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="fromGroup">目标QQ所在的群组</param>
+            <param name="sendQQ">接收消息的目标QQ</param>
+            <param name="message">要发送的消息内容</param>
+            <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFriendList(System.Int64,System.Boolean)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Discuss,QQMini.PluginSDK.Core.Model.QQ,System.String)">
             <summary>
-            获取指定QQ的好友列表
+            向指定的QQ发送一条讨论组临时消息
             </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>好友列表集合</returns>
+            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="fromDiscuss">目标QQ所在的群组</param>
+            <param name="sendQQ">接收消息的目标QQ</param>
+            <param name="message">要发送的消息内容</param>
+            <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFriendInfo(System.Int64,System.Int64,System.Boolean)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)">
             <summary>
-            获取指定QQ的好友信息,
+            向指定的QQ发送一条在线临时消息
             </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要获取好友信息的目标QQ</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>指定QQ的好友信息</returns>
+            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="sendQQ">接收消息的目标QQ</param>
+            <param name="message">要发送的消息内容</param>
+            <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetStrangerInfo(System.Int64,System.Int64,System.Boolean)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)">
             <summary>
-            获取指定QQ的陌生人信息
+            向指定的QQ发送好友验证回应消息
             </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要获取陌生人信息的目标QQ</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>陌生人信息</returns>
+            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="sendQQ">接收消息的目标QQ</param>
+            <param name="message">要发送的消息内容</param>
+            <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupList(System.Int64,System.Boolean)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetFatal(System.Int32,System.String)">
             <summary>
-            获取指定QQ的群组列表
+            设置一条致命错误信息. (注意: 设置后将导致框架停止运行)
             </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>群组列表</returns>
+            <param name="code">错误代码</param>
+            <param name="message">异常消息</param>
+            <returns>设置成功返回 <see langword="true"/>, 否则返回 <see langword="false"/></returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupInfo(System.Int64,System.Int64,System.Boolean)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SetFatal(System.Exception)">
             <summary>
-            获取指定QQ指定群组的群组信息
+            设置一条致命错误信息. (注意: 设置后将导致框架停止运行)
             </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要获取群组信息的目标群组</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>群组信息</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupMemberList(System.Int64,System.Int64,System.Boolean)">
-            <summary>
-            获取指定QQ在指定群的成员群组列表.
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要获取群组成员列表的目标群组</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>成员群组列表</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupMemberInfo(System.Int64,System.Int64,System.Int64,System.Boolean)">
-            <summary>
-            获取指定QQ在指定群组的群成员信息
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要获取群组成员信息的目标群组</param>
-            <param name="destQQ">要在群组内获取其成员信息的目标QQ</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>群成员信息</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupManagerList(System.Int64,System.Int64,System.Boolean)">
-            <summary>
-            获取指定QQ指定群组的管理员列表
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要获取群组管理员列表的目标群组</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>管理员列表</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetDiscussList(System.Int64,System.Boolean)">
-            <summary>
-            获取指定QQ的讨论组列表
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>讨论组列表</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetDiscussMemberList(System.Int64,System.Int64,System.Boolean)">
-            <summary>
-            获取指定QQ指定讨论组的讨论组成员列表
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destDiscuss">要获取讨论组成员列表的目标讨论组</param>
-            <param name="useCache">指示是否从缓存中获取列表信息, 默认为 "真"</param>
-            <returns>讨论组成员列表</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetCookies(System.Int64)">
-            <summary>
-            获取指定QQ网页操作用的 Cookies
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <returns>Cookies</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetBkn(System.Int64)">
-            <summary>
-            获取指定QQ网页操作用的 G_tk 或 Bkn 参数
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <returns> G_tk 或 Bkn 参数</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetOnlineStatus(System.Int64,System.Int64)">
-            <summary>
-            获取指定QQ的在线状态.
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要查询在线状态的QQ. 如果为空则查询 responseQQ</param>
-            <returns>在线状态</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupBanStatus(System.Int64,System.Int64,System.Int64)">
-            <summary>
-            获取群组或群组成员的禁言状态.
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要查询是否被禁言群组</param>
-            <param name="destQQ">要查询是否被禁言群组内的QQ</param>
-            <returns>禁言状态</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetFriendVerifyMode(System.Int64,System.Int64)">
-            <summary>
-            获取指定QQ的好友验证方式.
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要查询其好友验证方式的目标QQ</param>
-            <returns>好友验证方式</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetIsOnline(System.Int64,System.Int64)">
-            <summary>
-            获取指定的QQ是否在线
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要查询其是否在线的目标QQ</param>
-            <returns>是否在线</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetIsReceiveOnlineTempMessage(System.Int64,System.Int64)">
-            <summary>
-            获取指定QQ是否接收在线临时消息
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要查询其是否在线的目标QQ</param>
-            <returns>QQ是否接收在线临时消息</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetDiscussName(System.Int64,System.Int64)">
-            <summary>
-            获取指定讨论组的名称
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destDiscuss">要获取其名称的目标讨论组</param>
-            <returns>讨论组的名称</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetDiscussAddLink(System.Int64,System.Int64)">
-            <summary>
-            获取指定讨论组的加入链接
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destDiscuss">要获取加入链接的目标讨论组</param>
-            <returns>讨论组的加入链接</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetGroupGiftList(System.Int64)">
-            <summary>
-            获取收到的群组礼物
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <returns>收到的群组礼物</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.GetRandomGroupGift(System.Int64,System.Int64)">
-            <summary>
-            随机获取群礼物(需要Lv5群聊等级).
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup"></param>
-            <returns>查询到的礼物</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetLogger(System.Int32,System.String)">
-            <summary>
-            设置一条日志信息到框架
-            </summary>
-            <param name="nLevel">类型: 调试(0), 信息(1), 警告(2), 错误(3), 严重错误(4). 若使用严重错误, 会使主程序停止运行</param>
-            <param name="message">日志的详细信息字符串</param>
-            <returns>日志的详细信息字符串</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetOnlineStatus(System.Int64,QQMini.PluginSDK.Core.Model.StatusTypes,System.String)">
-            <summary>
-            设置指定QQ的在线状态.
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="onlineStatus">在线(1), Q我吧(2), 离开(3), 忙碌(4), 请勿打扰(5), 隐身(6).</param>
-            <param name="statusMessage">要附加的在线状态信息. 最大255字节</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetAddQQToBlacklist(System.Int64,System.Int64)">
-            <summary>
-            设置QQ添加到黑名单列表
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要加入黑名单的目标QQ</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupBanStatus(System.Int64,System.Int64,System.Int64,System.Int32)">
-            <summary>
-            设置群组或群组成员禁言
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要禁言的QQ所在的群组</param>
-            <param name="destQQ">要在群组禁言的QQ</param>
-            <param name="nTimeSpan">要禁言的时长.单位: 秒, 范围:1 - 2592000(30天). 0为解除禁言</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupAnonymousStatus(System.Int64,System.Int64,System.Boolean)">
-            <summary>
-            设置群组匿名功能状态
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要设置匿名功能的目标群组</param>
-            <param name="isEnabled">如果此参数为真, 则启动该群的匿名功能. 否则关闭匿名功能. 默认值: 假</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupShieldedStatus(System.Int64,System.Int64,System.Boolean)">
-            <summary>
-            设置群组屏蔽状态
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要设置屏蔽状态的群组</param>
-            <param name="isShielded">如果该值为 "真" 屏蔽群消息, 否则为接受并提醒. 默认值: 假</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupManager(System.Int64,System.Int64,System.Int64,System.Boolean)">
-            <summary>
-            设置群组管理员
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要设置管理员的群组</param>
-            <param name="destQQ">要在群组内设置为管理员的QQ</param>
-            <param name="isManager">是否设置为管理员</param>
-            <returns>成功返回真,失败返回假</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupMemberCard(System.Int64,System.Int64,System.Int64,System.String)">
-            <summary>
-            设置群组成员名片
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要设置群名片的目标群组</param>
-            <param name="destQQ">要在群组内设置群名片的目标QQ</param>
-            <param name="NewCard">要设置的新名片</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupQuit">
-            <summary>
-            设置群组退出(机器人是群主则解散群). 如果成功返回 0, 否则返回负值
-            </summary>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetDiscussName(System.Int64,System.Int64,System.String)">
-            <summary>
-            设置讨论组名称
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destDiscuss">要执行修改名称的目标讨论组</param>
-            <param name="NewName">要修改的新名称</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetFriendNotes(System.Int64,System.Int64,System.String)">
-            <summary>
-            设置好友备注
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要执行备注修改的好友QQ</param>
-            <param name="NewNotes">要修改的新备注</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetSignature(System.Int64,System.String)">
-            <summary>
-            设置个性签名
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="NewSignature">要修改的新个性签名</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGender(System.Int64,QQMini.PluginSDK.Core.Model.GenderTypes)">
-            <summary>
-            设置性别
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="nGender">要设置的性别值. 男(1),女(2).</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetNick(System.Int64,System.String)">
-            <summary>
-            设置昵称
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="NewNick">要修改的新昵称</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetFriendAddRequest(System.Int64,System.Int64,QQMini.PluginSDK.Core.Model.ResponseTypes,System.String)">
-            <summary>
-            设置好友添加请求	
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要处理请求添加好友的目标QQ</param>
-            <param name="responseType">处理该请求的方式. 同意(10). 拒绝(20), 忽略(30). </param>
-            <param name="AppendMsg">处理请求时的附加信息</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SetGroupAddRequest(System.Int64,System.Int64,System.Int64,System.String,QQMini.PluginSDK.Core.Model.ResponseTypes,System.String)">
-            <summary>
-            设置群组添加请求
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要处理请求加入的目标群组</param>
-            <param name="destQQ">要请求处理加入群组的目标QQ</param>
-            <param name="Seq">从事件处收到的请求标识</param>
-            <param name="nResponseType">处理该请求的方式. 同意(10). 拒绝(20), 忽略(30). 参考 #RESPONSE_ 常量</param>
-            <param name="AppendMsg">处理请求时的附加信息</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendMessage(System.Int64,System.Int32,System.Int64,System.Int64,System.String,System.Nullable{QQMini.PluginSDK.Core.Model.XmlTypes})">
-            <summary>
-            发送一条消息
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="sendType">指定消息的发送类型, 参考 #MSG_ 常量</param>
-            <param name="destTarget">发送到的目标群组或讨论组</param>
-            <param name="destQQ">发送到的目标QQ</param>
-            <param name="message">要发送的详细信息</param>
-            <param name="xmlSubType">基本结构(0), 歌曲结构(2), 其他值不明. 如果是普通消息和JSON消息, 本参数为空</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendLike(System.Int64,System.Int64,System.Int32)">
-            <summary>
-            发送一个点赞
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要为其点赞的目标QQ</param>
-            <param name="count">点赞的次数, 1-10. 默认: 1</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendShake(System.Int64,System.Int64)">
-            <summary>
-            向好友发送抖动窗口(移动端为"戳一戳")
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">欲抖动的好友</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendSignIn(System.Int64,System.Int64,System.String,System.String)">
-            <summary>
-            向指定群发送群签到
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">欲接收此签到的群组</param>
-            <param name="placeName">签到地名(Pro可用)</param>
-            <param name="message">想法发表的内容</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendInputing(System.Int64,System.Int64)">
-            <summary>
-            向好友发送正在输入状态
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">欲接收此状态的目标QQ</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupNotification(System.Int64,System.Int64,System.String,System.String)">
-            <summary>
-            向群组发送一条公告
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要发送公告的目标群组</param>
-            <param name="notificationTitle">要发送群公告的标题</param>
-            <param name="notificationContent">要发送群公告的内容</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupWork(System.Int64,System.Int64,System.String,System.String,System.String)">
-            <summary>
-            向群组发送一条作业
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要发送作业的目标群组</param>
-            <param name="workName">作业的名称</param>
-            <param name="workTitle">作业的标题</param>
-            <param name="workContent">作业的内容</param>
-            <returns>成功返回 0, 失败返回负值</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupGift(System.Int64,System.Int64,System.Int64,System.String)">
-            <summary>
-            向群组成员发送群组礼物
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要送出礼物的群组</param>
-            <param name="destQQ">要接收礼物的目标QQ</param>
-            <param name="giftPid">要送出的礼物的 PID</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupAddRequest(System.Int64,System.Int64,System.String)">
-            <summary>
-            发送群添加请求
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">欲申请加入的群的群号码</param>
-            <param name="appendMsg">附加的申请消息. 可为空 (需回答正确问题时, 请添加问题的答案)</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendfriendAddRequest(System.Int64,System.Int64,System.String)">
-            <summary>
-            发送好友添加请求
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">欲申请添加的目标QQ</param>
-            <param name="appendMsg">附加的申请消息. 可为空</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupInviteRequest(System.Int64,System.Int64,System.Int64)">
-            <summary>
-            发送群组邀请请求
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要邀请进入的目标群组</param>
-            <param name="destQQ">要邀请的目标QQ</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendDiscussInviteRequest(System.Int64,System.Int64,System.Int64)">
-            <summary>
-            发送讨论组邀请请求
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destDiscuss">要邀请进入的目标讨论组</param>
-            <param name="destQQ">被邀请进入讨论组的目标QQ</param>
-            <returns>成功返回 0, 失败返回负值</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.DownloadPicture(System.Int64,System.String,System.String)">
-            <summary>
-            接收指定的图片
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="pictureGUID">要接收图片的图片GUID, 例如: {xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}.qqmini.image</param>
-            <param name="picturePath">存放接收到图片位于本地服务器的绝对路径. </param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.DownloadVoice(System.Int64,System.String,System.Nullable{QQMini.PluginSDK.Core.Model.VoiceTypes},System.String)">
-            <summary>
-            接收指定的语音
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="voiceGUID">要接收语音的语音GUID, 例如: {xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}.qqmini.voice</param>
-            <param name="voiceOutFormat">要接收语音的目标语音格式. </param>
-            <param name="voicePath">存放接收到语音位于本地服务器的绝对路径. </param>
-            <returns>成功返回 0, 失败返回负值</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.UploadPicture(System.Int64,System.String,System.String)">
-            <summary>
-            上传指定的图片
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="picturePath">要上传图片的图片位于本地服务器的绝对路径</param>
-            <param name="pictureGUID">存放要上传图片的图片 GUID, 该 GUID 用于发送, 发送时图片将会被上传</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.UploadVoice(System.Int64,System.String,System.String)">
-            <summary>
-            上传指定的语音
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="voicePath">要上传图片的语音位于本地服务器的绝对路径</param>
-            <param name="voiceGUID">存放要上传语音的语音 GUID, 该 GUID 用于发送.</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.UploadHeadPortraits(System.Int64,System.String)">
-            <summary>
-            上传指定QQ的头像
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="picturePath">要设置的QQ头像位于本地服务器的绝对路径</param>
-            <returns>成功返回 0, 失败返回负值</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.UploadCover(System.Int64,System.String)">
-            <summary>
-            上传指定QQ的封面
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="picturePath">要设置的QQ封面位于本地服务器的绝对路径</param>
-            <returns>成功返回 0, 失败返回负值</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.RemoveFromBlacklist(System.Int64,System.Int64)">
-            <summary>
-            从黑名单列表中移除QQ
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要移除黑名单的目标QQ</param>
-            <returns>成功返回 0, 失败返回负值</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.Removefriend(System.Int64,System.Int64)">
-            <summary>
-            从好友列表中移除QQ
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要删除的目标QQ</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.RemoveMessage(System.Int64,System.Int32)">
-            <summary>
-            移除一条消息
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="messageId">要撤回的消息的消息ID</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.RemoveGroupMember(System.Int64,System.Int64,System.Int64,System.Boolean)">
-            <summary>
-            移除群组成员
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destGroup">要执行群成员移除的群组</param>
-            <param name="destQQ">要被群组移除的QQ</param>
-            <param name="isRefuseAccept">指定是否不再接收该QQ的加群申请, 如果为 "真" 则不再接收, 默认为 "假"</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.RemoveDiscussMember(System.Int64,System.Int64,System.Int64)">
-            <summary>
-            移除讨论组成员
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destDiscuss">要执行讨论组成员移除的讨论组</param>
-            <param name="destQQ">要被讨论组移除的QQ</param>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.CreateDiscuss(System.Int64,System.Int64)">
-            <summary>
-            创建讨论组
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="destQQ">要邀请进入讨论组的成员QQ</param>
-            <returns>讨论组ID</returns>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.AddDiscussFromLink(System.Int64,System.String)">
-            <summary>
-            通过链接加入讨论组.
-            </summary>
-            <param name="responseQQ">要响应此接口的QQ</param>
-            <param name="discussLink">要加入的讨论组的讨论组链接</param>
-            <returns>成功返回 0, 失败返回负值</returns>
+            <param name="innerException"></param>
+            <returns>设置成功返回 <see langword="true"/>, 否则返回 <see langword="false"/></returns>
         </member>
         <member name="T:QQMini.PluginSDK.Core.QMEventAttribute">
             <summary>
@@ -2699,6 +2482,11 @@
         <member name="T:QQMini.PluginSDK.Tasks.FileAdjustTask">
             <summary>
             文件调整任务
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Tasks.FileAdjustTask.BuildAssemblyName">
+            <summary>
+            获取或设置程序集名称
             </summary>
         </member>
         <member name="P:QQMini.PluginSDK.Tasks.FileAdjustTask.BuildOutputAssembly">
