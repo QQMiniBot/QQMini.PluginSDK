@@ -1,0 +1,2091 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PluginBase
+   | QQMini.PluginSDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PluginBase
+   | QQMini.PluginSDK ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.6/release/featherlight.min.css" type="text/css" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="QQMini.PluginSDK.Core.PluginBase">
+  
+  
+  <h1 id="QQMini_PluginSDK_Core_PluginBase" data-uid="QQMini.PluginSDK.Core.PluginBase" class="text-break">Class PluginBase
+  </h1>
+  <div class="markdown level0 summary"><p>提供一种符合 QQMini 扩展应用程序的运行机制</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.MarshalByRefObject</span></div>
+    <div class="level2"><span class="xref">PluginBase</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="QQMini.PluginSDK.Core.IPlugin.html">IPlugin</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.MarshalByRefObject.MemberwiseClone(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.GetLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.InitializeLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.CreateObjRef(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="QQMini.PluginSDK.Core.html">QQMini.PluginSDK.Core</a></h6>
+  <h6><strong>Assembly</strong>: QQMini.PluginSDK.dll</h6>
+  <h5 id="QQMini_PluginSDK_Core_PluginBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public abstract class PluginBase : MarshalByRefObject, IPlugin</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_IsInitialized.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.IsInitialized%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L34">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_IsInitialized_" data-uid="QQMini.PluginSDK.Core.PluginBase.IsInitialized*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_IsInitialized" data-uid="QQMini.PluginSDK.Core.PluginBase.IsInitialized">IsInitialized</h4>
+  <div class="markdown level1 summary"><p>获取当前插件是否已经初始化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_PluginInfo.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.PluginInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L38">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_PluginInfo_" data-uid="QQMini.PluginSDK.Core.PluginBase.PluginInfo*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_PluginInfo" data-uid="QQMini.PluginSDK.Core.PluginBase.PluginInfo">PluginInfo</h4>
+  <div class="markdown level1 summary"><p>当在派生类中重写时, 设置应用程序的信息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract PluginInfo PluginInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.PluginInfo.html">PluginInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_QMApi.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.QMApi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L30">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_QMApi_" data-uid="QQMini.PluginSDK.Core.PluginBase.QMApi*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_QMApi" data-uid="QQMini.PluginSDK.Core.PluginBase.QMApi">QMApi</h4>
+  <div class="markdown level1 summary"><p>获取当前插件可使用的 QQMini 框架的 <a class="xref" href="QQMini.PluginSDK.Core.QMApi.html">QMApi</a> 实例</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QMApi QMApi { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.QMApi.html">QMApi</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnBeAgreeAddFriend_QQMini_PluginSDK_Core_Model_QMFriendAddResponseEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnBeAgreeAddFriend(QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L297">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnBeAgreeAddFriend_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnBeAgreeAddFriend*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnBeAgreeAddFriend_QQMini_PluginSDK_Core_Model_QMFriendAddResponseEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnBeAgreeAddFriend(QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs)">OnBeAgreeAddFriend(QMFriendAddResponseEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当被同意添加为好友</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.FriendAddResponse, SubType = 1)]
+public virtual QMEventHandlerTypes OnBeAgreeAddFriend(QMFriendAddResponseEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs.html">QMFriendAddResponseEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnBeFriendDelete_QQMini_PluginSDK_Core_Model_QMBeFriendDeleteEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnBeFriendDelete(QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L317">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnBeFriendDelete_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnBeFriendDelete*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnBeFriendDelete_QQMini_PluginSDK_Core_Model_QMBeFriendDeleteEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnBeFriendDelete(QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs)">OnBeFriendDelete(QMBeFriendDeleteEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当被删除好友</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.BeFriendDelete, SubType = 1)]
+public virtual QMEventHandlerTypes OnBeFriendDelete(QMBeFriendDeleteEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs.html">QMBeFriendDeleteEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnBeRefuseAddFriend_QQMini_PluginSDK_Core_Model_QMFriendAddResponseEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnBeRefuseAddFriend(QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L307">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnBeRefuseAddFriend_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnBeRefuseAddFriend*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnBeRefuseAddFriend_QQMini_PluginSDK_Core_Model_QMFriendAddResponseEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnBeRefuseAddFriend(QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs)">OnBeRefuseAddFriend(QMFriendAddResponseEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当被拒绝添加为好友</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.FriendAddResponse, SubType = 2)]
+public virtual QMEventHandlerTypes OnBeRefuseAddFriend(QMFriendAddResponseEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs.html">QMFriendAddResponseEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnFriendAddRequest_QQMini_PluginSDK_Core_Model_QMFriendAddRequestEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnFriendAddRequest(QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L287">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnFriendAddRequest_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnFriendAddRequest*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnFriendAddRequest_QQMini_PluginSDK_Core_Model_QMFriendAddRequestEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnFriendAddRequest(QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs)">OnFriendAddRequest(QMFriendAddRequestEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当好友添加请求</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.FriendAddRequest, SubType = 1)]
+public virtual QMEventHandlerTypes OnFriendAddRequest(QMFriendAddRequestEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.html">QMFriendAddRequestEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupAnonymousClose_QQMini_PluginSDK_Core_Model_QMGroupAnonymousChangeEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousClose(QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L497">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupAnonymousClose_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousClose*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupAnonymousClose_QQMini_PluginSDK_Core_Model_QMGroupAnonymousChangeEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousClose(QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs)">OnGroupAnonymousClose(QMGroupAnonymousChangeEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组匿名被关闭</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupAnonymousChange, SubType = 2)]
+public virtual QMEventHandlerTypes OnGroupAnonymousClose(QMGroupAnonymousChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs.html">QMGroupAnonymousChangeEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupAnonymousOpen_QQMini_PluginSDK_Core_Model_QMGroupAnonymousChangeEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousOpen(QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L487">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupAnonymousOpen_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousOpen*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupAnonymousOpen_QQMini_PluginSDK_Core_Model_QMGroupAnonymousChangeEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupAnonymousOpen(QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs)">OnGroupAnonymousOpen(QMGroupAnonymousChangeEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组匿名被开启</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupAnonymousChange, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupAnonymousOpen(QMGroupAnonymousChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs.html">QMGroupAnonymousChangeEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupApplyAddRequest_QQMini_PluginSDK_Core_Model_QMGroupAddRequestEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupApplyAddRequest(QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L327">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupApplyAddRequest_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupApplyAddRequest*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupApplyAddRequest_QQMini_PluginSDK_Core_Model_QMGroupAddRequestEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupApplyAddRequest(QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs)">OnGroupApplyAddRequest(QMGroupAddRequestEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组申请加入请求</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupAddRequest, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupApplyAddRequest(QMGroupAddRequestEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.html">QMGroupAddRequestEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupBanSpeakClose_QQMini_PluginSDK_Core_Model_QMGroupBanSpeakEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakClose(QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L457">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupBanSpeakClose_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakClose*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupBanSpeakClose_QQMini_PluginSDK_Core_Model_QMGroupBanSpeakEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakClose(QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs)">OnGroupBanSpeakClose(QMGroupBanSpeakEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组关闭全体禁言</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupBanSpeak, SubType = 2)]
+public virtual QMEventHandlerTypes OnGroupBanSpeakClose(QMGroupBanSpeakEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs.html">QMGroupBanSpeakEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupBanSpeakOpen_QQMini_PluginSDK_Core_Model_QMGroupBanSpeakEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakOpen(QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L447">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupBanSpeakOpen_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakOpen*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupBanSpeakOpen_QQMini_PluginSDK_Core_Model_QMGroupBanSpeakEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupBanSpeakOpen(QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs)">OnGroupBanSpeakOpen(QMGroupBanSpeakEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组开启全体禁言</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupBanSpeak, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupBanSpeakOpen(QMGroupBanSpeakEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs.html">QMGroupBanSpeakEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupDissmiss_QQMini_PluginSDK_Core_Model_QMGroupDissmissEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupDissmiss(QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L397">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupDissmiss_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupDissmiss*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupDissmiss_QQMini_PluginSDK_Core_Model_QMGroupDissmissEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupDissmiss(QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs)">OnGroupDissmiss(QMGroupDissmissEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组解散</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupDissmiss, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupDissmiss(QMGroupDissmissEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs.html">QMGroupDissmissEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupInviteMyAddRequest_QQMini_PluginSDK_Core_Model_QMGroupAddRequestEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupInviteMyAddRequest(QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L337">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupInviteMyAddRequest_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupInviteMyAddRequest*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupInviteMyAddRequest_QQMini_PluginSDK_Core_Model_QMGroupAddRequestEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupInviteMyAddRequest(QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs)">OnGroupInviteMyAddRequest(QMGroupAddRequestEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组邀请我加入请求</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupAddRequest, SubType = 2)]
+public virtual QMEventHandlerTypes OnGroupInviteMyAddRequest(QMGroupAddRequestEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.html">QMGroupAddRequestEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupManagerRemoveMember_QQMini_PluginSDK_Core_Model_QMGroupMemberDecreaseEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupManagerRemoveMember(QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L387">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupManagerRemoveMember_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupManagerRemoveMember*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupManagerRemoveMember_QQMini_PluginSDK_Core_Model_QMGroupMemberDecreaseEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupManagerRemoveMember(QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs)">OnGroupManagerRemoveMember(QMGroupMemberDecreaseEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组管理员移除成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMemberDecrease, SubType = 2)]
+public virtual QMEventHandlerTypes OnGroupManagerRemoveMember(QMGroupMemberDecreaseEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.html">QMGroupMemberDecreaseEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberBeAllowAdd_QQMini_PluginSDK_Core_Model_QMGroupMemberIncreaseEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBeAllowAdd(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L347">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberBeAllowAdd_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBeAllowAdd*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberBeAllowAdd_QQMini_PluginSDK_Core_Model_QMGroupMemberIncreaseEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBeAllowAdd(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">OnGroupMemberBeAllowAdd(QMGroupMemberIncreaseEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组成员被允许入群</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMemberInstance, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupMemberBeAllowAdd(QMGroupMemberIncreaseEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.html">QMGroupMemberIncreaseEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberBecomeManager_QQMini_PluginSDK_Core_Model_QMGroupManagerChangeEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBecomeManager(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L407">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberBecomeManager_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBecomeManager*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberBecomeManager_QQMini_PluginSDK_Core_Model_QMGroupManagerChangeEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBecomeManager(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">OnGroupMemberBecomeManager(QMGroupManagerChangeEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群成员成为管理员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupManagerChange, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupMemberBecomeManager(QMGroupManagerChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs.html">QMGroupManagerChangeEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberBeInviteAdd_QQMini_PluginSDK_Core_Model_QMGroupMemberIncreaseEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBeInviteAdd(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L367">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberBeInviteAdd_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBeInviteAdd*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberBeInviteAdd_QQMini_PluginSDK_Core_Model_QMGroupMemberIncreaseEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberBeInviteAdd(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">OnGroupMemberBeInviteAdd(QMGroupMemberIncreaseEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组成员被邀请入群</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMemberInstance, SubType = 3)]
+public virtual QMEventHandlerTypes OnGroupMemberBeInviteAdd(QMGroupMemberIncreaseEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.html">QMGroupMemberIncreaseEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberCanceledManager_QQMini_PluginSDK_Core_Model_QMGroupManagerChangeEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCanceledManager(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L417">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberCanceledManager_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCanceledManager*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberCanceledManager_QQMini_PluginSDK_Core_Model_QMGroupManagerChangeEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCanceledManager(QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs)">OnGroupMemberCanceledManager(QMGroupManagerChangeEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群成员被取消管理员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupManagerChange, SubType = 2)]
+public virtual QMEventHandlerTypes OnGroupMemberCanceledManager(QMGroupManagerChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs.html">QMGroupManagerChangeEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberCardChange_QQMini_PluginSDK_Core_Model_QMGroupMemberCardChangeEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCardChange(QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L427">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberCardChange_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCardChange*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberCardChange_QQMini_PluginSDK_Core_Model_QMGroupMemberCardChangeEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberCardChange(QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs)">OnGroupMemberCardChange(QMGroupMemberCardChangeEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群成员修改了新名片</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMemberCardChange, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupMemberCardChange(QMGroupMemberCardChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs.html">QMGroupMemberCardChangeEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberLeave_QQMini_PluginSDK_Core_Model_QMGroupMemberDecreaseEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberLeave(QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L377">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberLeave_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberLeave*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberLeave_QQMini_PluginSDK_Core_Model_QMGroupMemberDecreaseEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberLeave(QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs)">OnGroupMemberLeave(QMGroupMemberDecreaseEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组成员离开</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMemberDecrease, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupMemberLeave(QMGroupMemberDecreaseEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.html">QMGroupMemberDecreaseEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberMyAddGroup_QQMini_PluginSDK_Core_Model_QMGroupMemberIncreaseEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberMyAddGroup(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L357">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberMyAddGroup_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberMyAddGroup*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberMyAddGroup_QQMini_PluginSDK_Core_Model_QMGroupMemberIncreaseEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberMyAddGroup(QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs)">OnGroupMemberMyAddGroup(QMGroupMemberIncreaseEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当我加入了群组</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMemberInstance, SubType = 2)]
+public virtual QMEventHandlerTypes OnGroupMemberMyAddGroup(QMGroupMemberIncreaseEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.html">QMGroupMemberIncreaseEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberRemoveBanSpeak_QQMini_PluginSDK_Core_Model_QMGroupMemberBanSpeakEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberRemoveBanSpeak(QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L477">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberRemoveBanSpeak_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberRemoveBanSpeak*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberRemoveBanSpeak_QQMini_PluginSDK_Core_Model_QMGroupMemberBanSpeakEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberRemoveBanSpeak(QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs)">OnGroupMemberRemoveBanSpeak(QMGroupMemberBanSpeakEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组成员被解除禁言</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMemberBanSpeak, SubType = 2)]
+public virtual QMEventHandlerTypes OnGroupMemberRemoveBanSpeak(QMGroupMemberBanSpeakEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.html">QMGroupMemberBanSpeakEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberRemoveMessage_QQMini_PluginSDK_Core_Model_QMGroupMemberRemoveMessageEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberRemoveMessage(QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L507">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberRemoveMessage_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberRemoveMessage*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberRemoveMessage_QQMini_PluginSDK_Core_Model_QMGroupMemberRemoveMessageEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberRemoveMessage(QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs)">OnGroupMemberRemoveMessage(QMGroupMemberRemoveMessageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组成员撤回消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMemberRemoveMessage, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupMemberRemoveMessage(QMGroupMemberRemoveMessageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.html">QMGroupMemberRemoveMessageEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupMemberSetBanSpeak_QQMini_PluginSDK_Core_Model_QMGroupMemberBanSpeakEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupMemberSetBanSpeak(QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L467">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberSetBanSpeak_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberSetBanSpeak*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupMemberSetBanSpeak_QQMini_PluginSDK_Core_Model_QMGroupMemberBanSpeakEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupMemberSetBanSpeak(QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs)">OnGroupMemberSetBanSpeak(QMGroupMemberBanSpeakEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组成员被设置禁言</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMemberBanSpeak, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupMemberSetBanSpeak(QMGroupMemberBanSpeakEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.html">QMGroupMemberBanSpeakEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnGroupNameChange_QQMini_PluginSDK_Core_Model_QMGroupNameChangeEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnGroupNameChange(QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L437">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnGroupNameChange_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupNameChange*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnGroupNameChange_QQMini_PluginSDK_Core_Model_QMGroupNameChangeEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnGroupNameChange(QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs)">OnGroupNameChange(QMGroupNameChangeEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当群组名称改变</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupNameChange, SubType = 1)]
+public virtual QMEventHandlerTypes OnGroupNameChange(QMGroupNameChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs.html">QMGroupNameChangeEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnInitialize.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnInitialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L190">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnInitialize_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnInitialize*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnInitialize" data-uid="QQMini.PluginSDK.Core.PluginBase.OnInitialize">OnInitialize()</h4>
+  <div class="markdown level1 summary"><p>当插件被初始化时调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnInitialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnOpenSettingMenu.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnOpenSettingMenu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L200">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnOpenSettingMenu_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnOpenSettingMenu*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnOpenSettingMenu" data-uid="QQMini.PluginSDK.Core.PluginBase.OnOpenSettingMenu">OnOpenSettingMenu()</h4>
+  <div class="markdown level1 summary"><p>当插件打开设置菜单时调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnOpenSettingMenu()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnReceiveDiscussMessage_QQMini_PluginSDK_Core_Model_QMDiscussMessageEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussMessage(QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L277">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnReceiveDiscussMessage_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussMessage*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnReceiveDiscussMessage_QQMini_PluginSDK_Core_Model_QMDiscussMessageEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussMessage(QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs)">OnReceiveDiscussMessage(QMDiscussMessageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当收到讨论组消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.DiscussMessage, SubType = 1)]
+public virtual QMEventHandlerTypes OnReceiveDiscussMessage(QMDiscussMessageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.html">QMDiscussMessageEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnReceiveDiscussTempMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L237">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnReceiveDiscussTempMessage_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnReceiveDiscussTempMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">OnReceiveDiscussTempMessage(QMPrivateMessageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当收到讨论组临时消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.PrivateMessage, SubType = 3)]
+public virtual QMEventHandlerTypes OnReceiveDiscussTempMessage(QMPrivateMessageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html">QMPrivateMessageEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnReceiveEvent_QQMini_PluginSDK_Core_Model_QMEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnReceiveEvent(QQMini.PluginSDK.Core.Model.QMEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L208">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnReceiveEvent_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveEvent*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnReceiveEvent_QQMini_PluginSDK_Core_Model_QMEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveEvent(QQMini.PluginSDK.Core.Model.QMEventArgs)">OnReceiveEvent(QMEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当插件收到新事件时调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual QMEventHandlerTypes OnReceiveEvent(QMEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventArgs.html">QMEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>新事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnReceiveFriendMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnReceiveFriendMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L217">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnReceiveFriendMessage_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveFriendMessage*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnReceiveFriendMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveFriendMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">OnReceiveFriendMessage(QMPrivateMessageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当收到好友消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.PrivateMessage, SubType = 1)]
+public virtual QMEventHandlerTypes OnReceiveFriendMessage(QMPrivateMessageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html">QMPrivateMessageEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnReceiveFriendVerifyMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnReceiveFriendVerifyMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L257">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnReceiveFriendVerifyMessage_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveFriendVerifyMessage*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnReceiveFriendVerifyMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveFriendVerifyMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">OnReceiveFriendVerifyMessage(QMPrivateMessageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当收到好友验证回复消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.PrivateMessage, SubType = 5)]
+public virtual QMEventHandlerTypes OnReceiveFriendVerifyMessage(QMPrivateMessageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html">QMPrivateMessageEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnReceiveGroupMessage_QQMini_PluginSDK_Core_Model_QMGroupMessageEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupMessage(QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L267">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnReceiveGroupMessage_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupMessage*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnReceiveGroupMessage_QQMini_PluginSDK_Core_Model_QMGroupMessageEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupMessage(QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs)">OnReceiveGroupMessage(QMGroupMessageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当收到群组消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.GroupMessage, SubType = 1)]
+public virtual QMEventHandlerTypes OnReceiveGroupMessage(QMGroupMessageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.html">QMGroupMessageEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnReceiveGroupTempMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L227">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnReceiveGroupTempMessage_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnReceiveGroupTempMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">OnReceiveGroupTempMessage(QMPrivateMessageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当收到群组临时消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.PrivateMessage, SubType = 2)]
+public virtual QMEventHandlerTypes OnReceiveGroupTempMessage(QMPrivateMessageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html">QMPrivateMessageEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnReceiveOnlineTempMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnReceiveOnlineTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L247">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnReceiveOnlineTempMessage_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveOnlineTempMessage*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnReceiveOnlineTempMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnReceiveOnlineTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)">OnReceiveOnlineTempMessage(QMPrivateMessageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>当收到在线临时消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[QMEvent(QMEventTypes.PrivateMessage, SubType = 4)]
+public virtual QMEventHandlerTypes OnReceiveOnlineTempMessage(QMPrivateMessageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html">QMPrivateMessageEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>包含当前事件的事件参数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>通知当前框架的事件处理办法</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_OnUninitialize.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.OnUninitialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L195">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_OnUninitialize_" data-uid="QQMini.PluginSDK.Core.PluginBase.OnUninitialize*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_OnUninitialize" data-uid="QQMini.PluginSDK.Core.PluginBase.OnUninitialize">OnUninitialize()</h4>
+  <div class="markdown level1 summary"><p>当插件被反初始化时调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnUninitialize()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_GetInfomaction.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.QQMini%23PluginSDK%23Core%23IPlugin%23GetInfomaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L53">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_GetInfomaction_" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#GetInfomaction*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_GetInfomaction" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#GetInfomaction">IPlugin.GetInfomaction()</h4>
+  <div class="markdown level1 summary"><p>获取插件的基本信息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IPlugin.GetInfomaction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>插件基本信息的字符串</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_PushNewEvent_System_Int32_System_Int32_System_IntPtr___.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.QQMini%23PluginSDK%23Core%23IPlugin%23PushNewEvent(System.Int32%2CSystem.Int32%2CSystem.IntPtr%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L131">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_PushNewEvent_" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#PushNewEvent*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_PushNewEvent_System_Int32_System_Int32_System_IntPtr___" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#PushNewEvent(System.Int32,System.Int32,System.IntPtr[])">IPlugin.PushNewEvent(Int32, Int32, IntPtr[])</h4>
+  <div class="markdown level1 summary"><p>向当前插件推送新事件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QMEventHandlerTypes IPlugin.PushNewEvent(int type, int subType, params IntPtr[] datas)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>事件类型</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">subType</span></td>
+        <td><p>事件子类型</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">datas</span></td>
+        <td><p>数据指针数组</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html">QMEventHandlerTypes</a></td>
+        <td><p>事件的处理结果</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetAuthorize_System_Int32_.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.QQMini%23PluginSDK%23Core%23IPlugin%23SetAuthorize(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L69">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetAuthorize_" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetAuthorize*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetAuthorize_System_Int32_" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetAuthorize(System.Int32)">IPlugin.SetAuthorize(Int32)</h4>
+  <div class="markdown level1 summary"><p>设置插件的授权信息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IPlugin.SetAuthorize(int authCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">authCode</span></td>
+        <td><p>插件授权码</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetInitialize.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.QQMini%23PluginSDK%23Core%23IPlugin%23SetInitialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L83">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetInitialize_" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetInitialize*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetInitialize" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetInitialize">IPlugin.SetInitialize()</h4>
+  <div class="markdown level1 summary"><p>设置插件初始化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IPlugin.SetInitialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetOpenSettingMenu.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.QQMini%23PluginSDK%23Core%23IPlugin%23SetOpenSettingMenu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L113">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetOpenSettingMenu_" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetOpenSettingMenu*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetOpenSettingMenu" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetOpenSettingMenu">IPlugin.SetOpenSettingMenu()</h4>
+  <div class="markdown level1 summary"><p>设置插件打开设置菜单</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IPlugin.SetOpenSettingMenu()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetUninitialize.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase.QQMini%23PluginSDK%23Core%23IPlugin%23SetUninitialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L98">View Source</a>
+  </span>
+  <a id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetUninitialize_" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetUninitialize*"></a>
+  <h4 id="QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetUninitialize" data-uid="QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetUninitialize">IPlugin.SetUninitialize()</h4>
+  <div class="markdown level1 summary"><p>设置插件反初始化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IPlugin.SetUninitialize()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="QQMini.PluginSDK.Core.IPlugin.html">IPlugin</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/new/Alpha/apiSpec/new?filename=QQMini_PluginSDK_Core_PluginBase.md&amp;value=---%0Auid%3A%20QQMini.PluginSDK.Core.PluginBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/QQMiniBot/QQMini.PluginSDK/blob/Alpha/src/QQMini.PluginSDK/Core/PluginBase.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Generated by JieGG
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.6/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+  </body>
+</html>

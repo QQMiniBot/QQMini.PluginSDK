@@ -1,0 +1,1163 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/DocFx/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.IPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.IPlugin.html",
+          "hash": "DdJbAZMjGp+4aC8CPFBO3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.Discuss.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.Discuss.html",
+          "hash": "UEI3qwba9wr2K7H91AvO1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.GenderTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.GenderTypes.html",
+          "hash": "k7hxj73+2+uyvaGMnRcVpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.Group.html",
+          "hash": "/t1HA0vcGrSrG85t00/cWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.Message.html",
+          "hash": "JerfrPiqsvTfwjz5QvmzhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.PluginInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.PluginInfo.html",
+          "hash": "JKFi4WjGcvVf2MxbXdLR8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.html",
+          "hash": "uhT597GHunMx0d/ZJomGDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException.html",
+          "hash": "gexqimqzsC8eHwyRO7AZSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs.html",
+          "hash": "pj6/3YkpbecuLU6hGa58vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventSubTypes.html",
+          "hash": "/Ywv5CpA8qEJUG9NTNyguQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.html",
+          "hash": "OazxsovpNegD4V0xDvWKWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMDiscussMessageEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMDiscussMessageEventSubTypes.html",
+          "hash": "h/M2FFzNiPAK7gfClHKbFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMEventArgs.html",
+          "hash": "X1JPm/S7z063o4maHKnmig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html",
+          "hash": "aSXSYgk/Id5PjDedc1T+mQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMEventTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMEventTypes.html",
+          "hash": "Euv/xumVfNMvbpkDoe2Ajg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMException.html",
+          "hash": "yl1JkyzHvDPTrntfOLG7SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.html",
+          "hash": "cbhF2UAYyrPjnhiL4JR8tQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.html",
+          "hash": "MIt0PLTn+vPNV/RA0MFdIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventSubTypes.html",
+          "hash": "BmCKOdUP1uveIJ+es+ZZog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs.html",
+          "hash": "iarxEkdHlCZ0X1JMC3OYOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventSubTypes.html",
+          "hash": "uTs+ECzhSxy1msuxuqmXDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.html",
+          "hash": "mydbzDlQhMAot/fgXZbihQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventSubTypes.html",
+          "hash": "qNhAvFE3HAHMdNFlbGZhjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs.html",
+          "hash": "WKH1oJE7km71wJ62eQqW5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventSubTypes.html",
+          "hash": "H5hGbRxqG8iUIr/1ls6nyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs.html",
+          "hash": "u4vkKmUXi1kbze5rQvB3Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventSubTypes.html",
+          "hash": "anWOYEZyFZzv23u9Cwce5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs.html",
+          "hash": "TYcfUCVyPVhpjU2rY01FGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupDissmissEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupDissmissEventSubTypes.html",
+          "hash": "aDWY3f/LWOEIaJejcrX5UQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs.html",
+          "hash": "KsU6lcz8gNe1vOzs7qWuxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventSubTypes.html",
+          "hash": "XZPWqq5QZMFKk2Ozd5Mddg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.html",
+          "hash": "wZGJCKiWNLxmnsyyoj74KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.html",
+          "hash": "X5JPlBCM3Jib0YkRUf0FPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs.html",
+          "hash": "Gd17w/6l5sWHQeZQMq7/Nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventSubTypes.html",
+          "hash": "5GsyjhDrhRaLOSvdHalYCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.html",
+          "hash": "81Z4WAYcDoLhylxkup6QgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventSubTypes.html",
+          "hash": "6bxRUi2Bka5Yz2kWfuFj2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.html",
+          "hash": "694jyrskdbIeDbPtW07vRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventSubTypes.html",
+          "hash": "RWNQudP3DIgZCj0cqe/1bQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.html",
+          "hash": "r18145wLii7eHCCsxmCPhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventSubTypes.html",
+          "hash": "MWHO/6njGDyLiZnAwNpKqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.html",
+          "hash": "0LAKFwp3kaGdql+341020A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMessageEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMessageEventSubTypes.html",
+          "hash": "0ufB3EENJbp9RHRH6wFyOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs.html",
+          "hash": "6dxSqX6vEWRi5+rMVWf2MQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventSubTypes.html",
+          "hash": "UDbUS7qpecdE8v2q/QR0xQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.html",
+          "hash": "jRqb9z0JBe9l+rOpRMfBlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.html",
+          "hash": "ZjHyodpVzBGt8JBnzEhetA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html",
+          "hash": "H/yyJ3FwCPPxocQ8hGI/oA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.html",
+          "hash": "oW928i463lLsebRsgeNbsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.html",
+          "hash": "Z3RfjpDvVtd0FNRNCmlhGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.html",
+          "hash": "jN85cRz7YX+QFk2KaSYD1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.html",
+          "hash": "PoVlFJBa5TuVgEpHBfVZ4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.html",
+          "hash": "HaXxeSy8OzVCDyVUdmS/cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.html",
+          "hash": "vagcVRrexv9TK1hdx9r5Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.html",
+          "hash": "2VREsyuehqk0xV7e10VyGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QQ.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QQ.html",
+          "hash": "MkdTUCd3PwU0FixfsbFY3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes.html",
+          "hash": "8ohMRfYXFvdWDTfCjcHCWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.Request.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.Request.html",
+          "hash": "RrZQ5w1Pmy4ZmP4rHUthEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.ResponseTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.ResponseTypes.html",
+          "hash": "f0IZiU7bBj4J/yBBHwEfCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.StatusTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.StatusTypes.html",
+          "hash": "3z7gt9S1jrS+5JrCFFTlIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.VerifyTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.VerifyTypes.html",
+          "hash": "FrPv5schRLZqJbtb4Q0EKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.VoiceTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.VoiceTypes.html",
+          "hash": "b/cC2vqclbosjwvHru4fjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.XmlTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.XmlTypes.html",
+          "hash": "KPo9LJ9PkHwGWDZMGDaUYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.Model.html",
+          "hash": "0u/YvtO5lkZ0yigCnFc6QA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.PluginBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.PluginBase.html",
+          "hash": "Xj9NAmZbCKri6lZRDV0e9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.QMApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.QMApi.html",
+          "hash": "vjNh5isFFGK1Nv0LFVj1JQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.QMEventAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.QMEventAttribute.html",
+          "hash": "gZBFAuEzeWkfURGDVPIyQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QQMini.PluginSDK.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QQMini.PluginSDK.Core.html",
+          "hash": "GJfYnEF4+zfj4ymTG0uFWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Fp39m/S+JkRSZUKlNTdFzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "FmHQxR9GtPMedLg1sp0qow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/addWindow.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/addWindow.html",
+          "hash": "jCzfn2K6lr5GRbE2+g1F/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/code.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/code.html",
+          "hash": "2aN6RUSySMoPJN4kViAXxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/debug.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/debug.html",
+          "hash": "jCzfn2K6lr5GRbE2+g1F/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/deploy.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/deploy.html",
+          "hash": "bj8A+ZN/2uF308iFPKSOFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/home.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/home.html",
+          "hash": "1G2mZC8/gSc6aaPtggl9pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/require.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/require.html",
+          "hash": "4moKU8pgutNOIiyPo9iOsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/setup.html",
+          "hash": "Z7fXa+TnHPZ3SQ+ugX4cpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "GxlCKiUorHsS9WHXFX7MDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/update.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/update.html",
+          "hash": "jCzfn2K6lr5GRbE2+g1F/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/AliPay.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/AliPay.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/articles/deploy/buildresult.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/articles/deploy/buildresult.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/articles/deploy/copyfile.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/articles/deploy/copyfile.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/articles/deploy/loadSuccess.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/articles/deploy/loadSuccess.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/articles/deploy/rebuild.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/articles/deploy/rebuild.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/articles/setup/changePlatform.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/articles/setup/changePlatform.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/articles/setup/createProject01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/articles/setup/createProject01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/articles/setup/createProject02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/articles/setup/createProject02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/articles/setup/openConfigManager.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/articles/setup/openConfigManager.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/articles/setup/openNuGet.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/articles/setup/openNuGet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/wechatPay.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/wechatPay.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "xzRHDo3aNoz3fzwbImfTYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "LXQoqVbkgtJvlYsf4IAuaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
+          "skipped_file_count": 9
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 68,
+          "skipped_file_count": 68
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
