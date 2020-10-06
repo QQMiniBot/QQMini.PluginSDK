@@ -11,7 +11,7 @@
 		<DocumentationFile>D:\文稿\QQMini-二次开发3.2020.8.22\QQMini-.NET SDK\QQMini.PluginSDK\src\QQMini.PluginSDK\QQMini.PluginSDK.xml</DocumentationFile>
 
 		<!--打包-->
-		<Version>1.0.5.1005-Beta</Version>
+		<Version>1.0.6.1006-Beta</Version>
 		<PackageId>QQMini.PluginSDK</PackageId>
 		<Authors>JieGG</Authors>
 		<Company>QQMiniBot</Company>
@@ -43,5 +43,6 @@
 		<PackageReference Include="Microsoft.Build.Utilities.Core" Version="14.3.0" />
 		<Reference Include="PresentationFramework" />
 		<PackageReference Update="@(PackageReference)" PrivateAssets="All" />
+		<PackageReference Update="QQMini.PluginFramework.Utility" Version="1.1.1.1006" />
 	</ItemGroup>
 </Project>
