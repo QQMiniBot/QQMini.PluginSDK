@@ -62,6 +62,10 @@ namespace QQMini.PluginSDK.Tasks
 				this.BuildOutTargetPath = Path.GetFullPath (this.BuildOutTargetPath);
 			}
 
+			if (this.DeleteFiles == null)
+			{
+				this.DeleteFiles = new string[0];
+			}
 			List<string> tempDelFils = new List<string> (this.DeleteFiles);
 			for (int i = 0; i < tempDelFils.Count; i++)
 			{

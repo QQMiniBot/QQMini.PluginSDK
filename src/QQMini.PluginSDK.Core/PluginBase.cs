@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using QQMini.PluginFramework.Utility.Core;
+using QQMini.PluginInterface.Core;
+using QQMini.PluginSDK.Core.Model;
+
+using System;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.InteropServices;
-using System.Threading.Tasks;
-
-using QQMini.PluginFramework.Utility.Core;
-using QQMini.PluginSDK.Core.Model;
 
 namespace QQMini.PluginSDK.Core
 {
@@ -128,7 +126,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="subType">事件子类型</param>
 		/// <param name="datas">数据指针数组</param>
 		/// <returns>事件的处理结果</returns>
-		QMEventHandlerTypes IPlugin.PushNewEvent (int type, int subType, params IntPtr[] datas)
+		int IPlugin.PushNewEvent (int type, int subType, params IntPtr[] datas)
 		{
 			try
 			{
@@ -165,22 +163,22 @@ namespace QQMini.PluginSDK.Core
 								QMEventHandlerTypes result = OnReceiveEvent (qMEventArgs);
 								if (result != QMEventHandlerTypes.Continue)
 								{
-									return result;
+									return (int)result;
 								}
 
 								// 调用具体路由方法
-								return (QMEventHandlerTypes)method.Invoke (this, new object[] { qMEventArgs });
+								return (int)method.Invoke (this, new object[] { qMEventArgs });
 							}
 						}
 					}
 				}
 
-				return QMEventHandlerTypes.Continue;
+				return (int)QMEventHandlerTypes.Continue;
 			}
 			catch (Exception ex)
 			{
 				OnException (ex);
-				return QMEventHandlerTypes.Exception;
+				return (int)QMEventHandlerTypes.Exception;
 			}
 		}
 

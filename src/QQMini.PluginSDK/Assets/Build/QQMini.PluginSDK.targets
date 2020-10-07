@@ -17,9 +17,6 @@
 		<ItemGroup>
 			<NotMoveFiles Include="$(OutputPath)$(TargetName)*.*"/>
 		</ItemGroup>
-		<ItemGroup>
-			<DeleteFiles Include="$(OutputPath)QQMini.PluginSDK*.*"/>
-		</ItemGroup>
-		<FileAdjustTask BuildAssemblyName="$(AssemblyName)" BuildOutputAssembly="$(TargetFileName)" BuildOutputPath="$(OutputPath)" BuildOutTargetPath="$(OutputPath)bin" NotMoveFiles="@(NotMoveFiles)" DeleteFiles="@(DeleteFiles)"/>
+		<FileAdjustTask BuildAssemblyName="$(AssemblyName)" BuildOutputAssembly="$(TargetFileName)" BuildOutputPath="$(OutputPath)" BuildOutTargetPath="$(OutputPath)bin" NotMoveFiles="@(NotMoveFiles)"/>
 	</Target>
 </Project>

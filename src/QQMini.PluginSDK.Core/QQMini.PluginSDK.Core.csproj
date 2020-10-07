@@ -2,20 +2,21 @@
 	<PropertyGroup>
 		<!--应用程序-->
 		<TargetFrameworks>net45;net46;net47;net48</TargetFrameworks>
-		<RootNamespace>QQMini.PluginSDK</RootNamespace>
+		<RootNamespace>QQMini.PluginSDK.Core</RootNamespace>
 		<OutputType>Library</OutputType>
 
 		<!--生成-->
 		<Platforms>x86</Platforms>
 		<PlatformTarget>x86</PlatformTarget>
+		<DocumentationFile>QQMini.PluginSDK.xml</DocumentationFile>
 
 		<!--打包-->
 		<Version>1.0.7.1007-Beta</Version>
-		<PackageId>QQMini.PluginSDK</PackageId>
+		<PackageId>QQMini.PluginSDK.Core</PackageId>
 		<Authors>JieGG</Authors>
 		<Company>QQMiniBot</Company>
-		<Product>QQMini机器人第三方托管扩展应用程序管理组件应用程序开发包</Product>
-		<Description>适用于QQMini机器人第三方托管扩展应用程序管理组件应用程序开发包</Description>
+		<Product>QQMini机器人第三方托管扩展应用程序管理组件应用程序开发包核心</Product>
+		<Description>适用于QQMini机器人第三方托管扩展应用程序管理组件应用程序开发包核心</Description>
 		<Copyright>Copyright © 2020 JieGG All rights reserved</Copyright>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -26,19 +27,19 @@
 		<RepositoryType>Git</RepositoryType>
 	</PropertyGroup>
 
-	<!--重定向目标包-->
 	<ItemGroup>
 		<None Include="..\..\img\icon.png">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
-		<None Include="Assets\Build\**" Pack="True" PackagePath="build\" />
-		<None Include="Assets\readme.txt" Pack="True" PackagePath="" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Build.Framework" Version="14.3.0" />
-		<PackageReference Include="Microsoft.Build.Utilities.Core" Version="14.3.0" />
-		<ProjectReference Include="..\QQMini.PluginSDK.Core\QQMini.PluginSDK.Core.csproj" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="QQMini.PluginFramework.Utility" Version="1.1.1.1006" />
+		<PackageReference Include="QQMini.PluginInterface" Version="1.0.0.1007" />
 		<PackageReference Update="@(PackageReference)" PrivateAssets="All" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Core\" />
 	</ItemGroup>
 </Project>
