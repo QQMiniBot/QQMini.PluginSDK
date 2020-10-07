@@ -11,7 +11,7 @@
 		<DocumentationFile>QQMini.PluginSDK.xml</DocumentationFile>
 
 		<!--打包-->
-		<Version>1.0.7.1007-Beta</Version>
+		<Version>1.0.8.1007-Beta</Version>
 		<PackageId>QQMini.PluginSDK.Core</PackageId>
 		<Authors>JieGG</Authors>
 		<Company>QQMiniBot</Company>
