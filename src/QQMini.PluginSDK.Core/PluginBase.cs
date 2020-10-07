@@ -5,6 +5,7 @@ using QQMini.PluginSDK.Core.Model;
 using System;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Remoting.Lifetime;
 
 namespace QQMini.PluginSDK.Core
 {
@@ -44,6 +45,14 @@ namespace QQMini.PluginSDK.Core
 		#endregion
 
 		#region --公开方法--
+		/// <summary>
+		/// 获取控制此实例的生存期策略的生存期服务对象
+		/// </summary>
+		/// <returns><see cref="ILease"/> 类型的对象，用于控制此实例的生存期策略。这是此实例当前的生存期服务对象（如果存在）；否则为初始化为 <see cref="LifetimeServices.LeaseManagerPollTime"/> 属性的值的新生存期服务对象</returns>
+		public override object InitializeLifetimeService ()
+		{
+			return null;
+		}
 		/// <summary>
 		/// 获取插件的基本信息
 		/// </summary>

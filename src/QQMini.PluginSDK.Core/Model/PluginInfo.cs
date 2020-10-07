@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json.Linq;
 
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+using System;
+using System.Runtime.Remoting.Lifetime;
 
 namespace QQMini.PluginSDK.Core.Model
 {
@@ -58,19 +52,29 @@ namespace QQMini.PluginSDK.Core.Model
 
 		#region --公开方法--
 		/// <summary>
+		/// 获取控制此实例的生存期策略的生存期服务对象
+		/// </summary>
+		/// <returns><see cref="ILease"/> 类型的对象，用于控制此实例的生存期策略。这是此实例当前的生存期服务对象（如果存在）；否则为初始化为 <see cref="LifetimeServices.LeaseManagerPollTime"/> 属性的值的新生存期服务对象</returns>
+		public override object InitializeLifetimeService ()
+		{
+			return null;
+		}
+		/// <summary>
 		/// 返回表示当前对象的字符串
 		/// </summary>
 		/// <returns>表示当前对象的字符串</returns>
 		public override string ToString ()
 		{
-			JObject root = new JObject ();
-			root.Add ("PackageID", this.PackageId);
-			root.Add ("Name", this.Name);
-			root.Add ("Version", this.Version.ToString ());
-			root.Add ("Author", this.Author);
-			root.Add ("Description", this.Description);
-			root.Add ("SDKVersion", this.SDKVersion);
-			root.Add ("DeveloperKey", this.DeveloperKey);
+			JObject root = new JObject
+			{
+				{ "PackageID", this.PackageId },
+				{ "Name", this.Name },
+				{ "Version", this.Version.ToString () },
+				{ "Author", this.Author },
+				{ "Description", this.Description },
+				{ "SDKVersion", this.SDKVersion },
+				{ "DeveloperKey", this.DeveloperKey }
+			};
 
 			return root.ToString ();
 		}

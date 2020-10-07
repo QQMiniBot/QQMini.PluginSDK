@@ -454,6 +454,12 @@
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.PluginInfo"/> 类的新实例
             </summary>
         </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.PluginInfo.InitializeLifetimeService">
+            <summary>
+            获取控制此实例的生存期策略的生存期服务对象
+            </summary>
+            <returns><see cref="T:System.Runtime.Remoting.Lifetime.ILease"/> 类型的对象，用于控制此实例的生存期策略。这是此实例当前的生存期服务对象（如果存在）；否则为初始化为 <see cref="P:System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime"/> 属性的值的新生存期服务对象</returns>
+        </member>
         <member name="M:QQMini.PluginSDK.Core.Model.PluginInfo.ToString">
             <summary>
             返回表示当前对象的字符串
@@ -2036,6 +2042,12 @@
             <summary>
             当在派生类中重写时, 设置应用程序的信息
             </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.PluginBase.InitializeLifetimeService">
+            <summary>
+            获取控制此实例的生存期策略的生存期服务对象
+            </summary>
+            <returns><see cref="T:System.Runtime.Remoting.Lifetime.ILease"/> 类型的对象，用于控制此实例的生存期策略。这是此实例当前的生存期服务对象（如果存在）；否则为初始化为 <see cref="P:System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime"/> 属性的值的新生存期服务对象</returns>
         </member>
         <member name="M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#GetInfomaction">
             <summary>
