@@ -5,12 +5,9 @@
 		<TargetFramework>net48</TargetFramework>
 		<PlatformTarget>x86</PlatformTarget>
 		<IsDebugModel>True</IsDebugModel>
+		<Platforms>AnyCPU;x86</Platforms>
 		<!--<IsBuildFramework>True</IsBuildFramework>-->
 	</PropertyGroup>
 
 	<Import Project="..\QQMini.PluginSDK\Assets\Build\QQMini.PluginSDK.targets" />
-
-	<ItemGroup>
-	  <ProjectReference Include="..\QQMini.PluginSDK\QQMini.PluginSDK.csproj" />
-	</ItemGroup>
 </Project>
