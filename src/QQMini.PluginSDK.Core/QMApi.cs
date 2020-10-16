@@ -4,6 +4,8 @@ using QQMini.PluginInterface.Core;
 
 using System;
 using System.Runtime.InteropServices;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
 
 namespace QQMini.PluginSDK.Core
 {
@@ -24,10 +26,31 @@ namespace QQMini.PluginSDK.Core
 		#endregion
 
 		#region --字段--
+		private static readonly ConcurrentDictionary<int, QMApi> _caches;
 		private readonly int _authCode;
+		private int _id;
 		#endregion
 
 		#region --属性--
+		/// <summary>
+		/// 获取当前程序域的 <see cref="QMApi"/> 实例
+		/// </summary>
+		public static QMApi CurrentApi
+		{
+			get
+			{
+				if (!_caches.ContainsKey (AppDomain.CurrentDomain.Id))
+				{
+					return null;
+				}
+
+				return _caches[AppDomain.CurrentDomain.Id];
+			}
+		}
+		/// <summary>
+		/// 获取当前实例的唯一标识
+		/// </summary>
+		public int Id => _id;
 		/// <summary>
 		/// 获取当前调用接口的授权码
 		/// </summary>
@@ -36,10 +59,17 @@ namespace QQMini.PluginSDK.Core
 
 		#region --构造函数--
 		/// <summary>
+		/// 初始化 <see cref="QMApi"/> 静态实例
+		/// </summary>
+		static QMApi ()
+		{
+			_caches = new ConcurrentDictionary<int, QMApi> ();
+		}
+		/// <summary>
 		/// 初始化 <see cref="QMApi"/> 类的新实例
 		/// </summary>
 		/// <param name="authCode">用于给 QMApi 授权的授权码</param>
-		public QMApi (int authCode)
+		private QMApi (int authCode)
 		{
 			if (authCode <= 0)
 			{
@@ -50,6 +80,27 @@ namespace QQMini.PluginSDK.Core
 		#endregion
 
 		#region --公开方法--
+		/// <summary>
+		/// 创建一个新的 <see cref="QMApi"/> 接口实例
+		/// </summary>
+		/// <param name="authCode">与此实例相关联的授权码</param>
+		/// <returns>如果成功创建新实例, 则返回 <see cref="QMApi"/>对象</returns>
+		internal static QMApi CreateNewApi (int authCode)
+		{
+			QMApi api = new QMApi (authCode)
+			{
+				_id = AppDomain.CurrentDomain.Id
+			};
+			return _caches.AddOrUpdate (api.Id, api, (key, value) => value = api);
+		}
+		/// <summary>
+		/// 销毁一个指定的 <see cref="QMApi"/> 接口实例
+		/// </summary>
+		/// <param name="api">要销毁的接口实例</param>
+		internal static void DestroyApi (QMApi api)
+		{
+			while (!_caches.TryRemove (api.Id, out QMApi _)) ;
+		}
 		/// <summary>
 		/// 向指定的指定的QQ好友发送一条消息
 		/// </summary>

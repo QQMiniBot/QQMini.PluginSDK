@@ -12,7 +12,6 @@ namespace QQMini.PluginSDK.Test
 	{
 		static void Main ()
 		{
-			Console.WriteLine (new TimeSpan (10000000L * 600));
 			Console.ReadKey ();
 		}
 	}

@@ -9,5 +9,9 @@
 		<!--<IsBuildFramework>True</IsBuildFramework>-->
 	</PropertyGroup>
 
-	<Import Project="..\QQMini.PluginSDK\Assets\Build\QQMini.PluginSDK.targets" />
+	<!--<Import Project="..\QQMini.PluginSDK\Assets\Build\QQMini.PluginSDK.targets" />-->
+
+	<ItemGroup>
+	  <ProjectReference Include="..\QQMini.PluginSDK.Core\QQMini.PluginSDK.Core.csproj" />
+	</ItemGroup>
 </Project>

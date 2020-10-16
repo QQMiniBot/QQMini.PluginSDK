@@ -2322,9 +2322,24 @@
             提供 QQMini 应用程序公开接口的调用实现
             </summary>
         </member>
+        <member name="P:QQMini.PluginSDK.Core.QMApi.CurrentApi">
+            <summary>
+            获取当前程序域的 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 实例
+            </summary>
+        </member>
+        <member name="P:QQMini.PluginSDK.Core.QMApi.Id">
+            <summary>
+            获取当前实例的唯一标识
+            </summary>
+        </member>
         <member name="P:QQMini.PluginSDK.Core.QMApi.AuthCode">
             <summary>
             获取当前调用接口的授权码
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.#cctor">
+            <summary>
+            初始化 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 静态实例
             </summary>
         </member>
         <member name="M:QQMini.PluginSDK.Core.QMApi.#ctor(System.Int32)">
@@ -2333,67 +2348,80 @@
             </summary>
             <param name="authCode">用于给 QMApi 授权的授权码</param>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendFriendMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.CreateNewApi(System.Int32)">
+            <summary>
+            创建一个新的 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 接口实例
+            </summary>
+            <param name="authCode">与此实例相关联的授权码</param>
+            <returns>如果成功创建新实例, 则返回 <see cref="T:QQMini.PluginSDK.Core.QMApi"/>对象</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.DestroyApi(QQMini.PluginSDK.Core.QMApi)">
+            <summary>
+            销毁一个指定的 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 接口实例
+            </summary>
+            <param name="api">要销毁的接口实例</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendFriendMessage(System.Int64,System.Int64,System.String)">
             <summary>
             向指定的指定的QQ好友发送一条消息
             </summary>
-            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="robotQQ">响应此请求的QQ</param>
             <param name="sendQQ">接收消息的目标QQ</param>
             <param name="message">要发送的消息内容</param>
             <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Group,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupMessage(System.Int64,System.Int64,System.String)">
             <summary>
             向指定的群组发送一条消息
             </summary>
-            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="robotQQ">响应此请求的QQ</param>
             <param name="sendGroup">接收消息的目标群组</param>
             <param name="message">要发送的消息内容</param>
             <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendDiscussMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Discuss,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendDiscussMessage(System.Int64,System.Int64,System.String)">
             <summary>
             向指定的讨论组发送一条消息
             </summary>
-            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="robotQQ">响应此请求的QQ</param>
             <param name="sendDiscuss">接收消息的目标讨论组</param>
             <param name="message">要发送的消息内容</param>
             <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Group,QQMini.PluginSDK.Core.Model.QQ,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage(System.Int64,System.Int64,System.Int64,System.String)">
             <summary>
             向指定的QQ发送一条群组临时消息
             </summary>
-            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="robotQQ">响应此请求的QQ</param>
             <param name="fromGroup">目标QQ所在的群组</param>
             <param name="sendQQ">接收消息的目标QQ</param>
             <param name="message">要发送的消息内容</param>
             <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Discuss,QQMini.PluginSDK.Core.Model.QQ,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage(System.Int64,System.Int64,System.Int64,System.String)">
             <summary>
             向指定的QQ发送一条讨论组临时消息
             </summary>
-            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="robotQQ">响应此请求的QQ</param>
             <param name="fromDiscuss">目标QQ所在的群组</param>
             <param name="sendQQ">接收消息的目标QQ</param>
             <param name="message">要发送的消息内容</param>
             <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage(System.Int64,System.Int64,System.String)">
             <summary>
             向指定的QQ发送一条在线临时消息
             </summary>
-            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="robotQQ">响应此请求的QQ</param>
             <param name="sendQQ">接收消息的目标QQ</param>
             <param name="message">要发送的消息内容</param>
             <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage(System.Int64,System.Int64,System.String)">
             <summary>
             向指定的QQ发送好友验证回应消息
             </summary>
-            <param name="responseQQ">响应此请求的QQ</param>
+            <param name="robotQQ">响应此请求的QQ</param>
             <param name="sendQQ">接收消息的目标QQ</param>
             <param name="message">要发送的消息内容</param>
             <returns>返回发送的消息 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 实例</returns>

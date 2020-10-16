@@ -77,7 +77,7 @@ namespace QQMini.PluginSDK.Core
 		{
 			try
 			{
-				this._qMApi = new QMApi (authCode);
+				this._qMApi = QMApi.CreateNewApi (authCode);
 			}
 			catch (Exception ex)
 			{
