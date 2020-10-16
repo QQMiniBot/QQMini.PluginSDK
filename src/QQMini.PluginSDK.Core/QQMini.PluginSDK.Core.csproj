@@ -8,10 +8,10 @@
 		<!--生成-->
 		<Platforms>x86</Platforms>
 		<PlatformTarget>x86</PlatformTarget>
-		<DocumentationFile>QQMini.PluginSDK.xml</DocumentationFile>
+		<DocumentationFile>QQMini.PluginSDK.Core.xml</DocumentationFile>
 
 		<!--打包-->
-		<Version>1.0.9.1007-Beta</Version>
+		<Version>1.0.10.1016-Beta</Version>
 		<PackageId>QQMini.PluginSDK.Core</PackageId>
 		<Authors>JieGG</Authors>
 		<Company>QQMiniBot</Company>
@@ -38,8 +38,5 @@
 		<PackageReference Include="QQMini.PluginFramework.Utility" Version="1.1.1.1006" />
 		<PackageReference Include="QQMini.PluginInterface" Version="1.0.0.1007" />
 		<PackageReference Update="@(PackageReference)" PrivateAssets="All" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Core\" />
 	</ItemGroup>
 </Project>
