@@ -1,8 +1,9 @@
 ﻿using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 
+using System.Diagnostics;
 using System.IO;
-
+using System.Linq;
 
 namespace QQMini.PluginSDK.Tasks
 {
@@ -13,9 +14,14 @@ namespace QQMini.PluginSDK.Tasks
 	{
 		#region --属性--
 		/// <summary>
+		/// 获取或设置程序集名称
+		/// </summary>
+		public string BuildAssemblyName { get; set; }
+		/// <summary>
 		/// 获取或设置编译输出路径
 		/// </summary>
 		public string BuildOutputPath { get; set; }
+
 		#endregion
 
 		#region --公开方法--
@@ -31,26 +37,60 @@ namespace QQMini.PluginSDK.Tasks
 				this.BuildOutputPath = Path.GetFullPath (this.BuildOutputPath);
 			}
 
-			DeleteFiles (this.BuildOutputPath, false);
-			Log.LogMessage (MessageImportance.High, "清理上次编译结果 -> 成功");
-			return true;
+			if (CheckDirectoryOrThrow (this.BuildOutputPath))
+			{
+				string deletePath = Path.Combine (this.BuildOutputPath, this.BuildAssemblyName);
+				DeleteFiles (deletePath, true);
+
+				string deleteFile = Path.Combine (this.BuildOutputPath, $"{this.BuildAssemblyName}.MQ.dll");
+				if (File.Exists (deleteFile))
+				{
+					File.Delete (deleteFile);
+					Log.LogMessage (MessageImportance.High, $"删除文件: {deleteFile}");
+				}
+
+				Log.LogMessage (MessageImportance.High, "清理上次编译结果 -> 成功");
+				return true;
+			}
+
+			return false;
 		}
 		#endregion
 
 		#region --私有方法--
+		private bool CheckDirectoryOrThrow (string path)
+		{
+			if (Path.IsPathRooted (path))
+			{
+				//判断文件夹是否还存在
+				if (Directory.Exists (path))
+				{
+					if (Directory.GetFiles (path, "*.sln").Length > 0 ||
+						Directory.GetFiles (path, "*.csproj").Length > 0 ||
+						Directory.GetFiles (path, "*.fsproj").Length > 0 ||
+						Directory.GetFiles (path, "*.vbproj").Length > 0)
+					{
+						Log.LogError ($"编译路径不能是解决方案或项目的根路径. 错误路径: {path}");
+						return false;
+					}
+				}
+			}
+
+			return true;
+		}
 		private void DeleteFiles (string path, bool isDelPath)
 		{
 			if (Path.IsPathRooted (path))
 			{
-				new DirectoryInfo (path)
-				{
-					Attributes = FileAttributes.Normal & FileAttributes.Directory
-				};
-				File.SetAttributes (path, FileAttributes.Normal);
-
 				//判断文件夹是否还存在
 				if (Directory.Exists (path))
 				{
+					new DirectoryInfo (path)
+					{
+						Attributes = FileAttributes.Normal & FileAttributes.Directory
+					};
+					File.SetAttributes (path, FileAttributes.Normal);
+
 					foreach (string item in Directory.GetFileSystemEntries (path))
 					{
 						if (File.Exists (item))

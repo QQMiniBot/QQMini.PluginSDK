@@ -10,7 +10,7 @@
 	<UsingTask TaskName="FileAdjustTask" AssemblyFile="$(TaskAssembly)"/>
 
 	<Target Name="BuildAfter" BeforeTargets="CoreCompile" Condition="$(IsBuildFramework) != 'True'">
-		<ClearOldBuildTask BuildOutputPath="$(OutputPath)"/>
+		<ClearOldBuildTask BuildAssemblyName="$(AssemblyName)" BuildOutputPath="$(OutputPath)"/>
 	</Target>
 
 	<Target Name="BuildBefore" AfterTargets="Build" BeforeTargets="AfterBuild; PostBuildEvent" Condition="$(IsBuildFramework) != 'True'">
