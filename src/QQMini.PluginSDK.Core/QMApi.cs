@@ -53,16 +53,16 @@ namespace QQMini.PluginSDK.Core
 		/// <summary>
 		/// 向指定的指定的QQ好友发送一条消息
 		/// </summary>
-		/// <param name="responseQQ">响应此请求的QQ</param>
+		/// <param name="robotQQ">响应此请求的QQ</param>
 		/// <param name="sendQQ">接收消息的目标QQ</param>
 		/// <param name="message">要发送的消息内容</param>
 		/// <returns>返回发送的消息 <see cref="Message"/> 实例</returns>
-		public Message SendFriendMessage (QQ responseQQ, QQ sendQQ, string message)
+		public Message SendFriendMessage (long robotQQ, long sendQQ, string message)
 		{
 			GCHandle messagehandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, responseQQ, MSG_FRIEND, 0, sendQQ, messagehandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_FRIEND, 0, sendQQ, messagehandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -74,16 +74,16 @@ namespace QQMini.PluginSDK.Core
 		/// <summary>
 		/// 向指定的群组发送一条消息
 		/// </summary>
-		/// <param name="responseQQ">响应此请求的QQ</param>
+		/// <param name="robotQQ">响应此请求的QQ</param>
 		/// <param name="sendGroup">接收消息的目标群组</param>
 		/// <param name="message">要发送的消息内容</param>
 		/// <returns>返回发送的消息 <see cref="Message"/> 实例</returns>
-		public Message SendGroupMessage (QQ responseQQ, Group sendGroup, string message)
+		public Message SendGroupMessage (long robotQQ, long sendGroup, string message)
 		{
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, responseQQ, MSG_GROUP, sendGroup, 0, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_GROUP, sendGroup, 0, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -95,16 +95,16 @@ namespace QQMini.PluginSDK.Core
 		/// <summary>
 		/// 向指定的讨论组发送一条消息
 		/// </summary>
-		/// <param name="responseQQ">响应此请求的QQ</param>
+		/// <param name="robotQQ">响应此请求的QQ</param>
 		/// <param name="sendDiscuss">接收消息的目标讨论组</param>
 		/// <param name="message">要发送的消息内容</param>
 		/// <returns>返回发送的消息 <see cref="Message"/> 实例</returns>
-		public Message SendDiscussMessage (QQ responseQQ, Discuss sendDiscuss, string message)
+		public Message SendDiscussMessage (long robotQQ, long sendDiscuss, string message)
 		{
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, responseQQ, MSG_DISUCSS, sendDiscuss, 0, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_DISUCSS, sendDiscuss, 0, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -116,17 +116,17 @@ namespace QQMini.PluginSDK.Core
 		/// <summary>
 		/// 向指定的QQ发送一条群组临时消息
 		/// </summary>
-		/// <param name="responseQQ">响应此请求的QQ</param>
+		/// <param name="robotQQ">响应此请求的QQ</param>
 		/// <param name="fromGroup">目标QQ所在的群组</param>
 		/// <param name="sendQQ">接收消息的目标QQ</param>
 		/// <param name="message">要发送的消息内容</param>
 		/// <returns>返回发送的消息 <see cref="Message"/> 实例</returns>
-		public Message SendGroupTempMessage (QQ responseQQ, Group fromGroup, QQ sendQQ, string message)
+		public Message SendGroupTempMessage (long robotQQ, long fromGroup, long sendQQ, string message)
 		{
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, responseQQ, MSG_GROUP_TEMP, fromGroup, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_GROUP_TEMP, fromGroup, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -138,17 +138,17 @@ namespace QQMini.PluginSDK.Core
 		/// <summary>
 		/// 向指定的QQ发送一条讨论组临时消息
 		/// </summary>
-		/// <param name="responseQQ">响应此请求的QQ</param>
+		/// <param name="robotQQ">响应此请求的QQ</param>
 		/// <param name="fromDiscuss">目标QQ所在的群组</param>
 		/// <param name="sendQQ">接收消息的目标QQ</param>
 		/// <param name="message">要发送的消息内容</param>
 		/// <returns>返回发送的消息 <see cref="Message"/> 实例</returns>
-		public Message SendDiscussTempMessage (QQ responseQQ, Discuss fromDiscuss, QQ sendQQ, string message)
+		public Message SendDiscussTempMessage (long robotQQ, long fromDiscuss, long sendQQ, string message)
 		{
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, responseQQ, MSG_DISCUSS_TEMP, fromDiscuss, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_DISCUSS_TEMP, fromDiscuss, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -160,16 +160,16 @@ namespace QQMini.PluginSDK.Core
 		/// <summary>
 		/// 向指定的QQ发送一条在线临时消息
 		/// </summary>
-		/// <param name="responseQQ">响应此请求的QQ</param>
+		/// <param name="robotQQ">响应此请求的QQ</param>
 		/// <param name="sendQQ">接收消息的目标QQ</param>
 		/// <param name="message">要发送的消息内容</param>
 		/// <returns>返回发送的消息 <see cref="Message"/> 实例</returns>
-		public Message SendOnlineTempMessage (QQ responseQQ, QQ sendQQ, string message)
+		public Message SendOnlineTempMessage (long robotQQ, long sendQQ, string message)
 		{
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, responseQQ, MSG_ONLINE_TEMP, 0, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_ONLINE_TEMP, 0, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -181,16 +181,16 @@ namespace QQMini.PluginSDK.Core
 		/// <summary>
 		/// 向指定的QQ发送好友验证回应消息
 		/// </summary>
-		/// <param name="responseQQ">响应此请求的QQ</param>
+		/// <param name="robotQQ">响应此请求的QQ</param>
 		/// <param name="sendQQ">接收消息的目标QQ</param>
 		/// <param name="message">要发送的消息内容</param>
 		/// <returns>返回发送的消息 <see cref="Message"/> 实例</returns>
-		public Message SendFriendResponseMessage (QQ responseQQ, QQ sendQQ, string message)
+		public Message SendFriendResponseMessage (long robotQQ, long sendQQ, string message)
 		{
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, responseQQ, MSG_FRIEND_RESPONSE, 0, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_FRIEND_RESPONSE, 0, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
