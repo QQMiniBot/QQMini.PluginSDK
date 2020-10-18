@@ -11,7 +11,7 @@
 		<DocumentationFile>QQMini.PluginSDK.Core.xml</DocumentationFile>
 
 		<!--打包-->
-		<Version>1.0.10.1016-Beta</Version>
+		<Version>1.0.11.1018-Beta</Version>
 		<PackageId>QQMini.PluginSDK.Core</PackageId>
 		<Authors>JieGG</Authors>
 		<Company>QQMiniBot</Company>
@@ -36,7 +36,8 @@
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
 		<PackageReference Include="QQMini.PluginFramework.Utility" Version="1.1.1.1006" />
-		<PackageReference Include="QQMini.PluginInterface" Version="1.0.0.1007" />
+		<PackageReference Include="QQMini.PluginInterface" />
 		<PackageReference Update="@(PackageReference)" PrivateAssets="All" />
+		<PackageReference Update="QQMini.PluginInterface" Version="1.0.1.1018" />
 	</ItemGroup>
 </Project>

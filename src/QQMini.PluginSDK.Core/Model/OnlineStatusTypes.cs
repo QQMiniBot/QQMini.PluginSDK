@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace QQMini.PluginSDK.Core.Model
 {
     /// <summary>
-    /// QQ的在线状态
+    /// 表示在线状态的枚举
     /// </summary>
-    public enum StatusTypes
+    public enum OnlineStatusTypes
     {
         /// <summary>
         /// 在线

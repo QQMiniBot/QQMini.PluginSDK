@@ -13,6 +13,13 @@ namespace QQMini.PluginSDK.Core.Model
 	[Serializable]
 	public class QMSendQQIsEmptyException : QMException
 	{
+		#region --属性--
+		/// <summary>
+		/// 获取描述当前异常的消息
+		/// </summary>
+		public override string Message => $"发送消息时指定的目标QQ不能为空";
+		#endregion
+
 		#region --构造函数--
 		/// <summary>
 		/// 初始化 <see cref="QMSendQQIsEmptyException"/> 类的新实例

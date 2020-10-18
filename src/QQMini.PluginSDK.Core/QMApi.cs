@@ -6,6 +6,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Net;
 
 namespace QQMini.PluginSDK.Core
 {
@@ -85,7 +86,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		/// <param name="authCode">与此实例相关联的授权码</param>
 		/// <returns>如果成功创建新实例, 则返回 <see cref="QMApi"/>对象</returns>
-		internal static QMApi CreateNewApi (int authCode)
+		internal static QMApi CreateNew (int authCode)
 		{
 			QMApi api = new QMApi (authCode)
 			{
@@ -97,9 +98,49 @@ namespace QQMini.PluginSDK.Core
 		/// 销毁一个指定的 <see cref="QMApi"/> 接口实例
 		/// </summary>
 		/// <param name="api">要销毁的接口实例</param>
-		internal static void DestroyApi (QMApi api)
+		internal static void Destroy (QMApi api)
 		{
 			while (!_caches.TryRemove (api.Id, out QMApi _)) ;
+		}
+		/// <summary>
+		/// 获取当前 QQMini 框架的框架类型
+		/// </summary>
+		/// <returns>如果获取成功返回 <see cref="QQMiniFrameworkTypes"/> 枚举的值</returns>
+		public QQMiniFrameworkTypes GetFrameworkType ()
+		{
+			int result = QQMiniApi.QMApi_GetFrameType (this.AuthCode);
+			CheckResultThrowException (result);
+			return (QQMiniFrameworkTypes)result;
+		}
+		/// <summary>
+		/// 获取当前 QQMini 框架的框架版本号
+		/// </summary>
+		/// <returns>如果获取成功返回表示框架版本号的 <see cref="Version"/> 对象</returns>
+		public Version GetFrameworkVersion ()
+		{
+			int result = QQMiniApi.QMApi_GetFrameVersion (this.AuthCode, out IntPtr version);
+			CheckResultThrowException (result);
+			return Version.Parse (version.ToString (Global.DefaultEncoding));
+		}
+		/// <summary>
+		/// 获取当前 QQMini 框架的时间戳
+		/// </summary>
+		/// <returns>如果获取成功返回以 "秒" 为单位的时间戳</returns>
+		public long GetFrameworkTimpStmap ()
+		{
+			long result = QQMiniApi.QMApi_GetFrameTimeStamp (this.AuthCode);
+			CheckResultThrowException (result);
+			return result;
+		}
+		/// <summary>
+		/// 获取当前插件的数据目录
+		/// </summary>
+		/// <returns>如果获取成功返回数据目录</returns>
+		public string GetPluginDataDirectory ()
+		{
+			int result = QQMiniApi.QMApi_GetPluginDataDirectory (this.AuthCode, out IntPtr szDirectory);
+			CheckResultThrowException (result);
+			return szDirectory.ToString (Global.DefaultEncoding);
 		}
 		/// <summary>
 		/// 向指定的指定的QQ好友发送一条消息
@@ -113,7 +154,7 @@ namespace QQMini.PluginSDK.Core
 			GCHandle messagehandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_FRIEND, 0, sendQQ, messagehandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this.AuthCode, robotQQ, MSG_FRIEND, 0, sendQQ, messagehandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -134,7 +175,7 @@ namespace QQMini.PluginSDK.Core
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_GROUP, sendGroup, 0, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this.AuthCode, robotQQ, MSG_GROUP, sendGroup, 0, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -155,7 +196,7 @@ namespace QQMini.PluginSDK.Core
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_DISUCSS, sendDiscuss, 0, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this.AuthCode, robotQQ, MSG_DISUCSS, sendDiscuss, 0, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -177,7 +218,7 @@ namespace QQMini.PluginSDK.Core
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_GROUP_TEMP, fromGroup, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this.AuthCode, robotQQ, MSG_GROUP_TEMP, fromGroup, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -199,7 +240,7 @@ namespace QQMini.PluginSDK.Core
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_DISCUSS_TEMP, fromDiscuss, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this.AuthCode, robotQQ, MSG_DISCUSS_TEMP, fromDiscuss, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -220,7 +261,7 @@ namespace QQMini.PluginSDK.Core
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_ONLINE_TEMP, 0, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this.AuthCode, robotQQ, MSG_ONLINE_TEMP, 0, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -241,7 +282,7 @@ namespace QQMini.PluginSDK.Core
 			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
 			try
 			{
-				int result = QQMiniApi.QMApi_SendMessage (this._authCode, robotQQ, MSG_FRIEND_RESPONSE, 0, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
+				int result = QQMiniApi.QMApi_SendMessage (this.AuthCode, robotQQ, MSG_FRIEND_RESPONSE, 0, sendQQ, messageHandle.AddrOfPinnedObject (), 0);
 				CheckResultThrowException (result);
 				return new Message (0, 0, message);
 			}
@@ -251,42 +292,91 @@ namespace QQMini.PluginSDK.Core
 			}
 		}
 		/// <summary>
-		/// 设置一条致命错误信息. (注意: 设置后将导致框架停止运行)
+		/// 获取指定QQ用于操作网页的 Cookies
 		/// </summary>
-		/// <param name="code">错误代码</param>
-		/// <param name="message">异常消息</param>
-		/// <returns>设置成功返回 <see langword="true"/>, 否则返回 <see langword="false"/></returns>
-		public bool SetFatal (int code, string message)
+		/// <param name="robotQQ">要获取 Cookies 的QQ号</param>
+		/// <returns>用于操作网页的 Cookies</returns>
+		public string GetCookies (long robotQQ)
 		{
-			GCHandle messageHandle = message.GetStringGCHandle (Global.DefaultEncoding);
-			try
-			{
-				return QQMiniApi.QMApi_SetFatal (this._authCode, code, messageHandle.AddrOfPinnedObject ()) == 0;
-			}
-			finally
-			{
-				messageHandle.Free ();
-			}
+			int result = QQMiniApi.QMApi_GetCookies (this.AuthCode, robotQQ, out IntPtr cookiesStr);
+			CheckResultThrowException (result);
 
+			return cookiesStr.ToString (Global.DefaultEncoding);
 		}
 		/// <summary>
-		/// 设置一条致命错误信息. (注意: 设置后将导致框架停止运行)
+		/// 获取指定QQ用于操作网页的 G_tk 或 bkn 值
 		/// </summary>
-		/// <param name="innerException"></param>
-		/// <returns>设置成功返回 <see langword="true"/>, 否则返回 <see langword="false"/></returns>
-		public bool SetFatal (Exception innerException)
+		/// <param name="robotQQ">要获取 G_tk 或 bkn 值的QQ号</param>
+		/// <returns>用于操作网页的 Cookies</returns>
+		public string GetBkn (long robotQQ)
 		{
-			if (innerException == null)
-			{
-				return false;
-			}
-
-			return this.SetFatal (innerException.HResult, $"{Environment.NewLine}{innerException}");
+			int result = QQMiniApi.QMApi_GetBkn (this.AuthCode, robotQQ, out IntPtr bkn);
+			CheckResultThrowException (result);
+			return bkn.ToString (Global.DefaultEncoding);
+		}
+		/// <summary>
+		/// 获取指定QQ号的QQ在线状态
+		/// </summary>
+		/// <param name="robotQQ">用来获取在线状态的QQ号</param>
+		/// <param name="targetQQ">要获取其在线状态的QQ号</param>
+		/// <returns>QQ在线状态的枚举</returns>
+		public OnlineStatusTypes GetOnlineStatus (long robotQQ, long targetQQ)
+		{
+			int result = QQMiniApi.QMApi_GetOnlineStatus (this.AuthCode, robotQQ, targetQQ, out int status);
+			CheckResultThrowException (result);
+			return (OnlineStatusTypes)status;
+		}
+		/// <summary>
+		/// 获取指定群组禁言的状态
+		/// </summary>
+		/// <param name="robotQQ">用来获取在线状态的QQ号</param>
+		/// <param name="targetGroup">要获取其禁言状态的群组</param>
+		/// <returns>如果群组处于禁言状态返回 <see langword="true"/>; 否则返回 <see langword="false"/></returns>
+		public bool GetGroupBanStatus (long robotQQ, long targetGroup)
+		{
+			int result = QQMiniApi.QMApi_GetGroupBanStatus (this.AuthCode, robotQQ, targetGroup, 0, out bool isBan);
+			CheckResultThrowException (result);
+			return isBan;
+		}
+		/// <summary>
+		/// 获取指定群组成员禁言的状态
+		/// </summary>
+		/// <param name="robotQQ">用来获取在线状态的QQ号</param>
+		/// <param name="targetGroup">要获取其禁言状态的群组</param>
+		/// <param name="targetQQ">要获取其禁言状态的QQ号</param>
+		/// <returns>如果群组处于禁言状态返回 <see langword="true"/>; 否则返回 <see langword="false"/></returns>
+		public bool GetGroupMemberBanStatus (long robotQQ, long targetGroup, long targetQQ)
+		{
+			int result = QQMiniApi.QMApi_GetGroupBanStatus (this.AuthCode, robotQQ, targetGroup, targetQQ, out bool isBan);
+			CheckResultThrowException (result);
+			return isBan;
+		}
+		/// <summary>
+		/// 获取指定QQ的好友验证方式
+		/// </summary>
+		/// <returns>好友验证方式的枚举</returns>
+		public FriendVerifyTypes GetFriendVerifyMode (long robotQQ, long targetQQ)
+		{
+			int result = QQMiniApi.QMApi_GetFriendVerifyMode (this.AuthCode, robotQQ, targetQQ, out int friendVerify);
+			CheckResultThrowException (result);
+			return (FriendVerifyTypes)friendVerify;
+		}
+		/// <summary>
+		/// 获取指定QQ是否在线
+		/// </summary>
+		/// <param name="robotQQ">要用来获取在线状态的QQ号</param>
+		/// <param name="targetQQ">要获取其是否在线的QQ号</param>
+		/// <returns>如果指定的QQ是在线的, 返回 <see langword="true"/>; 否则返回 <see langword="false"/></returns>
+		public bool GetIsOnline (long robotQQ, long targetQQ)
+		{
+			int result = QQMiniApi.QMApi_GetIsOnline (this.AuthCode, robotQQ, targetQQ, out bool isOnline);
+			CheckResultThrowException (result);
+			return isOnline;
 		}
 		#endregion
 
 		#region --私有方法--
-		private void CheckResultThrowException (int resultCode)
+		private void CheckResultThrowException (long resultCode)
 		{
 			if (resultCode >= 0)
 				return;
@@ -302,6 +392,9 @@ namespace QQMini.PluginSDK.Core
 				case QMExceptionCodes.SendContentIsEmpty: throw new QMSendContentIsEmptyException ();
 				case QMExceptionCodes.SendQQNotSupportTempMessage: throw new QMSendQQNotSupportTempMessageException ();
 				case QMExceptionCodes.NotReceiveSendQQResponseMessage: throw new QMNotReceiveSendQQResponseMessageException ();
+				case QMExceptionCodes.UnknownFrameworkType: throw new QMUnknownFrameworkTypeException ();
+				case QMExceptionCodes.GroupNotFound: throw new QMGroupNotFoundException ();
+				case QMExceptionCodes.QQNotFound: throw new QMQQNotFoundException ();
 			}
 		}
 		#endregion

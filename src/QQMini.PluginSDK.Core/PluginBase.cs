@@ -17,20 +17,39 @@ namespace QQMini.PluginSDK.Core
 	{
 		#region --字段--
 		private QMApi _qMApi;
+		private QMLog _qMLog;
 		private bool _isInitialized;
-
+		private string _dataDirectory;
 		private static readonly MethodInfo[] _methodInfo;
 		#endregion
 
 		#region --属性--
 		/// <summary>
-		/// 获取当前插件可使用的 QQMini 框架的 <see cref="PluginSDK.Core.QMApi"/> 实例
+		/// 获取当前插件可使用的 QQMini 框架的 <see cref="Core.QMApi"/> 实例
 		/// </summary>
 		public QMApi QMApi { get => this._qMApi; }
+		/// <summary>
+		/// 获取当前插件可使用的 QQMini 框架的 <see cref="Core.QMLog"/> 实例
+		/// </summary>
+		public QMLog QMLog { get => this._qMLog; }
 		/// <summary>
 		/// 获取当前插件是否已经初始化
 		/// </summary>
 		public bool IsInitialized { get => this._isInitialized; }
+		/// <summary>
+		/// 获取当前插件的数据目录
+		/// </summary>
+		public string DataDirectory
+		{
+			get
+			{
+				if (this._isInitialized && string.IsNullOrEmpty (this._dataDirectory))
+				{
+					this._dataDirectory = this.QMApi.GetPluginDataDirectory ();
+				}
+				return this._dataDirectory;
+			}
+		}
 		/// <summary>
 		/// 当在派生类中重写时, 设置应用程序的信息
 		/// </summary>
@@ -77,7 +96,8 @@ namespace QQMini.PluginSDK.Core
 		{
 			try
 			{
-				this._qMApi = QMApi.CreateNewApi (authCode);
+				this._qMApi = QMApi.CreateNew (authCode);
+				this._qMLog = QMLog.CreateNew (authCode);
 			}
 			catch (Exception ex)
 			{
@@ -108,6 +128,8 @@ namespace QQMini.PluginSDK.Core
 			{
 				this._isInitialized = false;
 				this.OnUninitialize ();
+				QMApi.Destroy (this.QMApi);
+				QMLog.Destroy (this.QMLog);
 			}
 			catch (Exception ex)
 			{
@@ -232,7 +254,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.GroupTemp)]
-		public virtual QMEventHandlerTypes OnReceiveGroupTempMessage (QMPrivateMessageEventArgs e)
+		public virtual QMEventHandlerTypes OnReceiveGroupTempMessage (QMGroupPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -242,7 +264,7 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="e">包含当前事件的事件参数</param>
 		/// <returns>通知当前框架的事件处理办法</returns>
 		[QMEvent (QMEventTypes.PrivateMessage, SubType = (int)QMPrivateMessageEventSubTypes.DiscussTemp)]
-		public virtual QMEventHandlerTypes OnReceiveDiscussTempMessage (QMPrivateMessageEventArgs e)
+		public virtual QMEventHandlerTypes OnReceiveDiscussTempMessage (QMDiscussPrivateMessageEventArgs e)
 		{
 			return QMEventHandlerTypes.Continue;
 		}
@@ -523,7 +545,7 @@ namespace QQMini.PluginSDK.Core
 		{
 			if (this.QMApi != null)
 			{
-				this.QMApi.SetFatal (ex);
+				this.QMLog.Fatal (ex);
 			}
 		}
 		#endregion

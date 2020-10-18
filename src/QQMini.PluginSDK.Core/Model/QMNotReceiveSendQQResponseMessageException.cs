@@ -13,6 +13,13 @@ namespace QQMini.PluginSDK.Core.Model
 	[Serializable]
 	public class QMNotReceiveSendQQResponseMessageException : QMException
 	{
+		#region --属性--
+		/// <summary>
+		/// 获取描述当前异常的消息
+		/// </summary>
+		public override string Message => $"发送的目标QQ不支持临时消息";
+		#endregion
+
 		#region --构造函数--
 		/// <summary>
 		/// 初始化 <see cref="QMNotReceiveSendQQResponseMessageException"/> 类的新实例
