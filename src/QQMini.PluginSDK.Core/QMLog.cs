@@ -5,10 +5,7 @@ using QQMini.PluginSDK.Core.Model;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QQMini.PluginSDK.Core
 {
@@ -19,7 +16,7 @@ namespace QQMini.PluginSDK.Core
 	public sealed class QMLog
 	{
 		#region --字段--
-		private static readonly ConcurrentDictionary<int, QMLog> _caches;
+		private static readonly Dictionary<int, QMLog> _caches;
 		private readonly int _authCode;
 		private int _id;
 		#endregion
@@ -56,7 +53,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		static QMLog ()
 		{
-			_caches = new ConcurrentDictionary<int, QMLog> ();
+			_caches = new Dictionary<int, QMLog> ();
 		}
 		/// <summary>
 		/// 初始化 <see cref="QMLog"/> 类的新实例
@@ -80,19 +77,34 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>如果成功创建新实例, 则返回 <see cref="QMLog"/>对象</returns>
 		internal static QMLog CreateNew (int authCode)
 		{
-			QMLog api = new QMLog (authCode)
+			QMLog log = new QMLog (authCode)
 			{
 				_id = AppDomain.CurrentDomain.Id
 			};
-			return _caches.AddOrUpdate (api.Id, api, (key, value) => value = api);
+
+			lock (_caches)
+			{
+				if (!_caches.ContainsKey (log.Id))
+				{
+					_caches.Add (log.Id, log);
+				}
+			}
+
+			return log;
 		}
 		/// <summary>
 		/// 销毁一个指定的 <see cref="QMLog"/> 接口实例
 		/// </summary>
-		/// <param name="api">要销毁的接口实例</param>
-		internal static void Destroy (QMLog api)
+		/// <param name="log">要销毁的接口实例</param>
+		internal static void Destroy (QMLog log)
 		{
-			while (!_caches.TryRemove (api.Id, out QMLog _)) ;
+			lock (_caches)
+			{
+				if (_caches.ContainsKey (log.Id))
+				{
+					_caches.Remove (log.Id);
+				}
+			}
 		}
 		/// <summary>
 		/// 设置一条指定等级的日志信息到框架

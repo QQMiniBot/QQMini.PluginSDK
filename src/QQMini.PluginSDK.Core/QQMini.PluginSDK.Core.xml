@@ -2856,7 +2856,7 @@
             <summary>
             销毁一个指定的 <see cref="T:QQMini.PluginSDK.Core.QMLog"/> 接口实例
             </summary>
-            <param name="api">要销毁的接口实例</param>
+            <param name="log">要销毁的接口实例</param>
         </member>
         <member name="M:QQMini.PluginSDK.Core.QMLog.Log(QQMini.PluginSDK.Core.Model.LogLevel,System.String)">
             <summary>

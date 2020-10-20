@@ -1,12 +1,10 @@
 ﻿using QQMini.PluginFramework.Utility.Core;
-using QQMini.PluginSDK.Core.Model;
 using QQMini.PluginInterface.Core;
+using QQMini.PluginSDK.Core.Model;
 
 using System;
-using System.Runtime.InteropServices;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Net;
+using System.Runtime.InteropServices;
 
 namespace QQMini.PluginSDK.Core
 {
@@ -27,7 +25,7 @@ namespace QQMini.PluginSDK.Core
 		#endregion
 
 		#region --字段--
-		private static readonly ConcurrentDictionary<int, QMApi> _caches;
+		private static readonly Dictionary<int, QMApi> _caches;
 		private readonly int _authCode;
 		private int _id;
 		#endregion
@@ -64,7 +62,7 @@ namespace QQMini.PluginSDK.Core
 		/// </summary>
 		static QMApi ()
 		{
-			_caches = new ConcurrentDictionary<int, QMApi> ();
+			_caches = new Dictionary<int, QMApi> ();
 		}
 		/// <summary>
 		/// 初始化 <see cref="QMApi"/> 类的新实例
@@ -92,7 +90,16 @@ namespace QQMini.PluginSDK.Core
 			{
 				_id = AppDomain.CurrentDomain.Id
 			};
-			return _caches.AddOrUpdate (api.Id, api, (key, value) => value = api);
+
+			lock (_caches)
+			{
+				if (!_caches.ContainsKey (api.Id))
+				{
+					_caches.Add (api.Id, api);
+				}
+			}
+
+			return api;
 		}
 		/// <summary>
 		/// 销毁一个指定的 <see cref="QMApi"/> 接口实例
@@ -100,7 +107,13 @@ namespace QQMini.PluginSDK.Core
 		/// <param name="api">要销毁的接口实例</param>
 		internal static void Destroy (QMApi api)
 		{
-			while (!_caches.TryRemove (api.Id, out QMApi _)) ;
+			lock (_caches)
+			{
+				if (_caches.ContainsKey (api.Id))
+				{
+					_caches.Remove (api.Id);
+				}
+			}
 		}
 		/// <summary>
 		/// 获取当前 QQMini 框架的框架类型
