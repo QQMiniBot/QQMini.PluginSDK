@@ -37,6 +37,7 @@
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
 		<PackageReference Include="QQMini.PluginFramework.Utility" Version="1.1.1.1006" />
 		<PackageReference Include="QQMini.PluginInterface" />
+		<Reference Include="System.Runtime.Caching" />
 		<PackageReference Update="@(PackageReference)" PrivateAssets="All" />
 		<PackageReference Update="QQMini.PluginInterface" Version="1.0.1.1018" />
 	</ItemGroup>

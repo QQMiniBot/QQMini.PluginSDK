@@ -4,6 +4,7 @@ using QQMini.PluginSDK.Core.Model;
 
 using System;
 using System.Collections.Generic;
+using System.Runtime.Caching;
 using System.Runtime.InteropServices;
 
 namespace QQMini.PluginSDK.Core
@@ -25,31 +26,14 @@ namespace QQMini.PluginSDK.Core
 		#endregion
 
 		#region --字段--
-		private static readonly Dictionary<int, QMApi> _caches;
 		private readonly int _authCode;
-		private int _id;
 		#endregion
 
 		#region --属性--
 		/// <summary>
 		/// 获取当前程序域的 <see cref="QMApi"/> 实例
 		/// </summary>
-		public static QMApi CurrentApi
-		{
-			get
-			{
-				if (!_caches.ContainsKey (AppDomain.CurrentDomain.Id))
-				{
-					return null;
-				}
-
-				return _caches[AppDomain.CurrentDomain.Id];
-			}
-		}
-		/// <summary>
-		/// 获取当前实例的唯一标识
-		/// </summary>
-		public int Id => _id;
+		public static QMApi CurrentApi => (QMApi)MemoryCache.Default.Get ($"QMAPI{AppDomain.CurrentDomain.Id}");
 		/// <summary>
 		/// 获取当前调用接口的授权码
 		/// </summary>
@@ -57,13 +41,6 @@ namespace QQMini.PluginSDK.Core
 		#endregion
 
 		#region --构造函数--
-		/// <summary>
-		/// 初始化 <see cref="QMApi"/> 静态实例
-		/// </summary>
-		static QMApi ()
-		{
-			_caches = new Dictionary<int, QMApi> ();
-		}
 		/// <summary>
 		/// 初始化 <see cref="QMApi"/> 类的新实例
 		/// </summary>
@@ -86,34 +63,16 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>如果成功创建新实例, 则返回 <see cref="QMApi"/>对象</returns>
 		internal static QMApi CreateNew (int authCode)
 		{
-			QMApi api = new QMApi (authCode)
-			{
-				_id = AppDomain.CurrentDomain.Id
-			};
-
-			lock (_caches)
-			{
-				if (!_caches.ContainsKey (api.Id))
-				{
-					_caches.Add (api.Id, api);
-				}
-			}
-
+			QMApi api = new QMApi (authCode);
+			MemoryCache.Default.Add ($"QMAPI{AppDomain.CurrentDomain.Id}", api, ObjectCache.InfiniteAbsoluteExpiration);
 			return api;
 		}
 		/// <summary>
 		/// 销毁一个指定的 <see cref="QMApi"/> 接口实例
 		/// </summary>
-		/// <param name="api">要销毁的接口实例</param>
-		internal static void Destroy (QMApi api)
+		internal static void Destroy ()
 		{
-			lock (_caches)
-			{
-				if (_caches.ContainsKey (api.Id))
-				{
-					_caches.Remove (api.Id);
-				}
-			}
+			MemoryCache.Default.Remove ($"QMAPI{AppDomain.CurrentDomain.Id}");
 		}
 		/// <summary>
 		/// 获取当前 QQMini 框架的框架类型

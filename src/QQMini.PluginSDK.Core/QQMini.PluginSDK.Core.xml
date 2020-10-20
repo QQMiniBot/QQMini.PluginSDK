@@ -2617,19 +2617,9 @@
             获取当前程序域的 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 实例
             </summary>
         </member>
-        <member name="P:QQMini.PluginSDK.Core.QMApi.Id">
-            <summary>
-            获取当前实例的唯一标识
-            </summary>
-        </member>
         <member name="P:QQMini.PluginSDK.Core.QMApi.AuthCode">
             <summary>
             获取当前调用接口的授权码
-            </summary>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.#cctor">
-            <summary>
-            初始化 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 静态实例
             </summary>
         </member>
         <member name="M:QQMini.PluginSDK.Core.QMApi.#ctor(System.Int32)">
@@ -2645,11 +2635,10 @@
             <param name="authCode">与此实例相关联的授权码</param>
             <returns>如果成功创建新实例, 则返回 <see cref="T:QQMini.PluginSDK.Core.QMApi"/>对象</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApi.Destroy(QQMini.PluginSDK.Core.QMApi)">
+        <member name="M:QQMini.PluginSDK.Core.QMApi.Destroy">
             <summary>
             销毁一个指定的 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 接口实例
             </summary>
-            <param name="api">要销毁的接口实例</param>
         </member>
         <member name="M:QQMini.PluginSDK.Core.QMApi.GetFrameworkType">
             <summary>
@@ -2824,19 +2813,9 @@
             获取当前程序域的 <see cref="T:QQMini.PluginSDK.Core.QMLog"/> 实例
             </summary>
         </member>
-        <member name="P:QQMini.PluginSDK.Core.QMLog.Id">
-            <summary>
-            获取当前实例的唯一标识
-            </summary>
-        </member>
         <member name="P:QQMini.PluginSDK.Core.QMLog.AuthCode">
             <summary>
             获取当前调用接口的授权码
-            </summary>
-        </member>
-        <member name="M:QQMini.PluginSDK.Core.QMLog.#cctor">
-            <summary>
-            初始化 <see cref="T:QQMini.PluginSDK.Core.QMApi"/> 静态实例
             </summary>
         </member>
         <member name="M:QQMini.PluginSDK.Core.QMLog.#ctor(System.Int32)">
@@ -2850,13 +2829,12 @@
             创建一个新的 <see cref="T:QQMini.PluginSDK.Core.QMLog"/> 接口实例
             </summary>
             <param name="authCode">与此实例相关联的授权码</param>
-            <returns>如果成功创建新实例, 则返回 <see cref="T:QQMini.PluginSDK.Core.QMLog"/>对象</returns>
+            <returns>如果成功创建新实例, 则返回 <see cref="T:QQMini.PluginSDK.Core.QMApi"/>对象</returns>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMLog.Destroy(QQMini.PluginSDK.Core.QMLog)">
+        <member name="M:QQMini.PluginSDK.Core.QMLog.Destroy">
             <summary>
             销毁一个指定的 <see cref="T:QQMini.PluginSDK.Core.QMLog"/> 接口实例
             </summary>
-            <param name="log">要销毁的接口实例</param>
         </member>
         <member name="M:QQMini.PluginSDK.Core.QMLog.Log(QQMini.PluginSDK.Core.Model.LogLevel,System.String)">
             <summary>

@@ -5,6 +5,7 @@ using QQMini.PluginSDK.Core.Model;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Runtime.Caching;
 using System.Runtime.InteropServices;
 
 namespace QQMini.PluginSDK.Core
@@ -16,31 +17,14 @@ namespace QQMini.PluginSDK.Core
 	public sealed class QMLog
 	{
 		#region --字段--
-		private static readonly Dictionary<int, QMLog> _caches;
 		private readonly int _authCode;
-		private int _id;
 		#endregion
 
 		#region --属性--
 		/// <summary>
 		/// 获取当前程序域的 <see cref="QMLog"/> 实例
 		/// </summary>
-		public static QMLog CurrentApi
-		{
-			get
-			{
-				if (!_caches.ContainsKey (AppDomain.CurrentDomain.Id))
-				{
-					return null;
-				}
-
-				return _caches[AppDomain.CurrentDomain.Id];
-			}
-		}
-		/// <summary>
-		/// 获取当前实例的唯一标识
-		/// </summary>
-		public int Id => _id;
+		public static QMLog CurrentApi => (QMLog)MemoryCache.Default.Get ($"QMLOG{AppDomain.CurrentDomain.Id}");
 		/// <summary>
 		/// 获取当前调用接口的授权码
 		/// </summary>
@@ -48,13 +32,6 @@ namespace QQMini.PluginSDK.Core
 		#endregion
 
 		#region --构造函数--
-		/// <summary>
-		/// 初始化 <see cref="QMApi"/> 静态实例
-		/// </summary>
-		static QMLog ()
-		{
-			_caches = new Dictionary<int, QMLog> ();
-		}
 		/// <summary>
 		/// 初始化 <see cref="QMLog"/> 类的新实例
 		/// </summary>
@@ -74,37 +51,19 @@ namespace QQMini.PluginSDK.Core
 		/// 创建一个新的 <see cref="QMLog"/> 接口实例
 		/// </summary>
 		/// <param name="authCode">与此实例相关联的授权码</param>
-		/// <returns>如果成功创建新实例, 则返回 <see cref="QMLog"/>对象</returns>
+		/// <returns>如果成功创建新实例, 则返回 <see cref="QMApi"/>对象</returns>
 		internal static QMLog CreateNew (int authCode)
 		{
-			QMLog log = new QMLog (authCode)
-			{
-				_id = AppDomain.CurrentDomain.Id
-			};
-
-			lock (_caches)
-			{
-				if (!_caches.ContainsKey (log.Id))
-				{
-					_caches.Add (log.Id, log);
-				}
-			}
-
+			QMLog log = new QMLog (authCode);
+			MemoryCache.Default.Add ($"QMLOG{AppDomain.CurrentDomain.Id}", log, ObjectCache.InfiniteAbsoluteExpiration);
 			return log;
 		}
 		/// <summary>
 		/// 销毁一个指定的 <see cref="QMLog"/> 接口实例
 		/// </summary>
-		/// <param name="log">要销毁的接口实例</param>
-		internal static void Destroy (QMLog log)
+		internal static void Destroy ()
 		{
-			lock (_caches)
-			{
-				if (_caches.ContainsKey (log.Id))
-				{
-					_caches.Remove (log.Id);
-				}
-			}
+			MemoryCache.Default.Remove ($"QMLOG{AppDomain.CurrentDomain.Id}");
 		}
 		/// <summary>
 		/// 设置一条指定等级的日志信息到框架

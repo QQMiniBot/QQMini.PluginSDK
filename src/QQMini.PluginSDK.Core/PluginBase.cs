@@ -128,8 +128,6 @@ namespace QQMini.PluginSDK.Core
 			{
 				this._isInitialized = false;
 				this.OnUninitialize ();
-				QMApi.Destroy (this.QMApi);
-				QMLog.Destroy (this.QMLog);
 			}
 			catch (Exception ex)
 			{
