@@ -9,9 +9,18 @@
 		<!--<IsBuildFramework>True</IsBuildFramework>-->
 	</PropertyGroup>
 
-	<!--<Import Project="..\QQMini.PluginSDK\Assets\Build\QQMini.PluginSDK.targets" />-->
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+	  <OutputPath>bin\x86\Debug\</OutputPath>
+	</PropertyGroup>
+
+	<Import Project="..\QQMini.PluginSDK\Assets\Build\QQMini.PluginSDK.targets" />
 
 	<ItemGroup>
-	  <ProjectReference Include="..\QQMini.PluginSDK.Core\QQMini.PluginSDK.Core.csproj" />
+	  <ProjectReference Include="..\QQMini.PluginSDK\QQMini.PluginSDK.csproj" />
 	</ItemGroup>
+
+	<!--<ItemGroup>
+	  <ProjectReference Include="..\QQMini.PluginSDK.Core\QQMini.PluginSDK.Core.csproj" />
+	  <ProjectReference Include="..\QQMini.PluginSDK\QQMini.PluginSDK.csproj" />
+	</ItemGroup>-->
 </Project>

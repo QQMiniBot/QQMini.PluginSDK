@@ -52,7 +52,7 @@ namespace QQMini.PluginSDK.Tasks
 				Log.LogMessage (MessageImportance.High, "清理上次编译结果 -> 成功");
 				return true;
 			}
-
+			Log.LogError ($"无法在当前输出目录进行编译. 目录:{this.BuildOutputPath}");
 			return false;
 		}
 		#endregion
@@ -71,12 +71,14 @@ namespace QQMini.PluginSDK.Tasks
 						Directory.GetFiles (path, "*.vbproj").Length > 0)
 					{
 						Log.LogError ($"编译路径不能是解决方案或项目的根路径. 错误路径: {path}");
-						return false;
+					}
+					else
+					{
+						return true;
 					}
 				}
 			}
-
-			return true;
+			return false;
 		}
 		private void DeleteFiles (string path, bool isDelPath)
 		{

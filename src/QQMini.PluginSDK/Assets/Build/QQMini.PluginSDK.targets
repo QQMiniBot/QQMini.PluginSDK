@@ -5,11 +5,12 @@
 		<TaskAssembly Condition="$(IsDebugModel) == 'True'">$(MSBuildThisFileDirectory)..\..\bin\x86\Debug\net45\QQMini.PluginSDK.dll</TaskAssembly>
 		<TaskAssembly Condition="$(IsDebugModel) != 'True'">$(MSBuildThisFileDirectory)..\lib\net45\QQMini.PluginSDK.dll</TaskAssembly>
 	</PropertyGroup>
-
+	
 	<UsingTask TaskName="ClearOldBuildTask" AssemblyFile="$(TaskAssembly)"/>
 	<UsingTask TaskName="FileAdjustTask" AssemblyFile="$(TaskAssembly)"/>
 
 	<Target Name="BuildAfter" BeforeTargets="CoreCompile" Condition="$(IsBuildFramework) != 'True'">
+		<MakeDir Condition="!Exists('@(OutputPath)')" Directories="$(OutputPath)" />
 		<ClearOldBuildTask BuildAssemblyName="$(AssemblyName)" BuildOutputPath="$(OutputPath)"/>
 	</Target>
 
