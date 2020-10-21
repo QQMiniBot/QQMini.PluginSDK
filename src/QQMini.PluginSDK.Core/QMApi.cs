@@ -294,9 +294,9 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>QQ在线状态的枚举</returns>
 		public OnlineStatusTypes GetOnlineStatus (long robotQQ, long targetQQ)
 		{
-			int result = QQMiniApi.QMApi_GetOnlineStatus (this.AuthCode, robotQQ, targetQQ, out int status);
+			int result = QQMiniApi.QMApi_GetOnlineStatus (this.AuthCode, robotQQ, targetQQ);
 			CheckResultThrowException (result);
-			return (OnlineStatusTypes)status;
+			return (OnlineStatusTypes)result;
 		}
 		/// <summary>
 		/// 获取指定群组禁言的状态
@@ -306,9 +306,9 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>如果群组处于禁言状态返回 <see langword="true"/>; 否则返回 <see langword="false"/></returns>
 		public bool GetGroupBanStatus (long robotQQ, long targetGroup)
 		{
-			int result = QQMiniApi.QMApi_GetGroupBanStatus (this.AuthCode, robotQQ, targetGroup, 0, out bool isBan);
+			int result = QQMiniApi.QMApi_GetGroupBanStatus (this.AuthCode, robotQQ, targetGroup, 0);
 			CheckResultThrowException (result);
-			return isBan;
+			return result == 1;
 		}
 		/// <summary>
 		/// 获取指定群组成员禁言的状态
@@ -319,9 +319,9 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>如果群组处于禁言状态返回 <see langword="true"/>; 否则返回 <see langword="false"/></returns>
 		public bool GetGroupMemberBanStatus (long robotQQ, long targetGroup, long targetQQ)
 		{
-			int result = QQMiniApi.QMApi_GetGroupBanStatus (this.AuthCode, robotQQ, targetGroup, targetQQ, out bool isBan);
+			int result = QQMiniApi.QMApi_GetGroupBanStatus (this.AuthCode, robotQQ, targetGroup, targetQQ);
 			CheckResultThrowException (result);
-			return isBan;
+			return result == 1;
 		}
 		/// <summary>
 		/// 获取指定QQ的好友验证方式
@@ -329,9 +329,9 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>好友验证方式的枚举</returns>
 		public FriendVerifyTypes GetFriendVerifyMode (long robotQQ, long targetQQ)
 		{
-			int result = QQMiniApi.QMApi_GetFriendVerifyMode (this.AuthCode, robotQQ, targetQQ, out int friendVerify);
+			int result = QQMiniApi.QMApi_GetFriendVerifyMode (this.AuthCode, robotQQ, targetQQ);
 			CheckResultThrowException (result);
-			return (FriendVerifyTypes)friendVerify;
+			return (FriendVerifyTypes)result;
 		}
 		/// <summary>
 		/// 获取指定QQ是否在线
@@ -341,9 +341,9 @@ namespace QQMini.PluginSDK.Core
 		/// <returns>如果指定的QQ是在线的, 返回 <see langword="true"/>; 否则返回 <see langword="false"/></returns>
 		public bool GetIsOnline (long robotQQ, long targetQQ)
 		{
-			int result = QQMiniApi.QMApi_GetIsOnline (this.AuthCode, robotQQ, targetQQ, out bool isOnline);
+			int result = QQMiniApi.QMApi_GetIsOnline (this.AuthCode, robotQQ, targetQQ);
 			CheckResultThrowException (result);
-			return isOnline;
+			return result == 1;
 		}
 		#endregion
 
