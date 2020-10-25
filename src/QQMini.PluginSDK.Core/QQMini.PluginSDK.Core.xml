@@ -1709,7 +1709,7 @@
             <param name="type">事件类型</param>
             <param name="subType">事件子类型</param>
             <param name="robotQQ">机器人QQ</param>
-            <param name="fromGroup">来源群组</param>
+            <param name="fromGroup">来源讨论组</param>
             <param name="fromQQ">来源QQ</param>
             <param name="msgNumber">消息序号</param>
             <param name="msgId">消息ID</param>
@@ -1825,13 +1825,14 @@
             指示当前事件的消息
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs"/> 类的新实例
             </summary>
             <param name="type">事件类型</param>
             <param name="subType">事件子类型</param>
             <param name="robotQQ">机器人QQ</param>
+            <param name="_"></param>
             <param name="fromQQ">来源QQ</param>
             <param name="msgNumber">消息序号</param>
             <param name="msgId">消息ID</param>

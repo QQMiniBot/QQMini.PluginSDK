@@ -25,7 +25,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <param name="type">事件类型</param>
 		/// <param name="subType">事件子类型</param>
 		/// <param name="robotQQ">机器人QQ</param>
-		/// <param name="fromGroup">来源群组</param>
+		/// <param name="fromGroup">来源讨论组</param>
 		/// <param name="fromQQ">来源QQ</param>
 		/// <param name="msgNumber">消息序号</param>
 		/// <param name="msgId">消息ID</param>
@@ -33,10 +33,10 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <exception cref="ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="QQ.MinValue"/></exception>
 		/// <exception cref="ArgumentNullException">参数 message 为 <see langword="null"/></exception>
 		public QMGroupPrivateMessageEventArgs (int type, int subType, long robotQQ, long fromGroup, long fromQQ, long msgNumber, int msgId, IntPtr message)
-			: base (type, subType, robotQQ, fromQQ, msgNumber, msgId, message)
+			: base (type, subType, robotQQ, 0, fromQQ, msgNumber, msgId, message)
 		{
 			this.FromGroup = new Group (fromGroup);
-		} 
+		}
 		#endregion
 	}
 }
