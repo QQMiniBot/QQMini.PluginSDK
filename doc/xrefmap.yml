@@ -7,93 +7,6 @@ references:
   commentId: N:QQMini.PluginSDK.Core
   fullName: QQMini.PluginSDK.Core
   nameWithType: QQMini.PluginSDK.Core
-- uid: QQMini.PluginSDK.Core.IPlugin
-  name: IPlugin
-  href: api/QQMini.PluginSDK.Core.IPlugin.html
-  commentId: T:QQMini.PluginSDK.Core.IPlugin
-  fullName: QQMini.PluginSDK.Core.IPlugin
-  nameWithType: IPlugin
-- uid: QQMini.PluginSDK.Core.IPlugin.GetInfomaction
-  name: GetInfomaction()
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_GetInfomaction
-  commentId: M:QQMini.PluginSDK.Core.IPlugin.GetInfomaction
-  fullName: QQMini.PluginSDK.Core.IPlugin.GetInfomaction()
-  nameWithType: IPlugin.GetInfomaction()
-- uid: QQMini.PluginSDK.Core.IPlugin.GetInfomaction*
-  name: GetInfomaction
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_GetInfomaction_
-  commentId: Overload:QQMini.PluginSDK.Core.IPlugin.GetInfomaction
-  isSpec: "True"
-  fullName: QQMini.PluginSDK.Core.IPlugin.GetInfomaction
-  nameWithType: IPlugin.GetInfomaction
-- uid: QQMini.PluginSDK.Core.IPlugin.PushNewEvent(System.Int32,System.Int32,System.IntPtr[])
-  name: PushNewEvent(Int32, Int32, IntPtr[])
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_PushNewEvent_System_Int32_System_Int32_System_IntPtr___
-  commentId: M:QQMini.PluginSDK.Core.IPlugin.PushNewEvent(System.Int32,System.Int32,System.IntPtr[])
-  name.vb: PushNewEvent(Int32, Int32, IntPtr())
-  fullName: QQMini.PluginSDK.Core.IPlugin.PushNewEvent(System.Int32, System.Int32, System.IntPtr[])
-  fullName.vb: QQMini.PluginSDK.Core.IPlugin.PushNewEvent(System.Int32, System.Int32, System.IntPtr())
-  nameWithType: IPlugin.PushNewEvent(Int32, Int32, IntPtr[])
-  nameWithType.vb: IPlugin.PushNewEvent(Int32, Int32, IntPtr())
-- uid: QQMini.PluginSDK.Core.IPlugin.PushNewEvent*
-  name: PushNewEvent
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_PushNewEvent_
-  commentId: Overload:QQMini.PluginSDK.Core.IPlugin.PushNewEvent
-  isSpec: "True"
-  fullName: QQMini.PluginSDK.Core.IPlugin.PushNewEvent
-  nameWithType: IPlugin.PushNewEvent
-- uid: QQMini.PluginSDK.Core.IPlugin.SetAuthorize(System.Int32)
-  name: SetAuthorize(Int32)
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_SetAuthorize_System_Int32_
-  commentId: M:QQMini.PluginSDK.Core.IPlugin.SetAuthorize(System.Int32)
-  fullName: QQMini.PluginSDK.Core.IPlugin.SetAuthorize(System.Int32)
-  nameWithType: IPlugin.SetAuthorize(Int32)
-- uid: QQMini.PluginSDK.Core.IPlugin.SetAuthorize*
-  name: SetAuthorize
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_SetAuthorize_
-  commentId: Overload:QQMini.PluginSDK.Core.IPlugin.SetAuthorize
-  isSpec: "True"
-  fullName: QQMini.PluginSDK.Core.IPlugin.SetAuthorize
-  nameWithType: IPlugin.SetAuthorize
-- uid: QQMini.PluginSDK.Core.IPlugin.SetInitialize
-  name: SetInitialize()
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_SetInitialize
-  commentId: M:QQMini.PluginSDK.Core.IPlugin.SetInitialize
-  fullName: QQMini.PluginSDK.Core.IPlugin.SetInitialize()
-  nameWithType: IPlugin.SetInitialize()
-- uid: QQMini.PluginSDK.Core.IPlugin.SetInitialize*
-  name: SetInitialize
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_SetInitialize_
-  commentId: Overload:QQMini.PluginSDK.Core.IPlugin.SetInitialize
-  isSpec: "True"
-  fullName: QQMini.PluginSDK.Core.IPlugin.SetInitialize
-  nameWithType: IPlugin.SetInitialize
-- uid: QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu
-  name: SetOpenSettingMenu()
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_SetOpenSettingMenu
-  commentId: M:QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu
-  fullName: QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu()
-  nameWithType: IPlugin.SetOpenSettingMenu()
-- uid: QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu*
-  name: SetOpenSettingMenu
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_SetOpenSettingMenu_
-  commentId: Overload:QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu
-  isSpec: "True"
-  fullName: QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu
-  nameWithType: IPlugin.SetOpenSettingMenu
-- uid: QQMini.PluginSDK.Core.IPlugin.SetUninitialize
-  name: SetUninitialize()
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_SetUninitialize
-  commentId: M:QQMini.PluginSDK.Core.IPlugin.SetUninitialize
-  fullName: QQMini.PluginSDK.Core.IPlugin.SetUninitialize()
-  nameWithType: IPlugin.SetUninitialize()
-- uid: QQMini.PluginSDK.Core.IPlugin.SetUninitialize*
-  name: SetUninitialize
-  href: api/QQMini.PluginSDK.Core.IPlugin.html#QQMini_PluginSDK_Core_IPlugin_SetUninitialize_
-  commentId: Overload:QQMini.PluginSDK.Core.IPlugin.SetUninitialize
-  isSpec: "True"
-  fullName: QQMini.PluginSDK.Core.IPlugin.SetUninitialize
-  nameWithType: IPlugin.SetUninitialize
 - uid: QQMini.PluginSDK.Core.Model
   name: QQMini.PluginSDK.Core.Model
   href: api/QQMini.PluginSDK.Core.Model.html
@@ -285,6 +198,42 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.Discuss.ToString
   nameWithType: Discuss.ToString
+- uid: QQMini.PluginSDK.Core.Model.FriendVerifyTypes
+  name: FriendVerifyTypes
+  href: api/QQMini.PluginSDK.Core.Model.FriendVerifyTypes.html
+  commentId: T:QQMini.PluginSDK.Core.Model.FriendVerifyTypes
+  fullName: QQMini.PluginSDK.Core.Model.FriendVerifyTypes
+  nameWithType: FriendVerifyTypes
+- uid: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.AlreadyFriend
+  name: AlreadyFriend
+  href: api/QQMini.PluginSDK.Core.Model.FriendVerifyTypes.html#QQMini_PluginSDK_Core_Model_FriendVerifyTypes_AlreadyFriend
+  commentId: F:QQMini.PluginSDK.Core.Model.FriendVerifyTypes.AlreadyFriend
+  fullName: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.AlreadyFriend
+  nameWithType: FriendVerifyTypes.AlreadyFriend
+- uid: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.Authentication
+  name: Authentication
+  href: api/QQMini.PluginSDK.Core.Model.FriendVerifyTypes.html#QQMini_PluginSDK_Core_Model_FriendVerifyTypes_Authentication
+  commentId: F:QQMini.PluginSDK.Core.Model.FriendVerifyTypes.Authentication
+  fullName: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.Authentication
+  nameWithType: FriendVerifyTypes.Authentication
+- uid: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.NeedAnswers
+  name: NeedAnswers
+  href: api/QQMini.PluginSDK.Core.Model.FriendVerifyTypes.html#QQMini_PluginSDK_Core_Model_FriendVerifyTypes_NeedAnswers
+  commentId: F:QQMini.PluginSDK.Core.Model.FriendVerifyTypes.NeedAnswers
+  fullName: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.NeedAnswers
+  nameWithType: FriendVerifyTypes.NeedAnswers
+- uid: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.NeetCorrectAnswer
+  name: NeetCorrectAnswer
+  href: api/QQMini.PluginSDK.Core.Model.FriendVerifyTypes.html#QQMini_PluginSDK_Core_Model_FriendVerifyTypes_NeetCorrectAnswer
+  commentId: F:QQMini.PluginSDK.Core.Model.FriendVerifyTypes.NeetCorrectAnswer
+  fullName: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.NeetCorrectAnswer
+  nameWithType: FriendVerifyTypes.NeetCorrectAnswer
+- uid: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.NoVerify
+  name: NoVerify
+  href: api/QQMini.PluginSDK.Core.Model.FriendVerifyTypes.html#QQMini_PluginSDK_Core_Model_FriendVerifyTypes_NoVerify
+  commentId: F:QQMini.PluginSDK.Core.Model.FriendVerifyTypes.NoVerify
+  fullName: QQMini.PluginSDK.Core.Model.FriendVerifyTypes.NoVerify
+  nameWithType: FriendVerifyTypes.NoVerify
 - uid: QQMini.PluginSDK.Core.Model.GenderTypes
   name: GenderTypes
   href: api/QQMini.PluginSDK.Core.Model.GenderTypes.html
@@ -488,6 +437,36 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.Group.ToString
   nameWithType: Group.ToString
+- uid: QQMini.PluginSDK.Core.Model.LogLevel
+  name: LogLevel
+  href: api/QQMini.PluginSDK.Core.Model.LogLevel.html
+  commentId: T:QQMini.PluginSDK.Core.Model.LogLevel
+  fullName: QQMini.PluginSDK.Core.Model.LogLevel
+  nameWithType: LogLevel
+- uid: QQMini.PluginSDK.Core.Model.LogLevel.Debug
+  name: Debug
+  href: api/QQMini.PluginSDK.Core.Model.LogLevel.html#QQMini_PluginSDK_Core_Model_LogLevel_Debug
+  commentId: F:QQMini.PluginSDK.Core.Model.LogLevel.Debug
+  fullName: QQMini.PluginSDK.Core.Model.LogLevel.Debug
+  nameWithType: LogLevel.Debug
+- uid: QQMini.PluginSDK.Core.Model.LogLevel.Error
+  name: Error
+  href: api/QQMini.PluginSDK.Core.Model.LogLevel.html#QQMini_PluginSDK_Core_Model_LogLevel_Error
+  commentId: F:QQMini.PluginSDK.Core.Model.LogLevel.Error
+  fullName: QQMini.PluginSDK.Core.Model.LogLevel.Error
+  nameWithType: LogLevel.Error
+- uid: QQMini.PluginSDK.Core.Model.LogLevel.Infomaction
+  name: Infomaction
+  href: api/QQMini.PluginSDK.Core.Model.LogLevel.html#QQMini_PluginSDK_Core_Model_LogLevel_Infomaction
+  commentId: F:QQMini.PluginSDK.Core.Model.LogLevel.Infomaction
+  fullName: QQMini.PluginSDK.Core.Model.LogLevel.Infomaction
+  nameWithType: LogLevel.Infomaction
+- uid: QQMini.PluginSDK.Core.Model.LogLevel.Warning
+  name: Warning
+  href: api/QQMini.PluginSDK.Core.Model.LogLevel.html#QQMini_PluginSDK_Core_Model_LogLevel_Warning
+  commentId: F:QQMini.PluginSDK.Core.Model.LogLevel.Warning
+  fullName: QQMini.PluginSDK.Core.Model.LogLevel.Warning
+  nameWithType: LogLevel.Warning
 - uid: QQMini.PluginSDK.Core.Model.Message
   name: Message
   href: api/QQMini.PluginSDK.Core.Model.Message.html
@@ -660,6 +639,48 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.Message.ToString
   nameWithType: Message.ToString
+- uid: QQMini.PluginSDK.Core.Model.OnlineStatusTypes
+  name: OnlineStatusTypes
+  href: api/QQMini.PluginSDK.Core.Model.OnlineStatusTypes.html
+  commentId: T:QQMini.PluginSDK.Core.Model.OnlineStatusTypes
+  fullName: QQMini.PluginSDK.Core.Model.OnlineStatusTypes
+  nameWithType: OnlineStatusTypes
+- uid: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Busy
+  name: Busy
+  href: api/QQMini.PluginSDK.Core.Model.OnlineStatusTypes.html#QQMini_PluginSDK_Core_Model_OnlineStatusTypes_Busy
+  commentId: F:QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Busy
+  fullName: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Busy
+  nameWithType: OnlineStatusTypes.Busy
+- uid: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Invisible
+  name: Invisible
+  href: api/QQMini.PluginSDK.Core.Model.OnlineStatusTypes.html#QQMini_PluginSDK_Core_Model_OnlineStatusTypes_Invisible
+  commentId: F:QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Invisible
+  fullName: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Invisible
+  nameWithType: OnlineStatusTypes.Invisible
+- uid: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Leave
+  name: Leave
+  href: api/QQMini.PluginSDK.Core.Model.OnlineStatusTypes.html#QQMini_PluginSDK_Core_Model_OnlineStatusTypes_Leave
+  commentId: F:QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Leave
+  fullName: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Leave
+  nameWithType: OnlineStatusTypes.Leave
+- uid: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.NoDisturb
+  name: NoDisturb
+  href: api/QQMini.PluginSDK.Core.Model.OnlineStatusTypes.html#QQMini_PluginSDK_Core_Model_OnlineStatusTypes_NoDisturb
+  commentId: F:QQMini.PluginSDK.Core.Model.OnlineStatusTypes.NoDisturb
+  fullName: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.NoDisturb
+  nameWithType: OnlineStatusTypes.NoDisturb
+- uid: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Online
+  name: Online
+  href: api/QQMini.PluginSDK.Core.Model.OnlineStatusTypes.html#QQMini_PluginSDK_Core_Model_OnlineStatusTypes_Online
+  commentId: F:QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Online
+  fullName: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.Online
+  nameWithType: OnlineStatusTypes.Online
+- uid: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.QMe
+  name: QMe
+  href: api/QQMini.PluginSDK.Core.Model.OnlineStatusTypes.html#QQMini_PluginSDK_Core_Model_OnlineStatusTypes_QMe
+  commentId: F:QQMini.PluginSDK.Core.Model.OnlineStatusTypes.QMe
+  fullName: QQMini.PluginSDK.Core.Model.OnlineStatusTypes.QMe
+  nameWithType: OnlineStatusTypes.QMe
 - uid: QQMini.PluginSDK.Core.Model.PluginInfo
   name: PluginInfo
   href: api/QQMini.PluginSDK.Core.Model.PluginInfo.html
@@ -718,6 +739,19 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.PluginInfo.DeveloperKey
   nameWithType: PluginInfo.DeveloperKey
+- uid: QQMini.PluginSDK.Core.Model.PluginInfo.InitializeLifetimeService
+  name: InitializeLifetimeService()
+  href: api/QQMini.PluginSDK.Core.Model.PluginInfo.html#QQMini_PluginSDK_Core_Model_PluginInfo_InitializeLifetimeService
+  commentId: M:QQMini.PluginSDK.Core.Model.PluginInfo.InitializeLifetimeService
+  fullName: QQMini.PluginSDK.Core.Model.PluginInfo.InitializeLifetimeService()
+  nameWithType: PluginInfo.InitializeLifetimeService()
+- uid: QQMini.PluginSDK.Core.Model.PluginInfo.InitializeLifetimeService*
+  name: InitializeLifetimeService
+  href: api/QQMini.PluginSDK.Core.Model.PluginInfo.html#QQMini_PluginSDK_Core_Model_PluginInfo_InitializeLifetimeService_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.PluginInfo.InitializeLifetimeService
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.PluginInfo.InitializeLifetimeService
+  nameWithType: PluginInfo.InitializeLifetimeService
 - uid: QQMini.PluginSDK.Core.Model.PluginInfo.Name
   name: Name
   href: api/QQMini.PluginSDK.Core.Model.PluginInfo.html#QQMini_PluginSDK_Core_Model_PluginInfo_Name
@@ -808,6 +842,19 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.QMAuthCodeInvalidException
   nameWithType: QMAuthCodeInvalidException.QMAuthCodeInvalidException
+- uid: QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.html#QQMini_PluginSDK_Core_Model_QMAuthCodeInvalidException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.Message
+  nameWithType: QMAuthCodeInvalidException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.html#QQMini_PluginSDK_Core_Model_QMAuthCodeInvalidException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.Message
+  nameWithType: QMAuthCodeInvalidException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException
   name: QMAuthCodeLessThanZeroException
   href: api/QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException.html
@@ -916,6 +963,31 @@ references:
   commentId: F:QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventSubTypes.BeFriendDelete
   fullName: QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventSubTypes.BeFriendDelete
   nameWithType: QMBeFriendDeleteEventSubTypes.BeFriendDelete
+- uid: QQMini.PluginSDK.Core.Model.QMCode
+  name: QMCode
+  href: api/QQMini.PluginSDK.Core.Model.QMCode.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMCode
+  fullName: QQMini.PluginSDK.Core.Model.QMCode
+  nameWithType: QMCode
+- uid: QQMini.PluginSDK.Core.Model.QMCode.Function
+  name: Function
+  href: api/QQMini.PluginSDK.Core.Model.QMCode.html#QQMini_PluginSDK_Core_Model_QMCode_Function
+  commentId: P:QQMini.PluginSDK.Core.Model.QMCode.Function
+  fullName: QQMini.PluginSDK.Core.Model.QMCode.Function
+  nameWithType: QMCode.Function
+- uid: QQMini.PluginSDK.Core.Model.QMCode.Function*
+  name: Function
+  href: api/QQMini.PluginSDK.Core.Model.QMCode.html#QQMini_PluginSDK_Core_Model_QMCode_Function_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMCode.Function
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMCode.Function
+  nameWithType: QMCode.Function
+- uid: QQMini.PluginSDK.Core.Model.QMCodeValue
+  name: QMCodeValue
+  href: api/QQMini.PluginSDK.Core.Model.QMCodeValue.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMCodeValue
+  fullName: QQMini.PluginSDK.Core.Model.QMCodeValue
+  nameWithType: QMCodeValue
 - uid: QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs
   name: QMDiscussMessageEventArgs
   href: api/QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.html
@@ -999,6 +1071,38 @@ references:
   commentId: F:QQMini.PluginSDK.Core.Model.QMDiscussMessageEventSubTypes.Discuss
   fullName: QQMini.PluginSDK.Core.Model.QMDiscussMessageEventSubTypes.Discuss
   nameWithType: QMDiscussMessageEventSubTypes.Discuss
+- uid: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs
+  name: QMDiscussPrivateMessageEventArgs
+  href: api/QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs
+  fullName: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs
+  nameWithType: QMDiscussPrivateMessageEventArgs
+- uid: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)
+  name: QMDiscussPrivateMessageEventArgs(Int32, Int32, Int64, Int64, Int64, Int64, Int32, IntPtr)
+  href: api/QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMDiscussPrivateMessageEventArgs__ctor_System_Int32_System_Int32_System_Int64_System_Int64_System_Int64_System_Int64_System_Int32_System_IntPtr_
+  commentId: M:QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)
+  fullName: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.QMDiscussPrivateMessageEventArgs(System.Int32, System.Int32, System.Int64, System.Int64, System.Int64, System.Int64, System.Int32, System.IntPtr)
+  nameWithType: QMDiscussPrivateMessageEventArgs.QMDiscussPrivateMessageEventArgs(Int32, Int32, Int64, Int64, Int64, Int64, Int32, IntPtr)
+- uid: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.#ctor*
+  name: QMDiscussPrivateMessageEventArgs
+  href: api/QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMDiscussPrivateMessageEventArgs__ctor_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.#ctor
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.QMDiscussPrivateMessageEventArgs
+  nameWithType: QMDiscussPrivateMessageEventArgs.QMDiscussPrivateMessageEventArgs
+- uid: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.FromDiscuss
+  name: FromDiscuss
+  href: api/QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMDiscussPrivateMessageEventArgs_FromDiscuss
+  commentId: P:QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.FromDiscuss
+  fullName: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.FromDiscuss
+  nameWithType: QMDiscussPrivateMessageEventArgs.FromDiscuss
+- uid: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.FromDiscuss*
+  name: FromDiscuss
+  href: api/QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMDiscussPrivateMessageEventArgs_FromDiscuss_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.FromDiscuss
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.FromDiscuss
+  nameWithType: QMDiscussPrivateMessageEventArgs.FromDiscuss
 - uid: QQMini.PluginSDK.Core.Model.QMEventArgs
   name: QMEventArgs
   href: api/QQMini.PluginSDK.Core.Model.QMEventArgs.html
@@ -1244,6 +1348,24 @@ references:
   commentId: F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.AuthCodeLessThanZero
   fullName: QQMini.PluginSDK.Core.Model.QMExceptionCodes.AuthCodeLessThanZero
   nameWithType: QMExceptionCodes.AuthCodeLessThanZero
+- uid: QQMini.PluginSDK.Core.Model.QMExceptionCodes.GroupNotFound
+  name: GroupNotFound
+  href: api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.html#QQMini_PluginSDK_Core_Model_QMExceptionCodes_GroupNotFound
+  commentId: F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.GroupNotFound
+  fullName: QQMini.PluginSDK.Core.Model.QMExceptionCodes.GroupNotFound
+  nameWithType: QMExceptionCodes.GroupNotFound
+- uid: QQMini.PluginSDK.Core.Model.QMExceptionCodes.LoggerLevelNotFound
+  name: LoggerLevelNotFound
+  href: api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.html#QQMini_PluginSDK_Core_Model_QMExceptionCodes_LoggerLevelNotFound
+  commentId: F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.LoggerLevelNotFound
+  fullName: QQMini.PluginSDK.Core.Model.QMExceptionCodes.LoggerLevelNotFound
+  nameWithType: QMExceptionCodes.LoggerLevelNotFound
+- uid: QQMini.PluginSDK.Core.Model.QMExceptionCodes.LoggerMessageIsEmpty
+  name: LoggerMessageIsEmpty
+  href: api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.html#QQMini_PluginSDK_Core_Model_QMExceptionCodes_LoggerMessageIsEmpty
+  commentId: F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.LoggerMessageIsEmpty
+  fullName: QQMini.PluginSDK.Core.Model.QMExceptionCodes.LoggerMessageIsEmpty
+  nameWithType: QMExceptionCodes.LoggerMessageIsEmpty
 - uid: QQMini.PluginSDK.Core.Model.QMExceptionCodes.NotReceiveSendQQResponseMessage
   name: NotReceiveSendQQResponseMessage
   href: api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.html#QQMini_PluginSDK_Core_Model_QMExceptionCodes_NotReceiveSendQQResponseMessage
@@ -1256,6 +1378,12 @@ references:
   commentId: F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.PlugiNotEnable
   fullName: QQMini.PluginSDK.Core.Model.QMExceptionCodes.PlugiNotEnable
   nameWithType: QMExceptionCodes.PlugiNotEnable
+- uid: QQMini.PluginSDK.Core.Model.QMExceptionCodes.QQNotFound
+  name: QQNotFound
+  href: api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.html#QQMini_PluginSDK_Core_Model_QMExceptionCodes_QQNotFound
+  commentId: F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.QQNotFound
+  fullName: QQMini.PluginSDK.Core.Model.QMExceptionCodes.QQNotFound
+  nameWithType: QMExceptionCodes.QQNotFound
 - uid: QQMini.PluginSDK.Core.Model.QMExceptionCodes.ResponseQQNotFound
   name: ResponseQQNotFound
   href: api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.html#QQMini_PluginSDK_Core_Model_QMExceptionCodes_ResponseQQNotFound
@@ -1292,6 +1420,12 @@ references:
   commentId: F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.SendTypeError
   fullName: QQMini.PluginSDK.Core.Model.QMExceptionCodes.SendTypeError
   nameWithType: QMExceptionCodes.SendTypeError
+- uid: QQMini.PluginSDK.Core.Model.QMExceptionCodes.UnknownFrameworkType
+  name: UnknownFrameworkType
+  href: api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.html#QQMini_PluginSDK_Core_Model_QMExceptionCodes_UnknownFrameworkType
+  commentId: F:QQMini.PluginSDK.Core.Model.QMExceptionCodes.UnknownFrameworkType
+  fullName: QQMini.PluginSDK.Core.Model.QMExceptionCodes.UnknownFrameworkType
+  nameWithType: QMExceptionCodes.UnknownFrameworkType
 - uid: QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs
   name: QMFriendAddRequestEventArgs
   href: api/QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.html
@@ -1451,6 +1585,18 @@ references:
   commentId: F:QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventSubTypes.RefuseAddFriend
   fullName: QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventSubTypes.RefuseAddFriend
   nameWithType: QMFriendAddResponseEventSubTypes.RefuseAddFriend
+- uid: QQMini.PluginSDK.Core.Model.QMFunctionTypes
+  name: QMFunctionTypes
+  href: api/QQMini.PluginSDK.Core.Model.QMFunctionTypes.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMFunctionTypes
+  fullName: QQMini.PluginSDK.Core.Model.QMFunctionTypes
+  nameWithType: QMFunctionTypes
+- uid: QQMini.PluginSDK.Core.Model.QMFunctionTypes.Image
+  name: Image
+  href: api/QQMini.PluginSDK.Core.Model.QMFunctionTypes.html#QQMini_PluginSDK_Core_Model_QMFunctionTypes_Image
+  commentId: F:QQMini.PluginSDK.Core.Model.QMFunctionTypes.Image
+  fullName: QQMini.PluginSDK.Core.Model.QMFunctionTypes.Image
+  nameWithType: QMFunctionTypes.Image
 - uid: QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs
   name: QMGroupAddRequestEventArgs
   href: api/QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.html
@@ -2469,6 +2615,152 @@ references:
   commentId: F:QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventSubTypes.GroupNameChange
   fullName: QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventSubTypes.GroupNameChange
   nameWithType: QMGroupNameChangeEventSubTypes.GroupNameChange
+- uid: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException
+  name: QMGroupNotFoundException
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMGroupNotFoundException
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException
+  nameWithType: QMGroupNotFoundException
+- uid: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.#ctor
+  name: QMGroupNotFoundException()
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.html#QQMini_PluginSDK_Core_Model_QMGroupNotFoundException__ctor
+  commentId: M:QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.#ctor
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.QMGroupNotFoundException()
+  nameWithType: QMGroupNotFoundException.QMGroupNotFoundException()
+- uid: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: QMGroupNotFoundException(SerializationInfo, StreamingContext)
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.html#QQMini_PluginSDK_Core_Model_QMGroupNotFoundException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.QMGroupNotFoundException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: QMGroupNotFoundException.QMGroupNotFoundException(SerializationInfo, StreamingContext)
+- uid: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.#ctor*
+  name: QMGroupNotFoundException
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.html#QQMini_PluginSDK_Core_Model_QMGroupNotFoundException__ctor_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.#ctor
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.QMGroupNotFoundException
+  nameWithType: QMGroupNotFoundException.QMGroupNotFoundException
+- uid: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.html#QQMini_PluginSDK_Core_Model_QMGroupNotFoundException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.Message
+  nameWithType: QMGroupNotFoundException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.html#QQMini_PluginSDK_Core_Model_QMGroupNotFoundException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.Message
+  nameWithType: QMGroupNotFoundException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs
+  name: QMGroupPrivateMessageEventArgs
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs
+  nameWithType: QMGroupPrivateMessageEventArgs
+- uid: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)
+  name: QMGroupPrivateMessageEventArgs(Int32, Int32, Int64, Int64, Int64, Int64, Int32, IntPtr)
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMGroupPrivateMessageEventArgs__ctor_System_Int32_System_Int32_System_Int64_System_Int64_System_Int64_System_Int64_System_Int32_System_IntPtr_
+  commentId: M:QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.QMGroupPrivateMessageEventArgs(System.Int32, System.Int32, System.Int64, System.Int64, System.Int64, System.Int64, System.Int32, System.IntPtr)
+  nameWithType: QMGroupPrivateMessageEventArgs.QMGroupPrivateMessageEventArgs(Int32, Int32, Int64, Int64, Int64, Int64, Int32, IntPtr)
+- uid: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.#ctor*
+  name: QMGroupPrivateMessageEventArgs
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMGroupPrivateMessageEventArgs__ctor_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.#ctor
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.QMGroupPrivateMessageEventArgs
+  nameWithType: QMGroupPrivateMessageEventArgs.QMGroupPrivateMessageEventArgs
+- uid: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.FromGroup
+  name: FromGroup
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMGroupPrivateMessageEventArgs_FromGroup
+  commentId: P:QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.FromGroup
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.FromGroup
+  nameWithType: QMGroupPrivateMessageEventArgs.FromGroup
+- uid: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.FromGroup*
+  name: FromGroup
+  href: api/QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMGroupPrivateMessageEventArgs_FromGroup_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.FromGroup
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.FromGroup
+  nameWithType: QMGroupPrivateMessageEventArgs.FromGroup
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException
+  name: QMLoggerLevelNotFountException
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException
+  nameWithType: QMLoggerLevelNotFountException
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.#ctor
+  name: QMLoggerLevelNotFountException()
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.html#QQMini_PluginSDK_Core_Model_QMLoggerLevelNotFountException__ctor
+  commentId: M:QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.#ctor
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.QMLoggerLevelNotFountException()
+  nameWithType: QMLoggerLevelNotFountException.QMLoggerLevelNotFountException()
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: QMLoggerLevelNotFountException(SerializationInfo, StreamingContext)
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.html#QQMini_PluginSDK_Core_Model_QMLoggerLevelNotFountException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.QMLoggerLevelNotFountException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: QMLoggerLevelNotFountException.QMLoggerLevelNotFountException(SerializationInfo, StreamingContext)
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.#ctor*
+  name: QMLoggerLevelNotFountException
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.html#QQMini_PluginSDK_Core_Model_QMLoggerLevelNotFountException__ctor_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.#ctor
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.QMLoggerLevelNotFountException
+  nameWithType: QMLoggerLevelNotFountException.QMLoggerLevelNotFountException
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.html#QQMini_PluginSDK_Core_Model_QMLoggerLevelNotFountException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.Message
+  nameWithType: QMLoggerLevelNotFountException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.html#QQMini_PluginSDK_Core_Model_QMLoggerLevelNotFountException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.Message
+  nameWithType: QMLoggerLevelNotFountException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException
+  name: QMLoggerMessageIsEmptyException
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException
+  nameWithType: QMLoggerMessageIsEmptyException
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.#ctor
+  name: QMLoggerMessageIsEmptyException()
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMLoggerMessageIsEmptyException__ctor
+  commentId: M:QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.#ctor
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.QMLoggerMessageIsEmptyException()
+  nameWithType: QMLoggerMessageIsEmptyException.QMLoggerMessageIsEmptyException()
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: QMLoggerMessageIsEmptyException(SerializationInfo, StreamingContext)
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMLoggerMessageIsEmptyException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.QMLoggerMessageIsEmptyException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: QMLoggerMessageIsEmptyException.QMLoggerMessageIsEmptyException(SerializationInfo, StreamingContext)
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.#ctor*
+  name: QMLoggerMessageIsEmptyException
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMLoggerMessageIsEmptyException__ctor_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.#ctor
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.QMLoggerMessageIsEmptyException
+  nameWithType: QMLoggerMessageIsEmptyException.QMLoggerMessageIsEmptyException
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMLoggerMessageIsEmptyException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.Message
+  nameWithType: QMLoggerMessageIsEmptyException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMLoggerMessageIsEmptyException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.Message
+  nameWithType: QMLoggerMessageIsEmptyException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException
   name: QMNotReceiveSendQQResponseMessageException
   href: api/QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.html
@@ -2494,6 +2786,19 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.QMNotReceiveSendQQResponseMessageException
   nameWithType: QMNotReceiveSendQQResponseMessageException.QMNotReceiveSendQQResponseMessageException
+- uid: QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.html#QQMini_PluginSDK_Core_Model_QMNotReceiveSendQQResponseMessageException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.Message
+  nameWithType: QMNotReceiveSendQQResponseMessageException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.html#QQMini_PluginSDK_Core_Model_QMNotReceiveSendQQResponseMessageException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.Message
+  nameWithType: QMNotReceiveSendQQResponseMessageException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMPluginNotEnableException
   name: QMPluginNotEnableException
   href: api/QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.html
@@ -2519,18 +2824,31 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.QMPluginNotEnableException
   nameWithType: QMPluginNotEnableException.QMPluginNotEnableException
+- uid: QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.html#QQMini_PluginSDK_Core_Model_QMPluginNotEnableException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.Message
+  nameWithType: QMPluginNotEnableException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.html#QQMini_PluginSDK_Core_Model_QMPluginNotEnableException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.Message
+  nameWithType: QMPluginNotEnableException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs
   name: QMPrivateMessageEventArgs
   href: api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html
   commentId: T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs
   fullName: QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs
   nameWithType: QMPrivateMessageEventArgs
-- uid: QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)
-  name: QMPrivateMessageEventArgs(Int32, Int32, Int64, Int64, Int64, Int32, IntPtr)
-  href: api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs__ctor_System_Int32_System_Int32_System_Int64_System_Int64_System_Int64_System_Int32_System_IntPtr_
-  commentId: M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)
-  fullName: QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.QMPrivateMessageEventArgs(System.Int32, System.Int32, System.Int64, System.Int64, System.Int64, System.Int32, System.IntPtr)
-  nameWithType: QMPrivateMessageEventArgs.QMPrivateMessageEventArgs(Int32, Int32, Int64, Int64, Int64, Int32, IntPtr)
+- uid: QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)
+  name: QMPrivateMessageEventArgs(Int32, Int32, Int64, Int64, Int64, Int64, Int32, IntPtr)
+  href: api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs__ctor_System_Int32_System_Int32_System_Int64_System_Int64_System_Int64_System_Int64_System_Int32_System_IntPtr_
+  commentId: M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)
+  fullName: QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.QMPrivateMessageEventArgs(System.Int32, System.Int32, System.Int64, System.Int64, System.Int64, System.Int64, System.Int32, System.IntPtr)
+  nameWithType: QMPrivateMessageEventArgs.QMPrivateMessageEventArgs(Int32, Int32, Int64, Int64, Int64, Int64, Int32, IntPtr)
 - uid: QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor*
   name: QMPrivateMessageEventArgs
   href: api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html#QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs__ctor_
@@ -2613,6 +2931,44 @@ references:
   commentId: F:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.OnlineTemp
   fullName: QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.OnlineTemp
   nameWithType: QMPrivateMessageEventSubTypes.OnlineTemp
+- uid: QQMini.PluginSDK.Core.Model.QMQQNotFoundException
+  name: QMQQNotFoundException
+  href: api/QQMini.PluginSDK.Core.Model.QMQQNotFoundException.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMQQNotFoundException
+  fullName: QQMini.PluginSDK.Core.Model.QMQQNotFoundException
+  nameWithType: QMQQNotFoundException
+- uid: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.#ctor
+  name: QMQQNotFoundException()
+  href: api/QQMini.PluginSDK.Core.Model.QMQQNotFoundException.html#QQMini_PluginSDK_Core_Model_QMQQNotFoundException__ctor
+  commentId: M:QQMini.PluginSDK.Core.Model.QMQQNotFoundException.#ctor
+  fullName: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.QMQQNotFoundException()
+  nameWithType: QMQQNotFoundException.QMQQNotFoundException()
+- uid: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: QMQQNotFoundException(SerializationInfo, StreamingContext)
+  href: api/QQMini.PluginSDK.Core.Model.QMQQNotFoundException.html#QQMini_PluginSDK_Core_Model_QMQQNotFoundException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:QQMini.PluginSDK.Core.Model.QMQQNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.QMQQNotFoundException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: QMQQNotFoundException.QMQQNotFoundException(SerializationInfo, StreamingContext)
+- uid: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.#ctor*
+  name: QMQQNotFoundException
+  href: api/QQMini.PluginSDK.Core.Model.QMQQNotFoundException.html#QQMini_PluginSDK_Core_Model_QMQQNotFoundException__ctor_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMQQNotFoundException.#ctor
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.QMQQNotFoundException
+  nameWithType: QMQQNotFoundException.QMQQNotFoundException
+- uid: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMQQNotFoundException.html#QQMini_PluginSDK_Core_Model_QMQQNotFoundException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMQQNotFoundException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.Message
+  nameWithType: QMQQNotFoundException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMQQNotFoundException.html#QQMini_PluginSDK_Core_Model_QMQQNotFoundException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMQQNotFoundException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMQQNotFoundException.Message
+  nameWithType: QMQQNotFoundException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException
   name: QMResponseQQNotFoundException
   href: api/QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.html
@@ -2638,6 +2994,19 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.QMResponseQQNotFoundException
   nameWithType: QMResponseQQNotFoundException.QMResponseQQNotFoundException
+- uid: QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.html#QQMini_PluginSDK_Core_Model_QMResponseQQNotFoundException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.Message
+  nameWithType: QMResponseQQNotFoundException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.html#QQMini_PluginSDK_Core_Model_QMResponseQQNotFoundException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.Message
+  nameWithType: QMResponseQQNotFoundException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException
   name: QMSendContentIsEmptyException
   href: api/QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.html
@@ -2663,6 +3032,19 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.QMSendContentIsEmptyException
   nameWithType: QMSendContentIsEmptyException.QMSendContentIsEmptyException
+- uid: QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMSendContentIsEmptyException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.Message
+  nameWithType: QMSendContentIsEmptyException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMSendContentIsEmptyException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.Message
+  nameWithType: QMSendContentIsEmptyException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException
   name: QMSendGroupOrDiscussIsEmptyException
   href: api/QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.html
@@ -2688,6 +3070,19 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.QMSendGroupOrDiscussIsEmptyException
   nameWithType: QMSendGroupOrDiscussIsEmptyException.QMSendGroupOrDiscussIsEmptyException
+- uid: QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMSendGroupOrDiscussIsEmptyException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.Message
+  nameWithType: QMSendGroupOrDiscussIsEmptyException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMSendGroupOrDiscussIsEmptyException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.Message
+  nameWithType: QMSendGroupOrDiscussIsEmptyException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException
   name: QMSendQQIsEmptyException
   href: api/QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.html
@@ -2713,6 +3108,19 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.QMSendQQIsEmptyException
   nameWithType: QMSendQQIsEmptyException.QMSendQQIsEmptyException
+- uid: QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMSendQQIsEmptyException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.Message
+  nameWithType: QMSendQQIsEmptyException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.html#QQMini_PluginSDK_Core_Model_QMSendQQIsEmptyException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.Message
+  nameWithType: QMSendQQIsEmptyException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException
   name: QMSendQQNotSupportTempMessageException
   href: api/QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.html
@@ -2738,6 +3146,19 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.QMSendQQNotSupportTempMessageException
   nameWithType: QMSendQQNotSupportTempMessageException.QMSendQQNotSupportTempMessageException
+- uid: QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.html#QQMini_PluginSDK_Core_Model_QMSendQQNotSupportTempMessageException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.Message
+  nameWithType: QMSendQQNotSupportTempMessageException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.html#QQMini_PluginSDK_Core_Model_QMSendQQNotSupportTempMessageException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.Message
+  nameWithType: QMSendQQNotSupportTempMessageException.Message
 - uid: QQMini.PluginSDK.Core.Model.QMSendTypeErrorException
   name: QMSendTypeErrorException
   href: api/QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.html
@@ -2763,6 +3184,57 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.QMSendTypeErrorException
   nameWithType: QMSendTypeErrorException.QMSendTypeErrorException
+- uid: QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.html#QQMini_PluginSDK_Core_Model_QMSendTypeErrorException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.Message
+  nameWithType: QMSendTypeErrorException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.html#QQMini_PluginSDK_Core_Model_QMSendTypeErrorException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.Message
+  nameWithType: QMSendTypeErrorException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException
+  name: QMUnknownFrameworkTypeException
+  href: api/QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.html
+  commentId: T:QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException
+  fullName: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException
+  nameWithType: QMUnknownFrameworkTypeException
+- uid: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.#ctor
+  name: QMUnknownFrameworkTypeException()
+  href: api/QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.html#QQMini_PluginSDK_Core_Model_QMUnknownFrameworkTypeException__ctor
+  commentId: M:QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.#ctor
+  fullName: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.QMUnknownFrameworkTypeException()
+  nameWithType: QMUnknownFrameworkTypeException.QMUnknownFrameworkTypeException()
+- uid: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: QMUnknownFrameworkTypeException(SerializationInfo, StreamingContext)
+  href: api/QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.html#QQMini_PluginSDK_Core_Model_QMUnknownFrameworkTypeException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.QMUnknownFrameworkTypeException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: QMUnknownFrameworkTypeException.QMUnknownFrameworkTypeException(SerializationInfo, StreamingContext)
+- uid: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.#ctor*
+  name: QMUnknownFrameworkTypeException
+  href: api/QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.html#QQMini_PluginSDK_Core_Model_QMUnknownFrameworkTypeException__ctor_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.#ctor
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.QMUnknownFrameworkTypeException
+  nameWithType: QMUnknownFrameworkTypeException.QMUnknownFrameworkTypeException
+- uid: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.Message
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.html#QQMini_PluginSDK_Core_Model_QMUnknownFrameworkTypeException_Message
+  commentId: P:QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.Message
+  fullName: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.Message
+  nameWithType: QMUnknownFrameworkTypeException.Message
+- uid: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.Message*
+  name: Message
+  href: api/QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.html#QQMini_PluginSDK_Core_Model_QMUnknownFrameworkTypeException_Message_
+  commentId: Overload:QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.Message
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.Message
+  nameWithType: QMUnknownFrameworkTypeException.Message
 - uid: QQMini.PluginSDK.Core.Model.QQ
   name: QQ
   href: api/QQMini.PluginSDK.Core.Model.QQ.html
@@ -3093,84 +3565,6 @@ references:
   commentId: F:QQMini.PluginSDK.Core.Model.ResponseTypes.Refuse
   fullName: QQMini.PluginSDK.Core.Model.ResponseTypes.Refuse
   nameWithType: ResponseTypes.Refuse
-- uid: QQMini.PluginSDK.Core.Model.StatusTypes
-  name: StatusTypes
-  href: api/QQMini.PluginSDK.Core.Model.StatusTypes.html
-  commentId: T:QQMini.PluginSDK.Core.Model.StatusTypes
-  fullName: QQMini.PluginSDK.Core.Model.StatusTypes
-  nameWithType: StatusTypes
-- uid: QQMini.PluginSDK.Core.Model.StatusTypes.Busy
-  name: Busy
-  href: api/QQMini.PluginSDK.Core.Model.StatusTypes.html#QQMini_PluginSDK_Core_Model_StatusTypes_Busy
-  commentId: F:QQMini.PluginSDK.Core.Model.StatusTypes.Busy
-  fullName: QQMini.PluginSDK.Core.Model.StatusTypes.Busy
-  nameWithType: StatusTypes.Busy
-- uid: QQMini.PluginSDK.Core.Model.StatusTypes.Invisible
-  name: Invisible
-  href: api/QQMini.PluginSDK.Core.Model.StatusTypes.html#QQMini_PluginSDK_Core_Model_StatusTypes_Invisible
-  commentId: F:QQMini.PluginSDK.Core.Model.StatusTypes.Invisible
-  fullName: QQMini.PluginSDK.Core.Model.StatusTypes.Invisible
-  nameWithType: StatusTypes.Invisible
-- uid: QQMini.PluginSDK.Core.Model.StatusTypes.Leave
-  name: Leave
-  href: api/QQMini.PluginSDK.Core.Model.StatusTypes.html#QQMini_PluginSDK_Core_Model_StatusTypes_Leave
-  commentId: F:QQMini.PluginSDK.Core.Model.StatusTypes.Leave
-  fullName: QQMini.PluginSDK.Core.Model.StatusTypes.Leave
-  nameWithType: StatusTypes.Leave
-- uid: QQMini.PluginSDK.Core.Model.StatusTypes.NoDisturb
-  name: NoDisturb
-  href: api/QQMini.PluginSDK.Core.Model.StatusTypes.html#QQMini_PluginSDK_Core_Model_StatusTypes_NoDisturb
-  commentId: F:QQMini.PluginSDK.Core.Model.StatusTypes.NoDisturb
-  fullName: QQMini.PluginSDK.Core.Model.StatusTypes.NoDisturb
-  nameWithType: StatusTypes.NoDisturb
-- uid: QQMini.PluginSDK.Core.Model.StatusTypes.Online
-  name: Online
-  href: api/QQMini.PluginSDK.Core.Model.StatusTypes.html#QQMini_PluginSDK_Core_Model_StatusTypes_Online
-  commentId: F:QQMini.PluginSDK.Core.Model.StatusTypes.Online
-  fullName: QQMini.PluginSDK.Core.Model.StatusTypes.Online
-  nameWithType: StatusTypes.Online
-- uid: QQMini.PluginSDK.Core.Model.StatusTypes.QMe
-  name: QMe
-  href: api/QQMini.PluginSDK.Core.Model.StatusTypes.html#QQMini_PluginSDK_Core_Model_StatusTypes_QMe
-  commentId: F:QQMini.PluginSDK.Core.Model.StatusTypes.QMe
-  fullName: QQMini.PluginSDK.Core.Model.StatusTypes.QMe
-  nameWithType: StatusTypes.QMe
-- uid: QQMini.PluginSDK.Core.Model.VerifyTypes
-  name: VerifyTypes
-  href: api/QQMini.PluginSDK.Core.Model.VerifyTypes.html
-  commentId: T:QQMini.PluginSDK.Core.Model.VerifyTypes
-  fullName: QQMini.PluginSDK.Core.Model.VerifyTypes
-  nameWithType: VerifyTypes
-- uid: QQMini.PluginSDK.Core.Model.VerifyTypes.Already_friend
-  name: Already_friend
-  href: api/QQMini.PluginSDK.Core.Model.VerifyTypes.html#QQMini_PluginSDK_Core_Model_VerifyTypes_Already_friend
-  commentId: F:QQMini.PluginSDK.Core.Model.VerifyTypes.Already_friend
-  fullName: QQMini.PluginSDK.Core.Model.VerifyTypes.Already_friend
-  nameWithType: VerifyTypes.Already_friend
-- uid: QQMini.PluginSDK.Core.Model.VerifyTypes.Authentication_required
-  name: Authentication_required
-  href: api/QQMini.PluginSDK.Core.Model.VerifyTypes.html#QQMini_PluginSDK_Core_Model_VerifyTypes_Authentication_required
-  commentId: F:QQMini.PluginSDK.Core.Model.VerifyTypes.Authentication_required
-  fullName: QQMini.PluginSDK.Core.Model.VerifyTypes.Authentication_required
-  nameWithType: VerifyTypes.Authentication_required
-- uid: QQMini.PluginSDK.Core.Model.VerifyTypes.Need_correct_answer
-  name: Need_correct_answer
-  href: api/QQMini.PluginSDK.Core.Model.VerifyTypes.html#QQMini_PluginSDK_Core_Model_VerifyTypes_Need_correct_answer
-  commentId: F:QQMini.PluginSDK.Core.Model.VerifyTypes.Need_correct_answer
-  fullName: QQMini.PluginSDK.Core.Model.VerifyTypes.Need_correct_answer
-  nameWithType: VerifyTypes.Need_correct_answer
-- uid: QQMini.PluginSDK.Core.Model.VerifyTypes.No_validation
-  name: No_validation
-  href: api/QQMini.PluginSDK.Core.Model.VerifyTypes.html#QQMini_PluginSDK_Core_Model_VerifyTypes_No_validation
-  commentId: F:QQMini.PluginSDK.Core.Model.VerifyTypes.No_validation
-  fullName: QQMini.PluginSDK.Core.Model.VerifyTypes.No_validation
-  nameWithType: VerifyTypes.No_validation
-- uid: QQMini.PluginSDK.Core.Model.VerifyTypes.Questions_to_answer
-  name: Questions_to_answer
-  href: api/QQMini.PluginSDK.Core.Model.VerifyTypes.html#QQMini_PluginSDK_Core_Model_VerifyTypes_Questions_to_answer
-  commentId: F:QQMini.PluginSDK.Core.Model.VerifyTypes.Questions_to_answer
-  fullName: QQMini.PluginSDK.Core.Model.VerifyTypes.Questions_to_answer
-  nameWithType: VerifyTypes.Questions_to_answer
 - uid: QQMini.PluginSDK.Core.Model.VoiceTypes
   name: VoiceTypes
   href: api/QQMini.PluginSDK.Core.Model.VoiceTypes.html
@@ -3207,6 +3601,32 @@ references:
   commentId: T:QQMini.PluginSDK.Core.PluginBase
   fullName: QQMini.PluginSDK.Core.PluginBase
   nameWithType: PluginBase
+- uid: QQMini.PluginSDK.Core.PluginBase.DataDirectory
+  name: DataDirectory
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_DataDirectory
+  commentId: P:QQMini.PluginSDK.Core.PluginBase.DataDirectory
+  fullName: QQMini.PluginSDK.Core.PluginBase.DataDirectory
+  nameWithType: PluginBase.DataDirectory
+- uid: QQMini.PluginSDK.Core.PluginBase.DataDirectory*
+  name: DataDirectory
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_DataDirectory_
+  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.DataDirectory
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.PluginBase.DataDirectory
+  nameWithType: PluginBase.DataDirectory
+- uid: QQMini.PluginSDK.Core.PluginBase.InitializeLifetimeService
+  name: InitializeLifetimeService()
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_InitializeLifetimeService
+  commentId: M:QQMini.PluginSDK.Core.PluginBase.InitializeLifetimeService
+  fullName: QQMini.PluginSDK.Core.PluginBase.InitializeLifetimeService()
+  nameWithType: PluginBase.InitializeLifetimeService()
+- uid: QQMini.PluginSDK.Core.PluginBase.InitializeLifetimeService*
+  name: InitializeLifetimeService
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_InitializeLifetimeService_
+  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.InitializeLifetimeService
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.PluginBase.InitializeLifetimeService
+  nameWithType: PluginBase.InitializeLifetimeService
 - uid: QQMini.PluginSDK.Core.PluginBase.IsInitialized
   name: IsInitialized
   href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_IsInitialized
@@ -3558,12 +3978,12 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussMessage
   nameWithType: PluginBase.OnReceiveDiscussMessage
-- uid: QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)
-  name: OnReceiveDiscussTempMessage(QMPrivateMessageEventArgs)
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_OnReceiveDiscussTempMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_
-  commentId: M:QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)
-  fullName: QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)
-  nameWithType: PluginBase.OnReceiveDiscussTempMessage(QMPrivateMessageEventArgs)
+- uid: QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage(QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs)
+  name: OnReceiveDiscussTempMessage(QMDiscussPrivateMessageEventArgs)
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_OnReceiveDiscussTempMessage_QQMini_PluginSDK_Core_Model_QMDiscussPrivateMessageEventArgs_
+  commentId: M:QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage(QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs)
+  fullName: QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage(QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs)
+  nameWithType: PluginBase.OnReceiveDiscussTempMessage(QMDiscussPrivateMessageEventArgs)
 - uid: QQMini.PluginSDK.Core.PluginBase.OnReceiveDiscussTempMessage*
   name: OnReceiveDiscussTempMessage
   href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_OnReceiveDiscussTempMessage_
@@ -3623,12 +4043,12 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupMessage
   nameWithType: PluginBase.OnReceiveGroupMessage
-- uid: QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)
-  name: OnReceiveGroupTempMessage(QMPrivateMessageEventArgs)
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_OnReceiveGroupTempMessage_QQMini_PluginSDK_Core_Model_QMPrivateMessageEventArgs_
-  commentId: M:QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)
-  fullName: QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage(QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs)
-  nameWithType: PluginBase.OnReceiveGroupTempMessage(QMPrivateMessageEventArgs)
+- uid: QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage(QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs)
+  name: OnReceiveGroupTempMessage(QMGroupPrivateMessageEventArgs)
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_OnReceiveGroupTempMessage_QQMini_PluginSDK_Core_Model_QMGroupPrivateMessageEventArgs_
+  commentId: M:QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage(QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs)
+  fullName: QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage(QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs)
+  nameWithType: PluginBase.OnReceiveGroupTempMessage(QMGroupPrivateMessageEventArgs)
 - uid: QQMini.PluginSDK.Core.PluginBase.OnReceiveGroupTempMessage*
   name: OnReceiveGroupTempMessage
   href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_OnReceiveGroupTempMessage_
@@ -3688,128 +4108,128 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.PluginBase.QMApi
   nameWithType: PluginBase.QMApi
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#GetInfomaction
+- uid: QQMini.PluginSDK.Core.PluginBase.QMLog
+  name: QMLog
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QMLog
+  commentId: P:QQMini.PluginSDK.Core.PluginBase.QMLog
+  fullName: QQMini.PluginSDK.Core.PluginBase.QMLog
+  nameWithType: PluginBase.QMLog
+- uid: QQMini.PluginSDK.Core.PluginBase.QMLog*
+  name: QMLog
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QMLog_
+  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QMLog
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.PluginBase.QMLog
+  nameWithType: PluginBase.QMLog
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#GetInfomaction
   name: IPlugin.GetInfomaction()
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_GetInfomaction
-  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#GetInfomaction
-  name.vb: QQMini.PluginSDK.Core.IPlugin.GetInfomaction()
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.GetInfomaction()
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_GetInfomaction
+  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#GetInfomaction
+  name.vb: QQMini.PluginInterface.Core.IPlugin.GetInfomaction()
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.GetInfomaction()
   nameWithType: PluginBase.IPlugin.GetInfomaction()
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.GetInfomaction()
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#GetInfomaction*
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.GetInfomaction()
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#GetInfomaction*
   name: IPlugin.GetInfomaction
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_GetInfomaction_
-  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#GetInfomaction
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_GetInfomaction_
+  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#GetInfomaction
   isSpec: "True"
-  name.vb: QQMini.PluginSDK.Core.IPlugin.GetInfomaction
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.GetInfomaction
+  name.vb: QQMini.PluginInterface.Core.IPlugin.GetInfomaction
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.GetInfomaction
   nameWithType: PluginBase.IPlugin.GetInfomaction
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.GetInfomaction
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#PushNewEvent(System.Int32,System.Int32,System.IntPtr[])
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.GetInfomaction
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#PushNewEvent(System.Int32,System.Int32,System.IntPtr[])
   name: IPlugin.PushNewEvent(Int32, Int32, IntPtr[])
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_PushNewEvent_System_Int32_System_Int32_System_IntPtr___
-  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#PushNewEvent(System.Int32,System.Int32,System.IntPtr[])
-  name.vb: QQMini.PluginSDK.Core.IPlugin.PushNewEvent(Int32, Int32, IntPtr())
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.PushNewEvent(System.Int32, System.Int32, System.IntPtr[])
-  fullName.vb: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.PushNewEvent(System.Int32, System.Int32, System.IntPtr())
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_PushNewEvent_System_Int32_System_Int32_System_IntPtr___
+  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#PushNewEvent(System.Int32,System.Int32,System.IntPtr[])
+  name.vb: QQMini.PluginInterface.Core.IPlugin.PushNewEvent(Int32, Int32, IntPtr())
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.PushNewEvent(System.Int32, System.Int32, System.IntPtr[])
+  fullName.vb: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.PushNewEvent(System.Int32, System.Int32, System.IntPtr())
   nameWithType: PluginBase.IPlugin.PushNewEvent(Int32, Int32, IntPtr[])
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.PushNewEvent(Int32, Int32, IntPtr())
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#PushNewEvent*
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.PushNewEvent(Int32, Int32, IntPtr())
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#PushNewEvent*
   name: IPlugin.PushNewEvent
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_PushNewEvent_
-  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#PushNewEvent
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_PushNewEvent_
+  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#PushNewEvent
   isSpec: "True"
-  name.vb: QQMini.PluginSDK.Core.IPlugin.PushNewEvent
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.PushNewEvent
+  name.vb: QQMini.PluginInterface.Core.IPlugin.PushNewEvent
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.PushNewEvent
   nameWithType: PluginBase.IPlugin.PushNewEvent
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.PushNewEvent
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetAuthorize(System.Int32)
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.PushNewEvent
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetAuthorize(System.Int32)
   name: IPlugin.SetAuthorize(Int32)
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetAuthorize_System_Int32_
-  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetAuthorize(System.Int32)
-  name.vb: QQMini.PluginSDK.Core.IPlugin.SetAuthorize(Int32)
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.SetAuthorize(System.Int32)
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_SetAuthorize_System_Int32_
+  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetAuthorize(System.Int32)
+  name.vb: QQMini.PluginInterface.Core.IPlugin.SetAuthorize(Int32)
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.SetAuthorize(System.Int32)
   nameWithType: PluginBase.IPlugin.SetAuthorize(Int32)
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.SetAuthorize(Int32)
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetAuthorize*
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.SetAuthorize(Int32)
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetAuthorize*
   name: IPlugin.SetAuthorize
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetAuthorize_
-  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetAuthorize
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_SetAuthorize_
+  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetAuthorize
   isSpec: "True"
-  name.vb: QQMini.PluginSDK.Core.IPlugin.SetAuthorize
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.SetAuthorize
+  name.vb: QQMini.PluginInterface.Core.IPlugin.SetAuthorize
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.SetAuthorize
   nameWithType: PluginBase.IPlugin.SetAuthorize
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.SetAuthorize
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetInitialize
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.SetAuthorize
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetInitialize
   name: IPlugin.SetInitialize()
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetInitialize
-  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetInitialize
-  name.vb: QQMini.PluginSDK.Core.IPlugin.SetInitialize()
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.SetInitialize()
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_SetInitialize
+  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetInitialize
+  name.vb: QQMini.PluginInterface.Core.IPlugin.SetInitialize()
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.SetInitialize()
   nameWithType: PluginBase.IPlugin.SetInitialize()
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.SetInitialize()
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetInitialize*
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.SetInitialize()
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetInitialize*
   name: IPlugin.SetInitialize
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetInitialize_
-  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetInitialize
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_SetInitialize_
+  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetInitialize
   isSpec: "True"
-  name.vb: QQMini.PluginSDK.Core.IPlugin.SetInitialize
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.SetInitialize
+  name.vb: QQMini.PluginInterface.Core.IPlugin.SetInitialize
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.SetInitialize
   nameWithType: PluginBase.IPlugin.SetInitialize
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.SetInitialize
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetOpenSettingMenu
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.SetInitialize
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetOpenSettingMenu
   name: IPlugin.SetOpenSettingMenu()
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetOpenSettingMenu
-  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetOpenSettingMenu
-  name.vb: QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu()
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu()
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_SetOpenSettingMenu
+  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetOpenSettingMenu
+  name.vb: QQMini.PluginInterface.Core.IPlugin.SetOpenSettingMenu()
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.SetOpenSettingMenu()
   nameWithType: PluginBase.IPlugin.SetOpenSettingMenu()
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu()
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetOpenSettingMenu*
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.SetOpenSettingMenu()
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetOpenSettingMenu*
   name: IPlugin.SetOpenSettingMenu
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetOpenSettingMenu_
-  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetOpenSettingMenu
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_SetOpenSettingMenu_
+  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetOpenSettingMenu
   isSpec: "True"
-  name.vb: QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu
+  name.vb: QQMini.PluginInterface.Core.IPlugin.SetOpenSettingMenu
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.SetOpenSettingMenu
   nameWithType: PluginBase.IPlugin.SetOpenSettingMenu
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.SetOpenSettingMenu
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetUninitialize
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.SetOpenSettingMenu
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetUninitialize
   name: IPlugin.SetUninitialize()
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetUninitialize
-  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetUninitialize
-  name.vb: QQMini.PluginSDK.Core.IPlugin.SetUninitialize()
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.SetUninitialize()
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_SetUninitialize
+  commentId: M:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetUninitialize
+  name.vb: QQMini.PluginInterface.Core.IPlugin.SetUninitialize()
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.SetUninitialize()
   nameWithType: PluginBase.IPlugin.SetUninitialize()
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.SetUninitialize()
-- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetUninitialize*
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.SetUninitialize()
+- uid: QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetUninitialize*
   name: IPlugin.SetUninitialize
-  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginSDK_Core_IPlugin_SetUninitialize_
-  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginSDK#Core#IPlugin#SetUninitialize
+  href: api/QQMini.PluginSDK.Core.PluginBase.html#QQMini_PluginSDK_Core_PluginBase_QQMini_PluginInterface_Core_IPlugin_SetUninitialize_
+  commentId: Overload:QQMini.PluginSDK.Core.PluginBase.QQMini#PluginInterface#Core#IPlugin#SetUninitialize
   isSpec: "True"
-  name.vb: QQMini.PluginSDK.Core.IPlugin.SetUninitialize
-  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginSDK.Core.IPlugin.SetUninitialize
+  name.vb: QQMini.PluginInterface.Core.IPlugin.SetUninitialize
+  fullName: QQMini.PluginSDK.Core.PluginBase.QQMini.PluginInterface.Core.IPlugin.SetUninitialize
   nameWithType: PluginBase.IPlugin.SetUninitialize
-  nameWithType.vb: PluginBase.QQMini.PluginSDK.Core.IPlugin.SetUninitialize
+  nameWithType.vb: PluginBase.QQMini.PluginInterface.Core.IPlugin.SetUninitialize
 - uid: QQMini.PluginSDK.Core.QMApi
   name: QMApi
   href: api/QQMini.PluginSDK.Core.QMApi.html
   commentId: T:QQMini.PluginSDK.Core.QMApi
   fullName: QQMini.PluginSDK.Core.QMApi
   nameWithType: QMApi
-- uid: QQMini.PluginSDK.Core.QMApi.#ctor(System.Int32)
-  name: QMApi(Int32)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi__ctor_System_Int32_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.#ctor(System.Int32)
-  fullName: QQMini.PluginSDK.Core.QMApi.QMApi(System.Int32)
-  nameWithType: QMApi.QMApi(Int32)
-- uid: QQMini.PluginSDK.Core.QMApi.#ctor*
-  name: QMApi
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi__ctor_
-  commentId: Overload:QQMini.PluginSDK.Core.QMApi.#ctor
-  isSpec: "True"
-  fullName: QQMini.PluginSDK.Core.QMApi.QMApi
-  nameWithType: QMApi.QMApi
 - uid: QQMini.PluginSDK.Core.QMApi.AuthCode
   name: AuthCode
   href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_AuthCode
@@ -3823,12 +4243,168 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.QMApi.AuthCode
   nameWithType: QMApi.AuthCode
-- uid: QQMini.PluginSDK.Core.QMApi.SendDiscussMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Discuss,System.String)
-  name: SendDiscussMessage(QQ, Discuss, String)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendDiscussMessage_QQMini_PluginSDK_Core_Model_QQ_QQMini_PluginSDK_Core_Model_Discuss_System_String_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.SendDiscussMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Discuss,System.String)
-  fullName: QQMini.PluginSDK.Core.QMApi.SendDiscussMessage(QQMini.PluginSDK.Core.Model.QQ, QQMini.PluginSDK.Core.Model.Discuss, System.String)
-  nameWithType: QMApi.SendDiscussMessage(QQ, Discuss, String)
+- uid: QQMini.PluginSDK.Core.QMApi.CurrentApi
+  name: CurrentApi
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_CurrentApi
+  commentId: P:QQMini.PluginSDK.Core.QMApi.CurrentApi
+  fullName: QQMini.PluginSDK.Core.QMApi.CurrentApi
+  nameWithType: QMApi.CurrentApi
+- uid: QQMini.PluginSDK.Core.QMApi.CurrentApi*
+  name: CurrentApi
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_CurrentApi_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.CurrentApi
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.CurrentApi
+  nameWithType: QMApi.CurrentApi
+- uid: QQMini.PluginSDK.Core.QMApi.GetBkn(System.Int64)
+  name: GetBkn(Int64)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetBkn_System_Int64_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetBkn(System.Int64)
+  fullName: QQMini.PluginSDK.Core.QMApi.GetBkn(System.Int64)
+  nameWithType: QMApi.GetBkn(Int64)
+- uid: QQMini.PluginSDK.Core.QMApi.GetBkn*
+  name: GetBkn
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetBkn_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetBkn
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetBkn
+  nameWithType: QMApi.GetBkn
+- uid: QQMini.PluginSDK.Core.QMApi.GetCookies(System.Int64)
+  name: GetCookies(Int64)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetCookies_System_Int64_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetCookies(System.Int64)
+  fullName: QQMini.PluginSDK.Core.QMApi.GetCookies(System.Int64)
+  nameWithType: QMApi.GetCookies(Int64)
+- uid: QQMini.PluginSDK.Core.QMApi.GetCookies*
+  name: GetCookies
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetCookies_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetCookies
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetCookies
+  nameWithType: QMApi.GetCookies
+- uid: QQMini.PluginSDK.Core.QMApi.GetFrameworkTimpStmap
+  name: GetFrameworkTimpStmap()
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetFrameworkTimpStmap
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetFrameworkTimpStmap
+  fullName: QQMini.PluginSDK.Core.QMApi.GetFrameworkTimpStmap()
+  nameWithType: QMApi.GetFrameworkTimpStmap()
+- uid: QQMini.PluginSDK.Core.QMApi.GetFrameworkTimpStmap*
+  name: GetFrameworkTimpStmap
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetFrameworkTimpStmap_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetFrameworkTimpStmap
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetFrameworkTimpStmap
+  nameWithType: QMApi.GetFrameworkTimpStmap
+- uid: QQMini.PluginSDK.Core.QMApi.GetFrameworkType
+  name: GetFrameworkType()
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetFrameworkType
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetFrameworkType
+  fullName: QQMini.PluginSDK.Core.QMApi.GetFrameworkType()
+  nameWithType: QMApi.GetFrameworkType()
+- uid: QQMini.PluginSDK.Core.QMApi.GetFrameworkType*
+  name: GetFrameworkType
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetFrameworkType_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetFrameworkType
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetFrameworkType
+  nameWithType: QMApi.GetFrameworkType
+- uid: QQMini.PluginSDK.Core.QMApi.GetFrameworkVersion
+  name: GetFrameworkVersion()
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetFrameworkVersion
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetFrameworkVersion
+  fullName: QQMini.PluginSDK.Core.QMApi.GetFrameworkVersion()
+  nameWithType: QMApi.GetFrameworkVersion()
+- uid: QQMini.PluginSDK.Core.QMApi.GetFrameworkVersion*
+  name: GetFrameworkVersion
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetFrameworkVersion_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetFrameworkVersion
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetFrameworkVersion
+  nameWithType: QMApi.GetFrameworkVersion
+- uid: QQMini.PluginSDK.Core.QMApi.GetFriendVerifyMode(System.Int64,System.Int64)
+  name: GetFriendVerifyMode(Int64, Int64)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetFriendVerifyMode_System_Int64_System_Int64_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetFriendVerifyMode(System.Int64,System.Int64)
+  fullName: QQMini.PluginSDK.Core.QMApi.GetFriendVerifyMode(System.Int64, System.Int64)
+  nameWithType: QMApi.GetFriendVerifyMode(Int64, Int64)
+- uid: QQMini.PluginSDK.Core.QMApi.GetFriendVerifyMode*
+  name: GetFriendVerifyMode
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetFriendVerifyMode_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetFriendVerifyMode
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetFriendVerifyMode
+  nameWithType: QMApi.GetFriendVerifyMode
+- uid: QQMini.PluginSDK.Core.QMApi.GetGroupBanStatus(System.Int64,System.Int64)
+  name: GetGroupBanStatus(Int64, Int64)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetGroupBanStatus_System_Int64_System_Int64_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetGroupBanStatus(System.Int64,System.Int64)
+  fullName: QQMini.PluginSDK.Core.QMApi.GetGroupBanStatus(System.Int64, System.Int64)
+  nameWithType: QMApi.GetGroupBanStatus(Int64, Int64)
+- uid: QQMini.PluginSDK.Core.QMApi.GetGroupBanStatus*
+  name: GetGroupBanStatus
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetGroupBanStatus_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetGroupBanStatus
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetGroupBanStatus
+  nameWithType: QMApi.GetGroupBanStatus
+- uid: QQMini.PluginSDK.Core.QMApi.GetGroupMemberBanStatus(System.Int64,System.Int64,System.Int64)
+  name: GetGroupMemberBanStatus(Int64, Int64, Int64)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetGroupMemberBanStatus_System_Int64_System_Int64_System_Int64_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetGroupMemberBanStatus(System.Int64,System.Int64,System.Int64)
+  fullName: QQMini.PluginSDK.Core.QMApi.GetGroupMemberBanStatus(System.Int64, System.Int64, System.Int64)
+  nameWithType: QMApi.GetGroupMemberBanStatus(Int64, Int64, Int64)
+- uid: QQMini.PluginSDK.Core.QMApi.GetGroupMemberBanStatus*
+  name: GetGroupMemberBanStatus
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetGroupMemberBanStatus_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetGroupMemberBanStatus
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetGroupMemberBanStatus
+  nameWithType: QMApi.GetGroupMemberBanStatus
+- uid: QQMini.PluginSDK.Core.QMApi.GetIsOnline(System.Int64,System.Int64)
+  name: GetIsOnline(Int64, Int64)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetIsOnline_System_Int64_System_Int64_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetIsOnline(System.Int64,System.Int64)
+  fullName: QQMini.PluginSDK.Core.QMApi.GetIsOnline(System.Int64, System.Int64)
+  nameWithType: QMApi.GetIsOnline(Int64, Int64)
+- uid: QQMini.PluginSDK.Core.QMApi.GetIsOnline*
+  name: GetIsOnline
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetIsOnline_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetIsOnline
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetIsOnline
+  nameWithType: QMApi.GetIsOnline
+- uid: QQMini.PluginSDK.Core.QMApi.GetOnlineStatus(System.Int64,System.Int64)
+  name: GetOnlineStatus(Int64, Int64)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetOnlineStatus_System_Int64_System_Int64_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetOnlineStatus(System.Int64,System.Int64)
+  fullName: QQMini.PluginSDK.Core.QMApi.GetOnlineStatus(System.Int64, System.Int64)
+  nameWithType: QMApi.GetOnlineStatus(Int64, Int64)
+- uid: QQMini.PluginSDK.Core.QMApi.GetOnlineStatus*
+  name: GetOnlineStatus
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetOnlineStatus_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetOnlineStatus
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetOnlineStatus
+  nameWithType: QMApi.GetOnlineStatus
+- uid: QQMini.PluginSDK.Core.QMApi.GetPluginDataDirectory
+  name: GetPluginDataDirectory()
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetPluginDataDirectory
+  commentId: M:QQMini.PluginSDK.Core.QMApi.GetPluginDataDirectory
+  fullName: QQMini.PluginSDK.Core.QMApi.GetPluginDataDirectory()
+  nameWithType: QMApi.GetPluginDataDirectory()
+- uid: QQMini.PluginSDK.Core.QMApi.GetPluginDataDirectory*
+  name: GetPluginDataDirectory
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_GetPluginDataDirectory_
+  commentId: Overload:QQMini.PluginSDK.Core.QMApi.GetPluginDataDirectory
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMApi.GetPluginDataDirectory
+  nameWithType: QMApi.GetPluginDataDirectory
+- uid: QQMini.PluginSDK.Core.QMApi.SendDiscussMessage(System.Int64,System.Int64,System.String)
+  name: SendDiscussMessage(Int64, Int64, String)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendDiscussMessage_System_Int64_System_Int64_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.SendDiscussMessage(System.Int64,System.Int64,System.String)
+  fullName: QQMini.PluginSDK.Core.QMApi.SendDiscussMessage(System.Int64, System.Int64, System.String)
+  nameWithType: QMApi.SendDiscussMessage(Int64, Int64, String)
 - uid: QQMini.PluginSDK.Core.QMApi.SendDiscussMessage*
   name: SendDiscussMessage
   href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendDiscussMessage_
@@ -3836,12 +4412,12 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.QMApi.SendDiscussMessage
   nameWithType: QMApi.SendDiscussMessage
-- uid: QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Discuss,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  name: SendDiscussTempMessage(QQ, Discuss, QQ, String)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendDiscussTempMessage_QQMini_PluginSDK_Core_Model_QQ_QQMini_PluginSDK_Core_Model_Discuss_QQMini_PluginSDK_Core_Model_QQ_System_String_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Discuss,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  fullName: QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage(QQMini.PluginSDK.Core.Model.QQ, QQMini.PluginSDK.Core.Model.Discuss, QQMini.PluginSDK.Core.Model.QQ, System.String)
-  nameWithType: QMApi.SendDiscussTempMessage(QQ, Discuss, QQ, String)
+- uid: QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage(System.Int64,System.Int64,System.Int64,System.String)
+  name: SendDiscussTempMessage(Int64, Int64, Int64, String)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendDiscussTempMessage_System_Int64_System_Int64_System_Int64_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage(System.Int64,System.Int64,System.Int64,System.String)
+  fullName: QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage(System.Int64, System.Int64, System.Int64, System.String)
+  nameWithType: QMApi.SendDiscussTempMessage(Int64, Int64, Int64, String)
 - uid: QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage*
   name: SendDiscussTempMessage
   href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendDiscussTempMessage_
@@ -3849,12 +4425,12 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.QMApi.SendDiscussTempMessage
   nameWithType: QMApi.SendDiscussTempMessage
-- uid: QQMini.PluginSDK.Core.QMApi.SendFriendMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  name: SendFriendMessage(QQ, QQ, String)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendFriendMessage_QQMini_PluginSDK_Core_Model_QQ_QQMini_PluginSDK_Core_Model_QQ_System_String_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.SendFriendMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  fullName: QQMini.PluginSDK.Core.QMApi.SendFriendMessage(QQMini.PluginSDK.Core.Model.QQ, QQMini.PluginSDK.Core.Model.QQ, System.String)
-  nameWithType: QMApi.SendFriendMessage(QQ, QQ, String)
+- uid: QQMini.PluginSDK.Core.QMApi.SendFriendMessage(System.Int64,System.Int64,System.String)
+  name: SendFriendMessage(Int64, Int64, String)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendFriendMessage_System_Int64_System_Int64_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.SendFriendMessage(System.Int64,System.Int64,System.String)
+  fullName: QQMini.PluginSDK.Core.QMApi.SendFriendMessage(System.Int64, System.Int64, System.String)
+  nameWithType: QMApi.SendFriendMessage(Int64, Int64, String)
 - uid: QQMini.PluginSDK.Core.QMApi.SendFriendMessage*
   name: SendFriendMessage
   href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendFriendMessage_
@@ -3862,12 +4438,12 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.QMApi.SendFriendMessage
   nameWithType: QMApi.SendFriendMessage
-- uid: QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  name: SendFriendResponseMessage(QQ, QQ, String)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendFriendResponseMessage_QQMini_PluginSDK_Core_Model_QQ_QQMini_PluginSDK_Core_Model_QQ_System_String_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  fullName: QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage(QQMini.PluginSDK.Core.Model.QQ, QQMini.PluginSDK.Core.Model.QQ, System.String)
-  nameWithType: QMApi.SendFriendResponseMessage(QQ, QQ, String)
+- uid: QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage(System.Int64,System.Int64,System.String)
+  name: SendFriendResponseMessage(Int64, Int64, String)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendFriendResponseMessage_System_Int64_System_Int64_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage(System.Int64,System.Int64,System.String)
+  fullName: QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage(System.Int64, System.Int64, System.String)
+  nameWithType: QMApi.SendFriendResponseMessage(Int64, Int64, String)
 - uid: QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage*
   name: SendFriendResponseMessage
   href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendFriendResponseMessage_
@@ -3875,12 +4451,12 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.QMApi.SendFriendResponseMessage
   nameWithType: QMApi.SendFriendResponseMessage
-- uid: QQMini.PluginSDK.Core.QMApi.SendGroupMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Group,System.String)
-  name: SendGroupMessage(QQ, Group, String)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendGroupMessage_QQMini_PluginSDK_Core_Model_QQ_QQMini_PluginSDK_Core_Model_Group_System_String_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.SendGroupMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Group,System.String)
-  fullName: QQMini.PluginSDK.Core.QMApi.SendGroupMessage(QQMini.PluginSDK.Core.Model.QQ, QQMini.PluginSDK.Core.Model.Group, System.String)
-  nameWithType: QMApi.SendGroupMessage(QQ, Group, String)
+- uid: QQMini.PluginSDK.Core.QMApi.SendGroupMessage(System.Int64,System.Int64,System.String)
+  name: SendGroupMessage(Int64, Int64, String)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendGroupMessage_System_Int64_System_Int64_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.SendGroupMessage(System.Int64,System.Int64,System.String)
+  fullName: QQMini.PluginSDK.Core.QMApi.SendGroupMessage(System.Int64, System.Int64, System.String)
+  nameWithType: QMApi.SendGroupMessage(Int64, Int64, String)
 - uid: QQMini.PluginSDK.Core.QMApi.SendGroupMessage*
   name: SendGroupMessage
   href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendGroupMessage_
@@ -3888,12 +4464,12 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.QMApi.SendGroupMessage
   nameWithType: QMApi.SendGroupMessage
-- uid: QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Group,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  name: SendGroupTempMessage(QQ, Group, QQ, String)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendGroupTempMessage_QQMini_PluginSDK_Core_Model_QQ_QQMini_PluginSDK_Core_Model_Group_QQMini_PluginSDK_Core_Model_QQ_System_String_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.Group,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  fullName: QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage(QQMini.PluginSDK.Core.Model.QQ, QQMini.PluginSDK.Core.Model.Group, QQMini.PluginSDK.Core.Model.QQ, System.String)
-  nameWithType: QMApi.SendGroupTempMessage(QQ, Group, QQ, String)
+- uid: QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage(System.Int64,System.Int64,System.Int64,System.String)
+  name: SendGroupTempMessage(Int64, Int64, Int64, String)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendGroupTempMessage_System_Int64_System_Int64_System_Int64_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage(System.Int64,System.Int64,System.Int64,System.String)
+  fullName: QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage(System.Int64, System.Int64, System.Int64, System.String)
+  nameWithType: QMApi.SendGroupTempMessage(Int64, Int64, Int64, String)
 - uid: QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage*
   name: SendGroupTempMessage
   href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendGroupTempMessage_
@@ -3901,12 +4477,12 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.QMApi.SendGroupTempMessage
   nameWithType: QMApi.SendGroupTempMessage
-- uid: QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  name: SendOnlineTempMessage(QQ, QQ, String)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendOnlineTempMessage_QQMini_PluginSDK_Core_Model_QQ_QQMini_PluginSDK_Core_Model_QQ_System_String_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ,System.String)
-  fullName: QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage(QQMini.PluginSDK.Core.Model.QQ, QQMini.PluginSDK.Core.Model.QQ, System.String)
-  nameWithType: QMApi.SendOnlineTempMessage(QQ, QQ, String)
+- uid: QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage(System.Int64,System.Int64,System.String)
+  name: SendOnlineTempMessage(Int64, Int64, String)
+  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendOnlineTempMessage_System_Int64_System_Int64_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage(System.Int64,System.Int64,System.String)
+  fullName: QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage(System.Int64, System.Int64, System.String)
+  nameWithType: QMApi.SendOnlineTempMessage(Int64, Int64, String)
 - uid: QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage*
   name: SendOnlineTempMessage
   href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SendOnlineTempMessage_
@@ -3914,25 +4490,6 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.QMApi.SendOnlineTempMessage
   nameWithType: QMApi.SendOnlineTempMessage
-- uid: QQMini.PluginSDK.Core.QMApi.SetFatal(System.Exception)
-  name: SetFatal(Exception)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SetFatal_System_Exception_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.SetFatal(System.Exception)
-  fullName: QQMini.PluginSDK.Core.QMApi.SetFatal(System.Exception)
-  nameWithType: QMApi.SetFatal(Exception)
-- uid: QQMini.PluginSDK.Core.QMApi.SetFatal(System.Int32,System.String)
-  name: SetFatal(Int32, String)
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SetFatal_System_Int32_System_String_
-  commentId: M:QQMini.PluginSDK.Core.QMApi.SetFatal(System.Int32,System.String)
-  fullName: QQMini.PluginSDK.Core.QMApi.SetFatal(System.Int32, System.String)
-  nameWithType: QMApi.SetFatal(Int32, String)
-- uid: QQMini.PluginSDK.Core.QMApi.SetFatal*
-  name: SetFatal
-  href: api/QQMini.PluginSDK.Core.QMApi.html#QQMini_PluginSDK_Core_QMApi_SetFatal_
-  commentId: Overload:QQMini.PluginSDK.Core.QMApi.SetFatal
-  isSpec: "True"
-  fullName: QQMini.PluginSDK.Core.QMApi.SetFatal
-  nameWithType: QMApi.SetFatal
 - uid: QQMini.PluginSDK.Core.QMEventAttribute
   name: QMEventAttribute
   href: api/QQMini.PluginSDK.Core.QMEventAttribute.html
@@ -3978,3 +4535,119 @@ references:
   isSpec: "True"
   fullName: QQMini.PluginSDK.Core.QMEventAttribute.Type
   nameWithType: QMEventAttribute.Type
+- uid: QQMini.PluginSDK.Core.QMLog
+  name: QMLog
+  href: api/QQMini.PluginSDK.Core.QMLog.html
+  commentId: T:QQMini.PluginSDK.Core.QMLog
+  fullName: QQMini.PluginSDK.Core.QMLog
+  nameWithType: QMLog
+- uid: QQMini.PluginSDK.Core.QMLog.AuthCode
+  name: AuthCode
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_AuthCode
+  commentId: P:QQMini.PluginSDK.Core.QMLog.AuthCode
+  fullName: QQMini.PluginSDK.Core.QMLog.AuthCode
+  nameWithType: QMLog.AuthCode
+- uid: QQMini.PluginSDK.Core.QMLog.AuthCode*
+  name: AuthCode
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_AuthCode_
+  commentId: Overload:QQMini.PluginSDK.Core.QMLog.AuthCode
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMLog.AuthCode
+  nameWithType: QMLog.AuthCode
+- uid: QQMini.PluginSDK.Core.QMLog.CurrentApi
+  name: CurrentApi
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_CurrentApi
+  commentId: P:QQMini.PluginSDK.Core.QMLog.CurrentApi
+  fullName: QQMini.PluginSDK.Core.QMLog.CurrentApi
+  nameWithType: QMLog.CurrentApi
+- uid: QQMini.PluginSDK.Core.QMLog.CurrentApi*
+  name: CurrentApi
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_CurrentApi_
+  commentId: Overload:QQMini.PluginSDK.Core.QMLog.CurrentApi
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMLog.CurrentApi
+  nameWithType: QMLog.CurrentApi
+- uid: QQMini.PluginSDK.Core.QMLog.Debug(System.String)
+  name: Debug(String)
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Debug_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMLog.Debug(System.String)
+  fullName: QQMini.PluginSDK.Core.QMLog.Debug(System.String)
+  nameWithType: QMLog.Debug(String)
+- uid: QQMini.PluginSDK.Core.QMLog.Debug*
+  name: Debug
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Debug_
+  commentId: Overload:QQMini.PluginSDK.Core.QMLog.Debug
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMLog.Debug
+  nameWithType: QMLog.Debug
+- uid: QQMini.PluginSDK.Core.QMLog.Error(System.String)
+  name: Error(String)
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Error_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMLog.Error(System.String)
+  fullName: QQMini.PluginSDK.Core.QMLog.Error(System.String)
+  nameWithType: QMLog.Error(String)
+- uid: QQMini.PluginSDK.Core.QMLog.Error*
+  name: Error
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Error_
+  commentId: Overload:QQMini.PluginSDK.Core.QMLog.Error
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMLog.Error
+  nameWithType: QMLog.Error
+- uid: QQMini.PluginSDK.Core.QMLog.Fatal(System.Exception)
+  name: Fatal(Exception)
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Fatal_System_Exception_
+  commentId: M:QQMini.PluginSDK.Core.QMLog.Fatal(System.Exception)
+  fullName: QQMini.PluginSDK.Core.QMLog.Fatal(System.Exception)
+  nameWithType: QMLog.Fatal(Exception)
+- uid: QQMini.PluginSDK.Core.QMLog.Fatal(System.Int32,System.String)
+  name: Fatal(Int32, String)
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Fatal_System_Int32_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMLog.Fatal(System.Int32,System.String)
+  fullName: QQMini.PluginSDK.Core.QMLog.Fatal(System.Int32, System.String)
+  nameWithType: QMLog.Fatal(Int32, String)
+- uid: QQMini.PluginSDK.Core.QMLog.Fatal*
+  name: Fatal
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Fatal_
+  commentId: Overload:QQMini.PluginSDK.Core.QMLog.Fatal
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMLog.Fatal
+  nameWithType: QMLog.Fatal
+- uid: QQMini.PluginSDK.Core.QMLog.Info(System.String)
+  name: Info(String)
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Info_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMLog.Info(System.String)
+  fullName: QQMini.PluginSDK.Core.QMLog.Info(System.String)
+  nameWithType: QMLog.Info(String)
+- uid: QQMini.PluginSDK.Core.QMLog.Info*
+  name: Info
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Info_
+  commentId: Overload:QQMini.PluginSDK.Core.QMLog.Info
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMLog.Info
+  nameWithType: QMLog.Info
+- uid: QQMini.PluginSDK.Core.QMLog.Log(QQMini.PluginSDK.Core.Model.LogLevel,System.String)
+  name: Log(LogLevel, String)
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Log_QQMini_PluginSDK_Core_Model_LogLevel_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMLog.Log(QQMini.PluginSDK.Core.Model.LogLevel,System.String)
+  fullName: QQMini.PluginSDK.Core.QMLog.Log(QQMini.PluginSDK.Core.Model.LogLevel, System.String)
+  nameWithType: QMLog.Log(LogLevel, String)
+- uid: QQMini.PluginSDK.Core.QMLog.Log*
+  name: Log
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Log_
+  commentId: Overload:QQMini.PluginSDK.Core.QMLog.Log
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMLog.Log
+  nameWithType: QMLog.Log
+- uid: QQMini.PluginSDK.Core.QMLog.Warning(System.String)
+  name: Warning(String)
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Warning_System_String_
+  commentId: M:QQMini.PluginSDK.Core.QMLog.Warning(System.String)
+  fullName: QQMini.PluginSDK.Core.QMLog.Warning(System.String)
+  nameWithType: QMLog.Warning(String)
+- uid: QQMini.PluginSDK.Core.QMLog.Warning*
+  name: Warning
+  href: api/QQMini.PluginSDK.Core.QMLog.html#QQMini_PluginSDK_Core_QMLog_Warning_
+  commentId: Overload:QQMini.PluginSDK.Core.QMLog.Warning
+  isSpec: "True"
+  fullName: QQMini.PluginSDK.Core.QMLog.Warning
+  nameWithType: QMLog.Warning
