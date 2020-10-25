@@ -8,10 +8,10 @@
 		<!--生成-->
 		<Platforms>x86</Platforms>
 		<PlatformTarget>x86</PlatformTarget>
-		<DocumentationFile>QQMini.PluginSDK.xml</DocumentationFile>
+		<DocumentationFile>QQMini.PluginSDK.Core.xml</DocumentationFile>
 
 		<!--打包-->
-		<Version>1.0.9.1007-Beta</Version>
+		<Version>1.0.15.1021-Beta</Version>
 		<PackageId>QQMini.PluginSDK.Core</PackageId>
 		<Authors>JieGG</Authors>
 		<Company>QQMiniBot</Company>
@@ -36,10 +36,9 @@
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
 		<PackageReference Include="QQMini.PluginFramework.Utility" Version="1.1.1.1006" />
-		<PackageReference Include="QQMini.PluginInterface" Version="1.0.0.1007" />
+		<PackageReference Include="QQMini.PluginInterface" />
+		<Reference Include="System.Runtime.Caching" />
 		<PackageReference Update="@(PackageReference)" PrivateAssets="All" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Core\" />
+		<PackageReference Update="QQMini.PluginInterface" Version="1.0.3.1021" />
 	</ItemGroup>
 </Project>

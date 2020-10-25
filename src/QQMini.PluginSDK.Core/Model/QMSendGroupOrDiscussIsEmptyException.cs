@@ -13,6 +13,13 @@ namespace QQMini.PluginSDK.Core.Model
 	[Serializable]
 	public class QMSendGroupOrDiscussIsEmptyException : QMException
 	{
+		#region --属性--
+		/// <summary>
+		/// 获取描述当前异常的消息
+		/// </summary>
+		public override string Message => $"发送消息时群组或讨论组不能为空";
+		#endregion
+
 		#region --构造函数--
 		/// <summary>
 		/// 初始化 <see cref="QMSendGroupOrDiscussIsEmptyException"/> 类的新实例

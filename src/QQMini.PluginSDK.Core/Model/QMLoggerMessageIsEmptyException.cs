@@ -8,35 +8,36 @@ using System.Threading.Tasks;
 namespace QQMini.PluginSDK.Core.Model
 {
 	/// <summary>
-	/// 表示在 QQMini 插件执行过程中未接收到该对象好友验证请求或未接收到该对象回复信息.
+	/// 表示在 QQMini 插件执行过程中发生的日志信息是空的异常
 	/// </summary>
 	[Serializable]
-	public class QMSendQQNotSupportTempMessageException : QMException
+	public class QMLoggerMessageIsEmptyException : QMException
 	{
 		#region --属性--
 		/// <summary>
 		/// 获取描述当前异常的消息
 		/// </summary>
-		public override string Message => $"未接收到该对象好友验证请求或未接收到该对象回复信息";
+		public override string Message => $"日志消息是空";
 		#endregion
 
 		#region --构造函数--
 		/// <summary>
-		/// 初始化 <see cref="QMSendQQNotSupportTempMessageException"/> 类的新实例
+		/// 初始化 <see cref="QMLoggerMessageIsEmptyException"/> 类的新实例
 		/// </summary>
-		public QMSendQQNotSupportTempMessageException ()
-			: base (QMExceptionCodes.SendQQNotSupportTempMessage)
+		public QMLoggerMessageIsEmptyException ()
+			: base (QMExceptionCodes.LoggerMessageIsEmpty)
 		{
+
 		}
 		/// <summary>
-		/// 用序列化数据初始化 <see cref="QMSendQQNotSupportTempMessageException"/> 类的新实例
+		/// 用序列化数据初始化 <see cref="QMLoggerMessageIsEmptyException"/> 类的新实例
 		/// </summary>
 		/// <param name="info"><see cref="SerializationInfo"/>，它保存关于所引发异常的序列化对象数据</param>
 		/// <param name="context"><see cref="StreamingContext"/>，它包含关于源或目标的上下文信息</param>
-		protected QMSendQQNotSupportTempMessageException (SerializationInfo info, StreamingContext context)
+		protected QMLoggerMessageIsEmptyException (SerializationInfo info, StreamingContext context)
 			: base (info, context)
 		{
-		} 
+		}
 		#endregion
 	}
 }

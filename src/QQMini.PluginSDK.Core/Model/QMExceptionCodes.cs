@@ -52,5 +52,25 @@ namespace QQMini.PluginSDK.Core.Model
 		/// 未收到发送QQ响应消息
 		/// </summary>
 		NotReceiveSendQQResponseMessage = -108,
+		/// <summary>
+		/// 日志等级找不到
+		/// </summary>
+		LoggerLevelNotFound = -109,
+		/// <summary>
+		/// 日志信息是空
+		/// </summary>
+		LoggerMessageIsEmpty = -110,
+		/// <summary>
+		/// 未知的框架类型
+		/// </summary>
+		UnknownFrameworkType = -111,
+		/// <summary>
+		/// 群组未找到
+		/// </summary>
+		GroupNotFound = -112,
+		/// <summary>
+		/// QQ未找到
+		/// </summary>
+		QQNotFound = -113,
 	}
 }

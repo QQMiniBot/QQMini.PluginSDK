@@ -13,13 +13,20 @@ namespace QQMini.PluginSDK.Core.Model
 	[Serializable]
 	public class QMAuthCodeInvalidException : QMException
 	{
+		#region --属性--
+		/// <summary>
+		/// 获取描述当前异常的消息
+		/// </summary>
+		public override string Message => $"插件的授权码无效";
+		#endregion
+
+		#region --构造函数--
 		/// <summary>
 		/// 初始化 <see cref="QMAuthCodeInvalidException"/> 类的新实例
 		/// </summary>
 		public QMAuthCodeInvalidException ()
 			: base (QMExceptionCodes.AuthCodeInvalid)
-		{
-		}
+		{ }
 		/// <summary>
 		/// 用序列化数据初始化 <see cref="QMException"/> 类的新实例
 		/// </summary>
@@ -27,7 +34,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <param name="context"><see cref="StreamingContext"/>，它包含关于源或目标的上下文信息</param>
 		protected QMAuthCodeInvalidException (SerializationInfo info, StreamingContext context)
 			: base (info, context)
-		{
-		}
+		{ } 
+		#endregion
 	}
 }
