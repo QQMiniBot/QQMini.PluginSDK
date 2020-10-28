@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.Discuss.html",
-          "hash": "p4hA/yrQpSRgaX1y0RNOlw=="
+          "hash": "yDUvxkGN42yFDYJY9b88Tw=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.FriendVerifyTypes.html",
-          "hash": "3so+EjtTa95IlaRs8aEkug=="
+          "hash": "v1HZMtDv4OrcmFGn77buXg=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.GenderTypes.html",
-          "hash": "qcoIKfqkMvB6W8oo2jH2+w=="
+          "hash": "kqpp7e7oIQd1pI++bi4WAw=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.Group.html",
-          "hash": "ezOGQ+X3ef0roQloXR0i2w=="
+          "hash": "463gwhxWEOH7xXj7ILsqjA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.LogLevel.html",
-          "hash": "VviSsnaN1uCNGdfAygrBeg=="
+          "hash": "RX8x5qmR2xv7s17NJcU/EA=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.Message.html",
-          "hash": "xvagX3r/APYN85RmT4lASQ=="
+          "hash": "Ri+To9PB9FuKriEswQGGzA=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.OnlineStatusTypes.html",
-          "hash": "4LxQI5JIiPeGHcGME+czBg=="
+          "hash": "UcCmC/2behbogRvAxrfRGg=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.PluginInfo.html",
-          "hash": "v+Q+WQ8OxuaRs0saT1S8pA=="
+          "hash": "WJiJqI9pxp91tiu/JMxdQQ=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMAuthCodeInvalidException.html",
-          "hash": "dvKqVlURPS/RfAOupDBSbA=="
+          "hash": "D0vVPkFWPAFHoToNVZgSZg=="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMAuthCodeLessThanZeroException.html",
-          "hash": "5so07trHtgx++OuZkMvX/g=="
+          "hash": "WpmdVNqzCWRuzBasL7y2ew=="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventArgs.html",
-          "hash": "BBm3VQgZ3+uFqhHPbopQQw=="
+          "hash": "eIBhmwjjddMY+ev3kBQhbQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMBeFriendDeleteEventSubTypes.html",
-          "hash": "EQ8lpDGMmzwUfHzzVhRfog=="
+          "hash": "RBUnQBDFrvnLLMthMohgRA=="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMCode.html",
-          "hash": "Eqs0HQCo2ninMNvNG5j4nw=="
+          "hash": "zDE6vJTMmHcm/ae0mSULaA=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMCodeValue.html",
-          "hash": "bdmta0w5Eqj1NPM2izFYhA=="
+          "hash": "j2EAm1m09T5+1Byjh1nwBQ=="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMDiscussMessageEventArgs.html",
-          "hash": "TTe+cQXI8kybLAYiq1lLRg=="
+          "hash": "KKe3vxOBgxsYosAuWTYkBA=="
         }
       },
       "is_incremental": false,
@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMDiscussMessageEventSubTypes.html",
-          "hash": "ZrMAH0E5Tfkucna1qjiY+g=="
+          "hash": "X3FlKu4hEdxPk4dgcwK04g=="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.html",
-          "hash": "gY4Ic1jDUBFOYbKKAj8+8A=="
+          "hash": "QegUn3LsKorHZQEbEfbOBg=="
         }
       },
       "is_incremental": false,
@@ -222,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMEventArgs.html",
-          "hash": "cigYncrN+DCorQbyRRwYLQ=="
+          "hash": "7FcYpcn6gtvNvnsgoICPNw=="
         }
       },
       "is_incremental": false,
@@ -234,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMEventHandlerTypes.html",
-          "hash": "FW3IAAz5cg41dVxtzZ3P/Q=="
+          "hash": "qss0ngg78MzTcxrwbv+FCw=="
         }
       },
       "is_incremental": false,
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMEventTypes.html",
-          "hash": "+AObpJwcKUax/+eqFO4GRw=="
+          "hash": "Q6DM1A/dInVrfD/ZrYgDaA=="
         }
       },
       "is_incremental": false,
@@ -258,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMException.html",
-          "hash": "Iho84juIPhd1EpMKel4e6w=="
+          "hash": "kvjFTU0gco9LdCBs8D+ysw=="
         }
       },
       "is_incremental": false,
@@ -270,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMExceptionCodes.html",
-          "hash": "m/fEfjWk+UeCePCwCmKr6Q=="
+          "hash": "XlkOMmaBKphq00OMc2gWrQ=="
         }
       },
       "is_incremental": false,
@@ -282,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventArgs.html",
-          "hash": "vl8jJTXnONe+kOlk5yJh1A=="
+          "hash": "gFB71+e+f7dnqAU2JKR8mg=="
         }
       },
       "is_incremental": false,
@@ -294,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddRequestEventSubTypes.html",
-          "hash": "9w3owEvtpDitA8Nw44AV3Q=="
+          "hash": "tId0m6yZG0HzVZikncrGrA=="
         }
       },
       "is_incremental": false,
@@ -306,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventArgs.html",
-          "hash": "+iyrw2QQcd5G9leZIEd+Hw=="
+          "hash": "FG49/xOBFeXP1zeWH9hcpg=="
         }
       },
       "is_incremental": false,
@@ -318,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMFriendAddResponseEventSubTypes.html",
-          "hash": "ipGctiDQBWwxGEFtRLXp+w=="
+          "hash": "PvEwQbqOOcrSm9CkLUrIAg=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMFunctionTypes.html",
-          "hash": "Fg6fp18n4wASzH02yzId7Q=="
+          "hash": "jQaPy2tXTxr0ysdqLDiizQ=="
         }
       },
       "is_incremental": false,
@@ -342,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventArgs.html",
-          "hash": "dFBCOw74vB9K6GgVYi/o3A=="
+          "hash": "ylH2FfYZOwLGAibdJVeiOA=="
         }
       },
       "is_incremental": false,
@@ -354,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAddRequestEventSubTypes.html",
-          "hash": "7l/yEvvIHTHFe9meI/Mrfw=="
+          "hash": "/QowoZGDKF850WBRmQc8Tw=="
         }
       },
       "is_incremental": false,
@@ -366,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventArgs.html",
-          "hash": "YDBxntsivWOCBNF2Ee5Gdg=="
+          "hash": "fPWx1RicKTOkndmqFEcTnw=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupAnonymousChangeEventSubTypes.html",
-          "hash": "nUKPPlVBD57hvbg6RW6Djw=="
+          "hash": "DEud9l50A6Tuxu/xa4YYng=="
         }
       },
       "is_incremental": false,
@@ -390,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventArgs.html",
-          "hash": "iEah9kKQPGiTomC6U6lWag=="
+          "hash": "gzDVQwjRZTNbt7ggDlYMYw=="
         }
       },
       "is_incremental": false,
@@ -402,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupBanSpeakEventSubTypes.html",
-          "hash": "2xl7lvZG5MuTC4zfX96u9w=="
+          "hash": "B4esBcRrHw7zpbj2Vera+g=="
         }
       },
       "is_incremental": false,
@@ -414,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupDissmissEventArgs.html",
-          "hash": "lVHRYLfH/AaJ+VFjtuHZ1Q=="
+          "hash": "tBaDY+Ux/gdB61vfJXuP2A=="
         }
       },
       "is_incremental": false,
@@ -426,7 +426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupDissmissEventSubTypes.html",
-          "hash": "wXxmCDm24u5e1f6OSlrzaw=="
+          "hash": "dGxwqU6niDWXSaUFyDwb8g=="
         }
       },
       "is_incremental": false,
@@ -438,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventArgs.html",
-          "hash": "p/eAsA+jBakXT8PLvL+ywA=="
+          "hash": "p7T0CPxIoccMc1dMXcevGQ=="
         }
       },
       "is_incremental": false,
@@ -450,7 +450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupManagerChangeEventSubTypes.html",
-          "hash": "ugc3j1FDWGnlGO3v3bVT/g=="
+          "hash": "0jHcKF53sGtx9dsLB5Sx0A=="
         }
       },
       "is_incremental": false,
@@ -462,7 +462,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventArgs.html",
-          "hash": "GF/QXstAIIFynFhP487Dxw=="
+          "hash": "idE9S6B0nbY5g1Guc6a1xQ=="
         }
       },
       "is_incremental": false,
@@ -474,7 +474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberBanSpeakEventSubTypes.html",
-          "hash": "ULjwOrkwZFx0MPFA5t5elw=="
+          "hash": "ZB0msFTFP+vn8ypuniBs1w=="
         }
       },
       "is_incremental": false,
@@ -486,7 +486,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventArgs.html",
-          "hash": "QL3cQ8tr3vLXJlriWpQsIg=="
+          "hash": "XrbgTOXQ9eo4MpeXcqWMGQ=="
         }
       },
       "is_incremental": false,
@@ -498,7 +498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberCardChangeEventSubTypes.html",
-          "hash": "glDi96gkpfaAYO0ImnIT4A=="
+          "hash": "EZ0kx1oj3XXsak9M7g8Y/w=="
         }
       },
       "is_incremental": false,
@@ -510,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventArgs.html",
-          "hash": "c50++LDVGp0t7A2xXyQ76Q=="
+          "hash": "Gk3K4WezpKnyuucLLTcPIg=="
         }
       },
       "is_incremental": false,
@@ -522,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberDecreaseEventSubTypes.html",
-          "hash": "cSMzDZn+F2wNFyMDB666PQ=="
+          "hash": "DkGUWuXv6gpq/D1Z18DsNg=="
         }
       },
       "is_incremental": false,
@@ -534,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventArgs.html",
-          "hash": "zA/uMVf15YFHIicHYrpKSg=="
+          "hash": "I7WQxs2D1rhWyPJIO46X1Q=="
         }
       },
       "is_incremental": false,
@@ -546,7 +546,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberIncreaseEventSubTypes.html",
-          "hash": "Ob2Ruf/y6uuUDMM95IcX+A=="
+          "hash": "C9IZXZXxQ0LEQr7UdvzVng=="
         }
       },
       "is_incremental": false,
@@ -558,7 +558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventArgs.html",
-          "hash": "yS+lpGg7ubu4gYGOz5+o+Q=="
+          "hash": "ZBU4C0ARX1Ugd+xE3ghgGA=="
         }
       },
       "is_incremental": false,
@@ -570,7 +570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMemberRemoveMessageEventSubTypes.html",
-          "hash": "egMBVE7nr8WxfnClS8WkNw=="
+          "hash": "6tvvAt8R+0kMzHR3gIBy1Q=="
         }
       },
       "is_incremental": false,
@@ -582,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMessageEventArgs.html",
-          "hash": "+iY7cG4J9gDbCgCABLkbUw=="
+          "hash": "868FfjL8zBSrpILIM47ruA=="
         }
       },
       "is_incremental": false,
@@ -594,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupMessageEventSubTypes.html",
-          "hash": "2NsYRAxCFID6djuHM1gk7A=="
+          "hash": "sjRH0nPK4qjQwM0vMAnFoA=="
         }
       },
       "is_incremental": false,
@@ -606,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventArgs.html",
-          "hash": "oyNPL02HwdZSizHjUoGmvg=="
+          "hash": "dRI3nLwYFcAWp+N4lvvT3A=="
         }
       },
       "is_incremental": false,
@@ -618,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupNameChangeEventSubTypes.html",
-          "hash": "OUZ8WHZMtMcDX+6g3RvpWA=="
+          "hash": "E1YCeIv3jJl6ZSFDLpnhPQ=="
         }
       },
       "is_incremental": false,
@@ -630,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupNotFoundException.html",
-          "hash": "O+W8sii750zSW2LynkADlQ=="
+          "hash": "AtATQ7g3+PpivSfLTW7Bsg=="
         }
       },
       "is_incremental": false,
@@ -642,7 +642,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.html",
-          "hash": "uWTjYe/zbH7X0HwJeVazzQ=="
+          "hash": "XvCvtqIMi19fZeYNJtZp1Q=="
         }
       },
       "is_incremental": false,
@@ -654,7 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMLoggerLevelNotFountException.html",
-          "hash": "99T3b7dWnk7RauFyVNJIXg=="
+          "hash": "5XF+okE0YvkNz+RdKzLH2g=="
         }
       },
       "is_incremental": false,
@@ -666,7 +666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMLoggerMessageIsEmptyException.html",
-          "hash": "2p0yrntpuVCgd1VkG1Td1A=="
+          "hash": "8e/mlN2axLsBcpvzUVKk4g=="
         }
       },
       "is_incremental": false,
@@ -678,7 +678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMNotReceiveSendQQResponseMessageException.html",
-          "hash": "aIL2+/CWzdVd+o/MZBVfVw=="
+          "hash": "ykcwJRHYFJyYgDugOaze6Q=="
         }
       },
       "is_incremental": false,
@@ -690,7 +690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMPluginNotEnableException.html",
-          "hash": "V583ci4CReO3UcoQ+27Awg=="
+          "hash": "8kX5iNuYxsSDhhaodyHYOw=="
         }
       },
       "is_incremental": false,
@@ -702,7 +702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.html",
-          "hash": "JCowwzxUdRx+IIrr6rqGLg=="
+          "hash": "UWpsbLQJ++eFZXwJEAB0SQ=="
         }
       },
       "is_incremental": false,
@@ -714,7 +714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes.html",
-          "hash": "CStQkv1M8G3bvNUWH3Y4rg=="
+          "hash": "9WKKXevEgNc6etbl3h4IFA=="
         }
       },
       "is_incremental": false,
@@ -726,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMQQNotFoundException.html",
-          "hash": "CpVSzaonWqr0zcezCpnWWQ=="
+          "hash": "uaapL7P3P6iSNCa6Ac/2Xw=="
         }
       },
       "is_incremental": false,
@@ -738,7 +738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMResponseQQNotFoundException.html",
-          "hash": "WEOPtCdFqR9YHd8F9KQZNQ=="
+          "hash": "J4f12f3ahuixfHeHpSK9sA=="
         }
       },
       "is_incremental": false,
@@ -750,7 +750,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendContentIsEmptyException.html",
-          "hash": "owklG/HCxAYKfsompLyvkw=="
+          "hash": "HTEGmc8sGh7jlnaK3bEnUQ=="
         }
       },
       "is_incremental": false,
@@ -762,7 +762,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendGroupOrDiscussIsEmptyException.html",
-          "hash": "VhxueOH/4cRWXxCUoSbwaw=="
+          "hash": "DXHxydgSfD+VpF60S1Duew=="
         }
       },
       "is_incremental": false,
@@ -774,7 +774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendQQIsEmptyException.html",
-          "hash": "cKsjAylZX2nIfqKxVA5/Cw=="
+          "hash": "qDs8LX8w4bG4zxgLpHIeIw=="
         }
       },
       "is_incremental": false,
@@ -786,7 +786,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendQQNotSupportTempMessageException.html",
-          "hash": "lZHJpBiTWt+Va2wUuSvtHA=="
+          "hash": "KFnrgTSrQN2RR/6B1Qav/g=="
         }
       },
       "is_incremental": false,
@@ -798,7 +798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMSendTypeErrorException.html",
-          "hash": "YV4cigsS+LhJu3XaYKZn1A=="
+          "hash": "tpy0sbLVytJwoTbBNAvsjA=="
         }
       },
       "is_incremental": false,
@@ -810,7 +810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QMUnknownFrameworkTypeException.html",
-          "hash": "kiZABFjxw471vZaQ0yhuMQ=="
+          "hash": "GJonsbjblSCrtpWOiXRePQ=="
         }
       },
       "is_incremental": false,
@@ -822,7 +822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QQ.html",
-          "hash": "Mq6WOmydSNIPZlSL2u0P9A=="
+          "hash": "H4eRCR8XYp3DhZe1KGc9IA=="
         }
       },
       "is_incremental": false,
@@ -834,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.QQMiniFrameworkTypes.html",
-          "hash": "MT0ODcHRF2juDVxumrsboA=="
+          "hash": "ixFEqh8Z26ZGALpqsw5G9Q=="
         }
       },
       "is_incremental": false,
@@ -846,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.Request.html",
-          "hash": "lAOJ2z15yIIKWC4TcM3UGg=="
+          "hash": "KoMLxp2eQ0ckkw+8yEcuWg=="
         }
       },
       "is_incremental": false,
@@ -858,7 +858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.ResponseTypes.html",
-          "hash": "1rmX893QiWBFmc+9tZ0bow=="
+          "hash": "V0FIL4sxi7QN3FxZK7l1AQ=="
         }
       },
       "is_incremental": false,
@@ -870,7 +870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.VoiceTypes.html",
-          "hash": "abLbACJTQ/gWHWxVIaxu3w=="
+          "hash": "vJMDF2GVNJRjOyKUbFbPCQ=="
         }
       },
       "is_incremental": false,
@@ -882,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.XmlTypes.html",
-          "hash": "2PTqqx7z4PZb7YHEkRYtow=="
+          "hash": "5n8Y/qbTcBcZtOYWMhi6XA=="
         }
       },
       "is_incremental": false,
@@ -894,7 +894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.Model.html",
-          "hash": "P/FUpOnrO6pJTwKpRNScIg=="
+          "hash": "mVSx1XdQE0BewIy4QNXO8A=="
         }
       },
       "is_incremental": false,
@@ -906,7 +906,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.PluginBase.html",
-          "hash": "1pYWWRXe/tuWrc/nftd+hQ=="
+          "hash": "4UTFCxc+dJ2SBWLL/NHxWA=="
         }
       },
       "is_incremental": false,
@@ -918,7 +918,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.QMApi.html",
-          "hash": "FrHVtcxi0+C8p/4VGdWoew=="
+          "hash": "aDNGPmC4RYOQ439XBXPMZA=="
         }
       },
       "is_incremental": false,
@@ -930,7 +930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.QMEventAttribute.html",
-          "hash": "T0fEFPEFmudy18mnBoNYsA=="
+          "hash": "SjAdlnFXrZlKwcEQTWQXjg=="
         }
       },
       "is_incremental": false,
@@ -942,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.QMLog.html",
-          "hash": "eHR4PYxsGkc6RqNhjyzZIQ=="
+          "hash": "td1HsAHuw5EZnbRn0LnKHw=="
         }
       },
       "is_incremental": false,
@@ -954,7 +954,7 @@
       "output": {
         ".html": {
           "relative_path": "api/QQMini.PluginSDK.Core.html",
-          "hash": "qupzpQDkNMDvcmnOfv08dw=="
+          "hash": "4Za72KGW2uMx9YfQnpzKiQ=="
         }
       },
       "is_incremental": false,
@@ -966,7 +966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "ne/3vuv9DywGmdsgplB97A=="
+          "hash": "C2lPn2ESadOa+SrE71ugng=="
         }
       },
       "is_incremental": false,
@@ -990,7 +990,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/addWindow.html",
-          "hash": "Bq9949NPADdLPvhdo/bLEg=="
+          "hash": "8zKpFe9rNlLPtXbjujesjQ=="
         }
       },
       "is_incremental": false,
@@ -1002,7 +1002,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/code.html",
-          "hash": "eFlQNRKOaOS1lXbNscqudw=="
+          "hash": "cm+8Lp8um+Hw40q1Fpx1ZA=="
         }
       },
       "is_incremental": false,
@@ -1014,7 +1014,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/debug.html",
-          "hash": "Bq9949NPADdLPvhdo/bLEg=="
+          "hash": "8zKpFe9rNlLPtXbjujesjQ=="
         }
       },
       "is_incremental": false,
@@ -1026,7 +1026,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/deploy.html",
-          "hash": "a2L7c/YvOHXRyrJIqRtPQw=="
+          "hash": "ffdTKPTV60JXmOzGwlj7CA=="
         }
       },
       "is_incremental": false,
@@ -1038,7 +1038,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/home.html",
-          "hash": "zKDNcTbbPwzvmDgKLk74Zg=="
+          "hash": "DjYTlxEahFZnW9b1JGoX1A=="
         }
       },
       "is_incremental": false,
@@ -1050,7 +1050,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/require.html",
-          "hash": "yoeZOBDIxbj7gnEL4wjcHA=="
+          "hash": "HW30PfUX+lMNRxP8Gm08UQ=="
         }
       },
       "is_incremental": false,
@@ -1062,7 +1062,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/setup.html",
-          "hash": "kdX8BBx4jv3rmVPERUsJDw=="
+          "hash": "AKkYJ1VAzVWlC07uirA06A=="
         }
       },
       "is_incremental": false,
@@ -1086,7 +1086,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/update.html",
-          "hash": "Bq9949NPADdLPvhdo/bLEg=="
+          "hash": "8zKpFe9rNlLPtXbjujesjQ=="
         }
       },
       "is_incremental": false,
@@ -1230,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "UW2VLIKMrHFOtONR3oxWlQ=="
+          "hash": "eenTRrSrsb5w0uaSxB95Tg=="
         }
       },
       "is_incremental": false,
@@ -1242,7 +1242,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "LXQoqVbkgtJvlYsf4IAuaQ=="
+          "hash": "3sm8C5pltnaS2jAQO/+RrQ=="
         }
       },
       "is_incremental": false,
