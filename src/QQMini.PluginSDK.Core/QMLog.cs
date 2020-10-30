@@ -55,7 +55,12 @@ namespace QQMini.PluginSDK.Core
 		internal static QMLog CreateNew (int authCode)
 		{
 			QMLog log = new QMLog (authCode);
-			MemoryCache.Default.Add ($"QMLOG{AppDomain.CurrentDomain.Id}", log, ObjectCache.InfiniteAbsoluteExpiration);
+			MemoryCache.Default.Add ($"QMLOG{AppDomain.CurrentDomain.Id}", log, new CacheItemPolicy ()
+			{
+				AbsoluteExpiration = ObjectCache.InfiniteAbsoluteExpiration,
+				Priority = CacheItemPriority.NotRemovable,
+				SlidingExpiration = ObjectCache.NoSlidingExpiration
+			});
 			return log;
 		}
 		/// <summary>

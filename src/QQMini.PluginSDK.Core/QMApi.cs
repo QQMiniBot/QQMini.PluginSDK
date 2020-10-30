@@ -64,7 +64,12 @@ namespace QQMini.PluginSDK.Core
 		internal static QMApi CreateNew (int authCode)
 		{
 			QMApi api = new QMApi (authCode);
-			MemoryCache.Default.Add ($"QMAPI{AppDomain.CurrentDomain.Id}", api, ObjectCache.InfiniteAbsoluteExpiration);
+			MemoryCache.Default.Add ($"QMAPI{AppDomain.CurrentDomain.Id}", api, new CacheItemPolicy ()
+			{
+				AbsoluteExpiration = ObjectCache.InfiniteAbsoluteExpiration,
+				Priority = CacheItemPriority.NotRemovable,
+				SlidingExpiration = ObjectCache.NoSlidingExpiration
+			});
 			return api;
 		}
 		/// <summary>

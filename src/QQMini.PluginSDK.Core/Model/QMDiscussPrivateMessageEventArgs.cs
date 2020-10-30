@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,6 +38,17 @@ namespace QQMini.PluginSDK.Core.Model
 			: base (type, subType, robotQQ, 0, fromQQ, msgNumber, msgId, message)
 		{
 			this.FromDiscuss = new Discuss (fromDiscuss);
+		}
+		#endregion
+
+		#region --公开方法--
+		/// <summary>
+		/// 将此实例转换为其等效的字符串表示形式
+		/// </summary>
+		/// <returns>表示当前对象的字符串</returns>
+		public override string ToString ()
+		{
+			return JsonConvert.SerializeObject (this);
 		}
 		#endregion
 	}

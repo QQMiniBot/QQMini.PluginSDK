@@ -374,7 +374,7 @@
             获取当前消息的文本
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.Message.#ctor(System.Int32,System.Int64,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.Model.Message.#ctor(System.Int64,System.Int64,System.String)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.Message"/> 类的新实例
             </summary>
@@ -730,6 +730,12 @@
             <param name="message">详细信息</param>
             <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/></exception>
             <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.ToString">
+            <summary>
+            将此实例转换为其等效的字符串表示形式
+            </summary>
+            <returns>表示当前对象的字符串</returns>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMEventArgs">
             <summary>
@@ -1825,7 +1831,7 @@
             指示当前事件的消息
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs"/> 类的新实例
             </summary>
@@ -1839,6 +1845,12 @@
             <param name="message">详细信息</param>
             <exception cref="T:System.ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="F:QQMini.PluginSDK.Core.Model.QQ.MinValue"/></exception>
             <exception cref="T:System.ArgumentNullException">参数 message 为 <see langword="null"/></exception>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventArgs.ToString">
+            <summary>
+            将此实例转换为其等效的字符串表示形式
+            </summary>
+            <returns>表示当前对象的字符串</returns>
         </member>
         <member name="T:QQMini.PluginSDK.Core.Model.QMPrivateMessageEventSubTypes">
             <summary>
@@ -2105,6 +2117,18 @@
             定义将 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象转换为 <see cref="T:System.String"/>
             </summary>
             <param name="value">转换的 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/> 对象</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Implicit(System.Int64)~QQMini.PluginSDK.Core.Model.QQ">
+            <summary>
+            定义将 <see cref="T:System.Int64"/> 对象转换为 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/>
+            </summary>
+            <param name="value">转换的 <see cref="T:System.Int64"/> 对象</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Implicit(System.String)~QQMini.PluginSDK.Core.Model.QQ">
+            <summary>
+            定义将 <see cref="T:System.String"/> 对象转换为 <see cref="T:QQMini.PluginSDK.Core.Model.QQ"/>
+            </summary>
+            <param name="value">转换的 <see cref="T:System.String"/> 对象</param>
         </member>
         <member name="M:QQMini.PluginSDK.Core.Model.QQ.op_Equality(QQMini.PluginSDK.Core.Model.QQ,QQMini.PluginSDK.Core.Model.QQ)">
             <summary>

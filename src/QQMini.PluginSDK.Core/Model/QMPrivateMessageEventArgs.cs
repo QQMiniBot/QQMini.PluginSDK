@@ -1,4 +1,6 @@
-﻿using QQMini.PluginFramework.Utility.Core;
+﻿using Newtonsoft.Json;
+
+using QQMini.PluginFramework.Utility.Core;
 
 using System;
 using System.Collections.Generic;
@@ -42,12 +44,23 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <param name="message">详细信息</param>
 		/// <exception cref="ArgumentOutOfRangeException">参数 robotQQ 或 fromQQ 小于 <see cref="QQ.MinValue"/></exception>
 		/// <exception cref="ArgumentNullException">参数 message 为 <see langword="null"/></exception>
-		public QMPrivateMessageEventArgs (int type, int subType, long robotQQ, long _, long fromQQ, long msgNumber, int msgId, IntPtr message)
+		public QMPrivateMessageEventArgs (int type, int subType, long robotQQ, long _, long fromQQ, long msgNumber, long msgId, IntPtr message)
 			: base (type, robotQQ)
 		{
 			SubType = (QMPrivateMessageEventSubTypes)subType;
 			FromQQ = new QQ (fromQQ);
 			Message = new Message (msgId, msgNumber, message.ToString (Global.DefaultEncoding));
+		}
+		#endregion
+
+		#region --公开方法--
+		/// <summary>
+		/// 将此实例转换为其等效的字符串表示形式
+		/// </summary>
+		/// <returns>表示当前对象的字符串</returns>
+		public override string ToString ()
+		{
+			return JsonConvert.SerializeObject (this);
 		}
 		#endregion
 	}

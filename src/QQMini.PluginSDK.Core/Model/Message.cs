@@ -17,7 +17,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <summary>
 		/// 获取当前消息的唯一标识 (ID)
 		/// </summary>
-		public int Id { get; }
+		public long Id { get; }
 		/// <summary>
 		/// 获取当前消息的序号
 		/// </summary>
@@ -37,7 +37,7 @@ namespace QQMini.PluginSDK.Core.Model
 		/// <param name="text">消息文本</param>
 		/// <exception cref="ArgumentOutOfRangeException">参数 id 或 number 小于 0</exception>
 		/// <exception cref="ArgumentNullException">参数 text 为 <see langword="null"/></exception>
-		public Message (int id, long number, string text)
+		public Message (long id, long number, string text)
 		{
 			if (id < 0)
 			{

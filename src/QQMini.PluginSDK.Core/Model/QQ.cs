@@ -37,7 +37,7 @@ namespace QQMini.PluginSDK.Core.Model
 		{
 			if (id < _minQQId)
 			{
-				throw new ArgumentOutOfRangeException (nameof (id));
+				throw new ArgumentOutOfRangeException (nameof (id), $"无法将小于 “{QQ.MinValue.Id}” 的值初始化为 QQ");
 			}
 			this.Id = id;
 		}
@@ -101,6 +101,26 @@ namespace QQMini.PluginSDK.Core.Model
 		public static implicit operator string (QQ value)
 		{
 			return value.Id.ToString ();
+		}
+		/// <summary>
+		/// 定义将 <see cref="long"/> 对象转换为 <see cref="QQ"/>
+		/// </summary>
+		/// <param name="value">转换的 <see cref="long"/> 对象</param>
+		public static implicit operator QQ (long value)
+		{
+			return new QQ (value);
+		}
+		/// <summary>
+		/// 定义将 <see cref="string"/> 对象转换为 <see cref="QQ"/>
+		/// </summary>
+		/// <param name="value">转换的 <see cref="string"/> 对象</param>
+		public static implicit operator QQ (string value)
+		{
+			if (long.TryParse (value, out long result))
+			{
+				return new QQ (result);
+			}
+			return null;
 		}
 		/// <summary>
 		/// 确定两个指定的 <see cref="QQ"/> 实例是否具有相同的值
