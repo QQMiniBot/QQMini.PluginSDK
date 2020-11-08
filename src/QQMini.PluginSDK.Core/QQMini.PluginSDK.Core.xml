@@ -2807,6 +2807,136 @@
             <param name="targetQQ">要获取其是否在线的QQ号</param>
             <returns>如果指定的QQ是在线的, 返回 <see langword="true"/>; 否则返回 <see langword="false"/></returns>
         </member>
+        <member name="T:QQMini.PluginSDK.Core.QMApiV2">
+            <summary>
+            提供 QQMini 应用程序公开接口的调用实现
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendGroupXML(System.String,System.String,System.String)">
+            <summary>
+            发送群组XML结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="group">要发送消息到的目标群组</param>
+            <param name="xmlContent">XML内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendFriendXML(System.String,System.String,System.String)">
+            <summary>
+            发送好友XML结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="qq">要发送消息到的目标QQ</param>
+            <param name="xmlContent">XML内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendDiscussXML(System.String,System.String,System.String)">
+            <summary>
+            发送讨论组XML结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="discuss">要发送消息到的目标讨论组</param>
+            <param name="xmlContent">XML内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendGroupTempXML(System.String,System.String,System.String)">
+            <summary>
+            发送群组临时XML结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="group">要发送消息到的目标群组</param>
+            <param name="xmlContent">XML内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendDiscussTempXML(System.String,System.String,System.String)">
+            <summary>
+            发送讨论组临时XML结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="discuss">要发送消息到的目标群组</param>
+            <param name="xmlContent">XML内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendWebTempXML(System.String,System.String,System.String)">
+            <summary>
+            发送网页临时XML结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="qq">要发送消息到的目标QQ</param>
+            <param name="xmlContent">XML内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.WithdrawMessage(System.String,System.String,QQMini.PluginSDK.Core.Model.Message)">
+            <summary>
+            撤回指定的消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="group">要从指定的群组撤回消息</param>
+            <param name="message">要撤回的消息</param>
+            <returns>成功返回空，失败返回腾讯给出的理由</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.GetGroupList(System.String)">
+            <summary>
+            获取群组列表
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <returns>成功返回群组组的 Json</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.GetGroupMemberList(System.String,System.String)">
+            <summary>
+            获取群成员列表
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="group">要获取成员列表的群</param>
+            <returns>成功返回群组成员的 Json</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.GetPicUrl(System.String,System.String,System.String)">
+            <summary>
+            获取指定群组的图片链接
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="target">要获取图片的群组或讨论组</param>
+            <param name="picCode">图片代码, 例如: [pic={xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}.jpg]</param>
+            <returns>根据图片获取下载地址</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.GetPicUrl(System.String,System.String)">
+            <summary>
+            获取非群组的图片链接
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="picCode">图片代码, 例如: [pic={xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}.jpg]</param>
+            <returns>根据图片获取下载地址</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.UploadGroupPic(System.String,System.String,System.Byte[])">
+            <summary>
+            上传群组图片, 上传成功返回图片 GUID
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="target">要上传的图片的图标群组或讨论组</param>
+            <param name="imgData">要上传图片的数据</param>
+            <returns>如果上传成功返回图片的 GUID</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.UploadNoGroupPic(System.String,System.String,System.Byte[])">
+            <summary>
+            上传非群组图片, 上传成功返回图片 GUID
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="qq">图标将要发送到的目标QQ</param>
+            <param name="imgData">要上传图片的数据</param>
+            <returns>如果上传成功返回图片的 GUID</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.UploadGroupVoice(System.String,System.String,System.Byte[])">
+            <summary>
+            上传群组语音, 上传成功返回语音 GUID
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="target">要发送的目标群组或讨论组</param>
+            <param name="vocData">语音数据 (AMR Silk编码)</param>
+            <returns>如果上传成功返回语音的 GUID</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.UploadNoGroupVoice(System.String,System.String,System.Byte[])">
+            <summary>
+            上传非群组语音, 上传成功返回语音 GUID
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="qq">要发送的目标QQ</param>
+            <param name="vocData">语音数据 (AMR Silk编码)</param>
+            <returns>如果上传成功返回语音的 GUID</returns>
+        </member>
         <member name="T:QQMini.PluginSDK.Core.QMEventAttribute">
             <summary>
             表示将特定方法设置为指定类型事件的终点的特性
