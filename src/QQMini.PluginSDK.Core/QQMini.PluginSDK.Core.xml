@@ -716,7 +716,7 @@
             表示当前事件的来源讨论组
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMDiscussPrivateMessageEventArgs"/> 类的新实例
             </summary>
@@ -1708,7 +1708,7 @@
             表示当前事件的来源群组
             </summary>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.IntPtr)">
+        <member name="M:QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs.#ctor(System.Int32,System.Int32,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.IntPtr)">
             <summary>
             初始化 <see cref="T:QQMini.PluginSDK.Core.Model.QMGroupPrivateMessageEventArgs"/> 类的新实例
             </summary>
@@ -2836,25 +2836,35 @@
             <param name="discuss">要发送消息到的目标讨论组</param>
             <param name="xmlContent">XML内容</param>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendGroupTempXML(System.String,System.String,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendGroupTempXML(System.String,System.String,System.String,System.String)">
             <summary>
             发送群组临时XML结构化消息
             </summary>
             <param name="robotQQ">机器人QQ</param>
             <param name="group">要发送消息到的目标群组</param>
+            <param name="qq">要发送消息到的目标QQ</param>
             <param name="xmlContent">XML内容</param>
         </member>
-        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendDiscussTempXML(System.String,System.String,System.String)">
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendDiscussTempXML(System.String,System.String,System.String,System.String)">
             <summary>
             发送讨论组临时XML结构化消息
             </summary>
             <param name="robotQQ">机器人QQ</param>
             <param name="discuss">要发送消息到的目标群组</param>
+            <param name="qq">要发送到的目标QQ</param>
             <param name="xmlContent">XML内容</param>
         </member>
         <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendWebTempXML(System.String,System.String,System.String)">
             <summary>
             发送网页临时XML结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="qq">要发送消息到的目标QQ</param>
+            <param name="xmlContent">XML内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendFriendVeriReplyXML(System.String,System.String,System.String)">
+            <summary>
+            发送好友验证回复XML结构化消息
             </summary>
             <param name="robotQQ">机器人QQ</param>
             <param name="qq">要发送消息到的目标QQ</param>
@@ -2936,6 +2946,116 @@
             <param name="qq">要发送的目标QQ</param>
             <param name="vocData">语音数据 (AMR Silk编码)</param>
             <returns>如果上传成功返回语音的 GUID</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendGroupJSON(System.String,System.String,System.String)">
+            <summary>
+            发送群组JSON结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="group">要发送消息到的目标群组</param>
+            <param name="jsonContent">JSON内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendFirnedJSON(System.String,System.String,System.String)">
+            <summary>
+            发送好友JSON结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="qq">要发送消息到的目标QQ</param>
+            <param name="jsonContent">JSON内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendDiscussJSON(System.String,System.String,System.String)">
+            <summary>
+            发送讨论组JSON结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="discuss">要发送消息到的目标讨论组</param>
+            <param name="jsonContent">JSON内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendGroupTempJSON(System.String,System.String,System.String,System.String)">
+            <summary>
+            发送群组临时JSON结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="group">要发送消息到的目标群组</param>
+            <param name="qq">要发送消息到的目标QQ</param>
+            <param name="jsonContent">JSON内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendDiscussTempJSON(System.String,System.String,System.String,System.String)">
+            <summary>
+            发送讨论组临时JSON结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="discuss">要发送消息到的目标群组</param>
+            <param name="qq">要发送到的目标QQ</param>
+            <param name="jsonContent">JSON内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendWebTempJSON(System.String,System.String,System.String)">
+            <summary>
+            发送网页临时JSON结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="qq">要发送消息到的目标QQ</param>
+            <param name="jsonContent">JSON内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SendFriendVeriReplyJSON(System.String,System.String,System.String)">
+            <summary>
+            发送好友验证回复JSON结构化消息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="qq">要发送消息到的目标QQ</param>
+            <param name="jsonContent">JSON内容</param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.GetFriendInfo(System.String,System.String)">
+            <summary>
+            获取好友信息
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="qq">要获取信息的目标好友QQ</param>
+            <returns>成功获取返回好友信息JSON</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.GetFirnedList(System.String)">
+            <summary>
+            获取好友列表
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <returns>成功返回指定QQ的好友列表JSON</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.SetGroupAdmin(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            设置或取消群组管理员
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="group">要操作成员权限的目标群</param>
+            <param name="qq">要控制其权限的QQ</param>
+            <param name="isSet">是否设置为管理员</param>
+            <returns>如果设置成功返回 <see langword="true"/>, 否则返回 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.RemoveGroupMember(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            移除群组成员
+            </summary>
+            <param name="robotQQ">机器人QQ</param>
+            <param name="group">要从中移除成员的目标群组</param>
+            <param name="qq">要从群组中移除的目标QQ</param>
+            <param name="isNotRec">设置一个值, 指示是否不再接收该成员的入群申请. 默认值: <see langword="false"/></param>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.GetFrameAllQQ">
+            <summary>
+            获取框架所有QQ
+            </summary>
+            <returns>返回框架的所有QQ</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.GetFrameAllOnlineQQ">
+            <summary>
+            获取框架所有在线QQ
+            </summary>
+            <returns>返回框架的所有在线的QQ</returns>
+        </member>
+        <member name="M:QQMini.PluginSDK.Core.QMApiV2.GetFrameAllOfflineQQ">
+            <summary>
+            获取框架所有离线QQ
+            </summary>
+            <returns>返回框架的所有在线的QQ</returns>
         </member>
         <member name="T:QQMini.PluginSDK.Core.QMEventAttribute">
             <summary>
